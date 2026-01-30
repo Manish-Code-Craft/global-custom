@@ -16,6 +16,10 @@ export default function Navigation() {
         <li className="group relative"><NavLink href="/services" name="Services" />
             <ul className="sub-menu">
                 <li><NavSubLink href="/customs-clearance" name="Customs Clearance" /></li>
+                <li><NavSubLink href="/road-custom-clearance" name="Road customs clearance" /></li>
+                <li><NavSubLink href="/sea-custom-clearance" name="Sea customs clearance " /></li>
+                <li><NavSubLink href="/air-freight-custom-clearance" name="Air freight customs clearance" /></li>
+                <li><NavSubLink href="/ens-declaration-uk-safety-security-declarations" name="ENS Declaration" /></li>
                 <li><NavSubLink href="/import-clearance" name="Import Clearance" /></li>
                 <li><NavSubLink href="/export-clearance" name="Export Clearance" /></li>
                 <li><NavSubLink href="/cds-declarations" name="CDS Declarations" /></li>
@@ -57,6 +61,10 @@ export default function Navigation() {
 
         <li className="group relative"><NavLink href="#" name="Locations" />
             <ul className="sub-menu">
+            <li><NavSubLink href="/customs-clearance-liverpool" name="Custom Clearance in Liverpool" /></li>
+                <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
+                <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
+                <li><NavSubLink href="/customs-clearance-southampton" name="Custom Clearance in Southampton" /></li>
                 <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Kent" /></li>
                 <li><NavSubLink href="/customs-clearance-medway" name="Customs Clearance Medway" /></li>
                 <li><NavSubLink href="/customs-clearance-gillingham" name="Customs Clearance Gillingham" /></li>
