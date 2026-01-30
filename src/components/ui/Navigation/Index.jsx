@@ -15,7 +15,7 @@ export default function Navigation() {
         </li> */}
         <li className="group relative"><NavLink href="/services" name="Services" />
             <ul className="sub-menu">
-                <li><NavSubLink href="/customs-clearance" name="Customs Clearance" /></li>
+                <li><NavSubLink href="/customs-clearance-uk" name="Customs Clearance" /></li>
                 <li><NavSubLink href="/road-custom-clearance" name="Road customs clearance" /></li>
                 <li><NavSubLink href="/sea-custom-clearance" name="Sea customs clearance " /></li>
                 <li><NavSubLink href="/air-freight-custom-clearance" name="Air freight customs clearance" /></li>
@@ -65,17 +65,18 @@ export default function Navigation() {
                 <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
                 <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
                 <li><NavSubLink href="/customs-clearance-southampton" name="Custom Clearance in Southampton" /></li>
+                <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Tilbury" /></li>
                 <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Kent" /></li>
                 <li><NavSubLink href="/customs-clearance-medway" name="Customs Clearance Medway" /></li>
                 <li><NavSubLink href="/customs-clearance-gillingham" name="Customs Clearance Gillingham" /></li>
                 <li><NavSubLink href="/customs-clearance-rochester" name="Customs Clearance Rochester" /></li>
                 <li><NavSubLink href="/customs-clearance-chatham" name="Customs Clearance Chatham" /></li>
                 <li className="divider" />
-                <li><NavSubLink href="/customs-clearance-felixstowe" name="Customs Clearance Felixstowe" /></li>
-                <li><NavSubLink href="/customs-clearance-southampton" name="Customs Clearance Southampton" /></li>
+                {/* <li><NavSubLink href="/customs-clearance-felixstowe" name="Customs Clearance Felixstowe" /></li> */}
+                {/* <li><NavSubLink href="/customs-clearance-southampton" name="Customs Clearance Southampton" /></li> */}
                 <li><NavSubLink href="/customs-clearance-dover" name="Customs Clearance Dover" /></li>
                 <li><NavSubLink href="/customs-clearance-london" name="Customs Clearance London" /></li>
-                <li><NavSubLink href="/customs-clearance-london-gateway" name="Customs Clearance London Gateway" /></li>
+                {/* <li><NavSubLink href="/customs-clearance-london-gateway" name="Customs Clearance London Gateway" /></li> */}
             </ul>
         </li>
 
