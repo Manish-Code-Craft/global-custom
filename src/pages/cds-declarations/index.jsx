@@ -88,7 +88,7 @@ export default function Road ({ preview }) {
     { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." }
   ];
 
-  const SITE_FAQS = [
+  const cdsFaq = [
     {
       question: "How long does a CDS declaration take?",
       answer:
@@ -368,7 +368,7 @@ export default function Road ({ preview }) {
          sectionDescription="Answers to common questions about CDS import and export declarations, timelines, and urgent submissions."
          buttonText="get a quote"
          buttonLink="/contact"
-         faqs={SITE_FAQS}
+         faqs={cdsFaq}
        />
        <SiteCta
           title="Need fast, reliable CDS declarations?"

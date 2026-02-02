@@ -9,29 +9,22 @@ import Heroroad from "@/components/ui/Heroroad";
 import Servicefaq from "@/components/ui/Servicefaq/Servicefaq";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
+import { Ship, Plane, Warehouse, MapPin, AlertCircle, CheckCircle2   } from 'lucide-react';
 import { 
-  CheckCircle, 
-  AlertTriangle, 
-  ArrowRight, 
+  CheckCircle,   
   FileText, 
   Globe, 
   Clock, 
   ShieldCheck, 
   Truck, 
-  Search, 
-  HelpCircle,
-  Phone,
-  Mail,
-  ChevronDown,
-  ChevronUp,
+  Search,  
   Anchor,
-  Briefcase,
-  AlertCircle,
-  Link as LinkIcon,
-  Package
+  Briefcase, 
+  Link as LinkIcon, 
 } from 'lucide-react';
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
+import Btn from "@/components/ui/Btns/Btn";
 
 export default function Road ({ preview }) {
 
@@ -49,15 +42,42 @@ export default function Road ({ preview }) {
   };
 
   const services = [
-    { title: "Import Declarations", desc: "Full import declarations for goods entering the UK.", icon: <Anchor /> },
-    { title: "Export Declarations", desc: "Accurate export filings for goods leaving the UK.", icon: <Globe /> },
-    { title: "Supplementary Declarations", desc: "For businesses using simplified procedures.", icon: <FileText /> },
+    { title: "Import Declarations (CDS)", desc: "Fast, accurate import declarations for goods entering the UK.", icon: <Anchor /> },
+    { title: "HS Code Classification", desc: "Correct commodity codes to avoid overpaying duty.", icon: <Briefcase /> },
     { title: "Customs Procedure Codes (CPCs)", desc: "Correct CPC selection to avoid delays.", icon: <Search /> },
     { title: "Document Code Validation", desc: "Ensuring all required certificates and licences are included.", icon: <CheckCircle /> },
-    { title: "HS Code Classification", desc: "Correct commodity codes to avoid overpaying duty.", icon: <Briefcase /> },
     { title: "Duty & VAT Calculation", desc: "Including postponed VAT accounting (PVA).", icon: <ShieldCheck /> },
     { title: "T1 Transit Documents", desc: "Creation and discharge of transit movements.", icon: <Truck /> },
-    { title: "Urgent & Same-Day Declarations", desc: "Priority processing for time-critical shipments.", icon: <Clock /> }
+    { title: "Temporary Admission & ATA Carnets", desc: "Support for goods entering the UK temporarily.", icon: <Globe /> },
+    { title: "Urgent & Same-Day Declarations", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
+    { title: "Support for Freight Forwarders & Hauliers", desc: "White-label customs services for logistics providers.", icon: <FileText /> },
+  ];
+
+  const risks = [
+    "Delays at ports",
+    "Rejected entries",
+    "Incorrect duty charges",
+    "VAT accounting issues",
+    "Compliance penalties",
+    "Supply chain disruption"
+  ];
+
+  const locations = [
+    {
+      title: "Major Ports",
+      icon: <Ship className="w-8 h-8 text-[#3daee0]" />,
+      items: ["Felixstowe", "Southampton", "London Gateway", "Dover", "Liverpool", "Hull", "Immingham", "Bristol", "Tilbury"]
+    },
+    {
+      title: "Airports",
+      icon: <Plane className="w-8 h-8 text-[#3daee0]" />,
+      items: ["Heathrow", "Gatwick", "Manchester", "East Midlands", "Birmingham", "Stansted"]
+    },
+    {
+      title: "Inland Border Facilities",
+      icon: <Warehouse className="w-8 h-8 text-[#3daee0]" />,
+      items: ["Sevington", "Ashford", "Dover Western Docks", "Birmingham", "Warrington"]
+    }
   ];
  
   const requirements = [
@@ -80,27 +100,26 @@ export default function Road ({ preview }) {
   ];
 
   const features = [
-    { title: "Expert Knowledge of CDS Requirements", desc: "We stay up to date with all regulatory changes." },
+    { title: "Nationwide Expertise", desc: "We understand the requirements of every major UK port and airport." },
     { title: "Fast Turnaround", desc: "We process declarations quickly to keep your goods moving." },
     { title: "Compliance-First Approach", desc: "We ensure every declaration meets HMRC requirements." },
-    { title: "Transparent Pricing", desc: "Clear, competitive rates with no hidden fees." },
-    { title: "Nationwide Coverage", desc: "We support all major UK ports and airports." },
+    { title: "Transparent Pricing", desc: "Clear, competitive rates with no hidden fees." },   
     { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." }
   ];
 
-  const SITE_FAQS = [
+  const importFaq = [
     {
-      question: "How long does a CDS declaration take?",
+      question: "How long does import clearance take in the UK?",
       answer:
-        "Most declarations are processed quickly, but timing depends on documentation accuracy, port traffic, and any HMRC compliance checks.",
+        "Most import declarations are processed quickly. However, the exact timeframe depends on documentation accuracy, port traffic, and any HMRC checks.",
     },
     {
-      question: "Do you support CDS import and export declarations?",
+      question: "Do you support CDS import declarations?",
       answer:
-        "Yes — we handle both import and export declarations fully through the Customs Declaration Service (CDS).",
+        "Yes — all import declarations are fully processed through the Customs Declaration Service (CDS).",
     },
     {
-      question: "Can you handle urgent or same-day declarations?",
+      question: "Can you handle urgent or same-day shipments?",
       answer:
         "Absolutely. We offer priority processing for urgent and time-critical shipments.",
     },
@@ -112,10 +131,10 @@ export default function Road ({ preview }) {
     {
       question: "What if I don’t know my HS codes?",
       answer:
-        "No problem. Our customs specialists can accurately classify your goods and ensure the correct HS codes are applied.",
+        "No worries. Our customs experts can accurately classify your goods and apply the correct HS codes.",
     },
   ];
-
+  
     return(
       <>
       <PageHead PageMeta={PageMeta} />
@@ -125,70 +144,60 @@ export default function Road ({ preview }) {
        />
 
 
+<section className="py-24 bg-slate-50 font-sans">
+      <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
+        <div className="flex flex-col lg:flex-row gap-16 items-start">
+          
+          {/* Left Side: The "Why" & The "Risks" */}
+          <div className="lg:w-3/5">
+            <h3 className="text-[#3daee0] text-sm font-bold uppercase  mb-6">
+              Why Import Clearance Matters
+            </h3>
+            <h2 className="text-3xl font-bold text-slate-900 mb-10">
+              Every shipment entering the UK must be declared to HMRC.
+            </h2>
+            
+            <p className="text-xl text-slate-500 mb-8 font-medium">
+              Incorrect or incomplete declarations can cause:
+            </p>
 
-      {/* What is CDS - Grid Layout */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#0ea5e9] p-2 rounded-lg text-white">
-                  <Globe className="h-6 w-6" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {risks.map((risk, index) => (
+                <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
+                  <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
+                  <span className="text-slate-700 font-semibold">{risk}</span>
                 </div>
-                <h2 className="text-3xl font-bold text-slate-900">What Is CDS?</h2>
-              </div>
-              <p className="text-slate-600 mb-4">
-                The Customs Declaration Service (CDS) is the UK’s modern customs platform, replacing the old CHIEF system. It handles:
-              </p>
-              <ul className="space-y-3 mb-6">
-                {['Import declarations', 'Export declarations', 'Duty and VAT calculations', 'Customs procedure codes (CPCs)', 'Document codes and licences', 'Tari and commodity code validation'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-slate-700">
-                    <CheckCircle className="text-[#0ea5e9] mt-1 h-5 w-5 shrink-0" /> {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="bg-blue-50 border-l-4 border-[#0ea5e9] p-4 rounded-r-lg">
-                <p className="text-[#0ea5e9] font-bold">
-                  CDS is more detailed and complex than CHIEF, requiring additional data fields and precise information.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="bg-red-50 p-2 rounded-lg text-red-500">
-                  <AlertTriangle className="h-6 w-6" />
-                </div>
-                <h2 className="text-3xl font-bold text-slate-900">Why CDS Matters for Your Business</h2>
-              </div>
-              <p className="text-slate-600 mb-6">
-                Incorrect or incomplete CDS declarations can cause:
-              </p>
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
-                <ul className="grid grid-cols-1 gap-4">
-                  {['Delays at ports', 'Rejected declarations', 'Incorrect duty charges', 'VAT accounting errors', 'Compliance penalties', 'Supply chain disruption'].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-slate-700">
-                      <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <p className="mt-8 font-bold text-slate-900 flex items-center gap-2">
-                <ShieldCheck className="text-[#0ea5e9]" />
-                Global Customs ensures your declarations are correct the first time.
-              </p>
+              ))}
             </div>
           </div>
+
+          {/* Right Side: The Resolution Card */}
+          <div className="lg:w-2/5 lg:mt-24">
+            <div className="relative p-1 bg-gradient-to-b from-[#3daee0] to-blue-600 rounded-[2.5rem] shadow-2xl shadow-blue-200">
+              <div className="bg-white rounded-[2.4rem] p-10 text-center">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
+                  <CheckCircle2 className="text-[#3daee0] w-10 h-10" />
+                </div>
+                <p className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
+                  We ensure your declarations are correct the first time.
+                </p>
+                <div className="mt-8 pt-8 border-t border-slate-100">
+                  <Btn link="/contact" title="Contact Us"/>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Services Grid */}
       <section className="py-20 ">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900">Our CDS Declaration Services</h2>
-            <p className="mt-4 text-slate-600">We provide a complete range of CDS services:</p>
+            <h2 className="text-3xl font-bold text-slate-900">Our Import Clearance Services</h2>
+            <p className="mt-4 text-slate-600">We provide a complete range of import services across the UK:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -203,6 +212,49 @@ export default function Road ({ preview }) {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              Ports & Airports We Cover <span className="text-[#3daee0]">Across the UK</span>
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Wherever your goods enter the UK, we can handle the customs process with full coverage at all major entry points.
+            </p>
+          </div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {locations.map((loc, index) => (
+              <div key={index} className="bg-white p-8 rounded-xl shadow-sm border-t-4 border-[#3daee0] hover:shadow-md transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="p-3 bg-blue-50 rounded-lg mr-4">
+                    {loc.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800">{loc.title}</h3>
+                </div>
+                <ul className="space-y-3">
+                  {loc.items.map((item, i) => (
+                    <li key={i} className="flex items-center text-gray-600">
+                      <MapPin className="w-4 h-4 mr-2 text-[#3daee0] opacity-70" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          
+          {/* Footer Note */}
+          <div className="mt-12 text-center p-6 bg-[#3daee0] rounded-lg">
+            <p className="text-white font-medium text-lg">
+              Ready to clear your cargo? Our team is available at every major UK gateway.
+            </p>
+          </div>
+        </div>
+    </section>
 
       {/* Who We Work With - Image 2 */}
       <section className="py-20 bg-white">
@@ -222,7 +274,7 @@ export default function Road ({ preview }) {
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Who We Work With</h2>
               <p className="text-slate-600 mb-6">Our CDS services support:</p>
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {[
                   'Importers', 'Exporters', 'Freight forwarders', 'Hauliers', 
                   'Retailers', 'Manufacturers', 'E-commerce sellers', 
@@ -245,8 +297,8 @@ export default function Road ({ preview }) {
       <section className="py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">What You Need for a CDS Declaration</h2>
-            <p className="text-slate-600 mt-4">To process your declaration quickly, we typically require:</p>
+            <h2 className="text-3xl font-bold text-slate-900">What You Need for Import Clearance</h2>
+            <p className="text-slate-600 mt-4">To process your import declaration quickly, we typically require:</p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
@@ -276,7 +328,7 @@ export default function Road ({ preview }) {
       {/* How We Ensure Fast Filing */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant CDS Filing</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Import Clearance</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((item, i) => (
               <div key={i} className="bg-slate-50 p-6 rounded-lg border border-slate-100">
@@ -292,7 +344,7 @@ export default function Road ({ preview }) {
       {/* Common Problems */}
       <section className="py-20 bg-[#0ea5e9] text-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Common CDS Problems We Solve</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Common Import Problems We Solve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {problems.map((prob, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
@@ -302,23 +354,7 @@ export default function Road ({ preview }) {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Industries Support */}
-      {/* <section className="py-16 bg-white">
-        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0 text-center">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">Industries We Support</h2>
-          <p className="text-slate-600 mb-8">We work with businesses across:</p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {['E-commerce', 'Automotive', 'Food & drink', 'Pharmaceuticals', 'Retail', 'Manufacturing', 'Logistics & freight forwarding', 'Amazon FBA sellers'].map((ind, i) => (
-              <span key={i} className="px-6 py-3 rounded-full bg-slate-50 text-slate-700 font-medium border border-slate-200">
-                {ind}
-              </span>
-            ))}
-          </div>
-          <p className="text-slate-900 font-medium">Whether you import small parcels or full containers, we can support your needs.</p>
-        </div>
-      </section> */}
+      </section>     
 
       {/* Industries Support */}
       <section className="py-24 bg-white">
@@ -365,14 +401,14 @@ export default function Road ({ preview }) {
        <Testimonials/>
        <SiteFAQs
          sectionTitle="FAQs"
-         sectionDescription="Answers to common questions about CDS import and export declarations, timelines, and urgent submissions."
+         sectionDescription="Get clear answers for faster, hassle-free UK import clearance."
          buttonText="get a quote"
          buttonLink="/contact"
-         faqs={SITE_FAQS}
+         faqs={importFaq}
        />
        <SiteCta
-          title="Need fast, reliable CDS declarations?"
-          description="Contact Global Customs today for expert support, accurate filings, and 24/7 assistance."
+          title="Need fast, reliable import clearance anywhere in the UK?"
+          description="Contact Global Customs today for expert support, accurate declarations, and 24/7 assistance."
           buttonText="Contact us"
           buttonLink="/contact"
           backgroundImage="/images/road-service.png"
