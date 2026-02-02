@@ -36,7 +36,7 @@ import SiteCta from "@/components/ui/SiteCta";
 export default function Road ({ preview }) {
 
   const PageMeta = {
-   title: "CDS Declarations | Clearance Services UK",
+   title: "Import Clearance  | Custom Clearance Services UK",
    description:"Global Custom Clearance (UK) provides expert road customs clearance services, ensuring efficient and compliant transport of goods across UK borders. Our experienced team manages all aspects of customs documentation, duty calculations, and regulatory compliance to facilitate smooth transit for your road freight shipments.",
    keywords:"Road Customs Clearance, Border Clearance Services, Fast Customs Processing, Freight Forwarding Solutions,",
  };
