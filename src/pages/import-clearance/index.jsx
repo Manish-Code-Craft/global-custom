@@ -25,13 +25,15 @@ import {
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
 import Btn from "@/components/ui/Btns/Btn";
+import ServiceHero from "@/components/ui/New/ServiceHero";
+import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
 
 export default function Road ({ preview }) {
 
   const PageMeta = {
    title: "Import Clearance  | Custom Clearance Services UK",
-   description:"Global Custom Clearance (UK) provides expert road customs clearance services, ensuring efficient and compliant transport of goods across UK borders. Our experienced team manages all aspects of customs documentation, duty calculations, and regulatory compliance to facilitate smooth transit for your road freight shipments.",
-   keywords:"Road Customs Clearance, Border Clearance Services, Fast Customs Processing, Freight Forwarding Solutions,",
+   description:"Global Customs provides fast, reliable import clearance services across all major UK ports and airports. Ensure your goods move smoothly with our expert customs support.",
+   keywords:"Import Clearance UK, Customs Declaration Service, CDS Import Services, UK Customs Clearance, Fast Import Declarations, HS Code Classification, Customs Procedure Codes, Duty and VAT Calculation, T1 Transit Documents, Temporary Admission Support, Urgent Import Clearance, Freight Forwarder Customs Services",
  };
 
 
@@ -139,58 +141,74 @@ export default function Road ({ preview }) {
       <>
       <PageHead PageMeta={PageMeta} />
         <Layout preview={preview}>
-        <Heroroad bannerdescription='Fast, Compliant Customs Support for All UK Ports and Airports' title='Import Clearance UK' title2='Import Clearance UK' description="Importing goods into the UK requires precision, compliance, and a deep understanding of customs regulations. Every shipment must be declared correctly through the Customs Declaration Service (CDS), with accurate HS codes, correct valuation, and the right customs procedure codes (CPCs). Any errors can lead to delays, rejected declarations, additional charges, or goods being held at the border. Global Customs provides fast, reliable import clearance services across the UK, supporting importers, freight forwarders, hauliers, manufacturers, retailers, and e-commerce businesses. We work with all major UK ports, airports, and inland border facilities to ensure your goods move smoothly and without delay."
-        image1="/images/road-big.jpg" image2='/images/road-small.jpg' image3='/images/road-smaal2.jpg' backgroundImage="/images/road-bg.jpg"
-       />
-
-
-<section className="py-24 bg-slate-50 font-sans">
-      <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-        <div className="flex flex-col lg:flex-row gap-16 items-start">
           
-          {/* Left Side: The "Why" & The "Risks" */}
-          <div className="lg:w-3/5">
-            <h3 className="text-[#3daee0] text-sm font-bold uppercase  mb-6">
-              Why Import Clearance Matters
-            </h3>
-            <h2 className="text-3xl font-bold text-slate-900 mb-10">
-              Every shipment entering the UK must be declared to HMRC.
-            </h2>
+      <NewInnerBanner
+        title="Import Clearance UK"
+        backgroundImage="/images/road-bg.jpg"
+        bannerDescription={[
+          "Fast, Compliant Customs Support for All UK Ports and Airports", 
+          "Importing goods into the UK requires precision, compliance, and a deep understanding of customs regulations. Every shipment must be declared correctly through the Customs Declaration Service (CDS), with accurate HS codes, correct valuation, and the right customs procedure codes (CPCs). Any errors can lead to delays, rejected declarations, additional charges, or goods being held at the border."        
+        ]}
+      />
+
+      <ServiceHero
+        title="End-to-End UK Customs Clearance Services"
+        description={[
+          "Global Customs provides fast, reliable import clearance services across the UK, supporting importers, freight forwarders, hauliers, manufacturers, retailers, and e-commerce businesses. We work with all major UK ports, airports, and inland border facilities to ensure your goods move smoothly and without delay",
+          "This page explains how our import clearance service works, what documents you need, and why businesses nationwide trust Global Customs for accurate, eicient, and compliant declarations.",         
+        ]}
+        image1="/images/road-big.jpg"
+        image2="/images/road-small.jpg"
+        image3="/images/road-smaal2.jpg"
+      />
+      
+      <section className="py-24 bg-slate-50 font-sans">
+        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
+          <div className="flex flex-col lg:flex-row gap-16 items-start">
             
-            <p className="text-xl text-slate-500 mb-8 font-medium">
-              Incorrect or incomplete declarations can cause:
-            </p>
+            {/* Left Side: The "Why" & The "Risks" */}
+            <div className="lg:w-3/5">
+              <h3 className="text-[#3daee0] text-sm font-bold uppercase  mb-6">
+                Why Import Clearance Matters
+              </h3>
+              <h2 className="text-3xl font-bold text-slate-900 mb-10">
+                Every shipment entering the UK must be declared to HMRC.
+              </h2>
+              
+              <p className="text-xl text-slate-500 mb-8 font-medium">
+                Incorrect or incomplete declarations can cause:
+              </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {risks.map((risk, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
-                  <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                  <span className="text-slate-700 font-semibold">{risk}</span>
-                </div>
-              ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {risks.map((risk, index) => (
+                  <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
+                    <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
+                    <span className="text-slate-700 font-semibold">{risk}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Right Side: The Resolution Card */}
-          <div className="lg:w-2/5 lg:mt-24">
-            <div className="relative p-1 bg-gradient-to-b from-[#3daee0] to-blue-600 rounded-[2.5rem] shadow-2xl shadow-blue-200">
-              <div className="bg-white rounded-[2.4rem] p-10 text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
-                  <CheckCircle2 className="text-[#3daee0] w-10 h-10" />
-                </div>
-                <p className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
-                  We ensure your declarations are correct the first time.
-                </p>
-                <div className="mt-8 pt-8 border-t border-slate-100">
-                  <Btn link="/contact" title="Contact Us"/>                  
+            {/* Right Side: The Resolution Card */}
+            <div className="lg:w-2/5 lg:mt-24">
+              <div className="relative p-1 bg-gradient-to-b from-[#3daee0] to-blue-600 rounded-[2.5rem] shadow-2xl shadow-blue-200">
+                <div className="bg-white rounded-[2.4rem] p-10 text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-6">
+                    <CheckCircle2 className="text-[#3daee0] w-10 h-10" />
+                  </div>
+                  <p className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
+                    We ensure your declarations are correct the first time.
+                  </p>
+                  <div className="mt-8 pt-8 border-t border-slate-100">
+                    <Btn link="/contact" title="Contact Us"/>                  
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Services Grid */}
       <section className="py-20 ">
