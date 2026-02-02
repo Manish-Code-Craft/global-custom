@@ -31,9 +31,9 @@ import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
 export default function Road ({ preview }) {
 
   const PageMeta = {
-   title: "Import Clearance  | Custom Clearance Services UK",
-   description:"Global Customs provides fast, reliable import clearance services across all major UK ports and airports. Ensure your goods move smoothly with our expert customs support.",
-   keywords:"Import Clearance UK, Customs Declaration Service, CDS Import Services, UK Customs Clearance, Fast Import Declarations, HS Code Classification, Customs Procedure Codes, Duty and VAT Calculation, T1 Transit Documents, Temporary Admission Support, Urgent Import Clearance, Freight Forwarder Customs Services",
+   title: "Export Clearance UK  | Custom Clearance Services UK",
+   description:" Fast, Reliable Export Clearance Services Across the UK. Expert Customs Declarations, HS Code Classification & Duty Management for Smooth Global Trade.",
+   keywords:" Export clearance UK, customs declarations, export documentation, HS code classification, duty management, global trade compliance, freight forwarding, logistics solutions, UK export services, customs brokerage",
  };
 
 
@@ -44,22 +44,22 @@ export default function Road ({ preview }) {
   };
 
   const services = [
-    { title: "Import Declarations (CDS)", desc: "Fast, accurate import declarations for goods entering the UK.", icon: <Anchor /> },
-    { title: "HS Code Classification", desc: "Correct commodity codes to avoid overpaying duty.", icon: <Briefcase /> },
+    { title: "Export Declarations (CDS)", desc: "Fast, accurate export declarations for goods leaving the UK.", icon: <Anchor /> },
+    { title: "HS Code Classification", desc: "Correct commodity codes to ensure compliance with overseas customs.", icon: <Briefcase /> },
     { title: "Customs Procedure Codes (CPCs)", desc: "Correct CPC selection to avoid delays.", icon: <Search /> },
     { title: "Document Code Validation", desc: "Ensuring all required certificates and licences are included.", icon: <CheckCircle /> },
-    { title: "Duty & VAT Calculation", desc: "Including postponed VAT accounting (PVA).", icon: <ShieldCheck /> },
+    { title: "Export Accompanying Documents (EAD)", desc: "For goods moving under EU export procedures.", icon: <ShieldCheck /> },
     { title: "T1 Transit Documents", desc: "Creation and discharge of transit movements.", icon: <Truck /> },
-    { title: "Temporary Admission & ATA Carnets", desc: "Support for goods entering the UK temporarily.", icon: <Globe /> },
-    { title: "Urgent & Same-Day Declarations", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
+    { title: " Certificates of Origin & Supporting Documents", desc: "Guidance on origin requirements for trade agreements.", icon: <Globe /> },
+    { title: "Urgent & Same-Day Clearance", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
     { title: "Support for Freight Forwarders & Hauliers", desc: "White-label customs services for logistics providers.", icon: <FileText /> },
   ];
 
   const risks = [
-    "Delays at ports",
-    "Rejected entries",
-    "Incorrect duty charges",
-    "VAT accounting issues",
+    "Delays at ports or airports",
+    "Rejected export entries",
+    "Missed vessel or flight departures",
+    "Incorrect documentation for overseas customs",
     "Compliance penalties",
     "Supply chain disruption"
   ];
@@ -143,19 +143,19 @@ export default function Road ({ preview }) {
         <Layout preview={preview}>
           
       <NewInnerBanner
-        title="Import Clearance UK"
+        title="Export Clearance UK"
         backgroundImage="/images/road-bg.jpg"
         bannerDescription={[
-          "Fast, Compliant Customs Support for All UK Ports and Airports", 
-          "Importing goods into the UK requires precision, compliance, and a deep understanding of customs regulations. Every shipment must be declared correctly through the Customs Declaration Service (CDS), with accurate HS codes, correct valuation, and the right customs procedure codes (CPCs). Any errors can lead to delays, rejected declarations, additional charges, or goods being held at the border."        
+          " Fast, Compliant Export Declarations for All UK Ports and Airports", 
+          "Exporting goods from the UK requires accurate documentation, correct customs declarations, and full compliance with UK and international regulations. Every export shipment must be declared through the Customs Declaration Service (CDS), with the correct HS codes, customs procedure codes (CPCs), and supporting documents. Any errors can lead to delays, rejected declarations, missed sailings or flights, and supply chain disruption."        
         ]}
       />
 
       <ServiceHero
-        title="Import Clearance UK"
+        title="Export Clearance UK"
         description={[
-          "Global Customs provides fast, reliable import clearance services across the UK, supporting importers, freight forwarders, hauliers, manufacturers, retailers, and e-commerce businesses. We work with all major UK ports, airports, and inland border facilities to ensure your goods move smoothly and without delay",
-          "This page explains how our import clearance service works, what documents you need, and why businesses nationwide trust Global Customs for accurate, eicient, and compliant declarations.",         
+          "Global Customs provides fast, reliable export clearance services across the UK, supporting exporters, freight forwarders, hauliers, manufacturers, retailers, and e-commerce businesses. We work with all major UK ports, airports, and inland border facilities to ensure your goods leave the country smoothly and without delay.",
+          "This page explains how our export clearance service works, what documents you need, and why businesses nationwide trust Global Customs for accurate, eicient, and compliant export declarations.",         
         ]}
         image1="/images/road-big.jpg"
         image2="/images/road-small.jpg"
@@ -169,7 +169,7 @@ export default function Road ({ preview }) {
             {/* Left Side: The "Why" & The "Risks" */}
             <div className="lg:w-3/5">
               <h3 className="text-[#3daee0] text-sm font-bold uppercase  mb-6">
-                Why Import Clearance Matters
+              Why Export Clearance Matters
               </h3>
               <h2 className="text-3xl font-bold text-slate-900 mb-10">
                 Every shipment entering the UK must be declared to HMRC.
@@ -214,8 +214,8 @@ export default function Road ({ preview }) {
       <section className="py-20 ">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900">Our Import Clearance Services</h2>
-            <p className="mt-4 text-slate-600">We provide a complete range of import services across the UK:</p>
+            <h2 className="text-3xl font-bold text-slate-900">Our Export Clearance Services</h2>
+            <p className="mt-4 text-slate-600">We provide a complete range of export services across the UK:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => (
