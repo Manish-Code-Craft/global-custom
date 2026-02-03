@@ -25,13 +25,10 @@ export default function Navigation() {
                 <li><NavSubLink href="/cds-declarations" name="CDS Declarations" /></li>
                 <li><NavSubLink href="/t1-transit-documents" name="T1 Transit Documents" /></li>
                 <li><NavSubLink href="/hs-code-classification" name="HS Code Classification" /></li>
+                <li><NavSubLink href="/urgent-customs-clearance" name="Urgent Customs Clearance" /></li>
                 <li><NavSubLink href="/duty-vat-consultancy" name="Duty & VAT Consultancy" /></li>
                 <li><NavSubLink href="/temporary-admission" name="Temporary Admission (TA)" /></li>
                 <li><NavSubLink href="/ata-carnets" name="ATA Carnets" /></li>
-
-                <li className="divider" />
-
-                <li><NavSubLink href="/urgent-customs-clearance" name="Urgent Customs Clearance" /></li>
                 <li><NavSubLink href="/same-day-customs-clearance" name="Same-Day Customs Clearance" /></li>
                 <li><NavSubLink href="/customs-clearance-small-businesses" name="Customs Clearance for Small Businesses" /></li>
             </ul>

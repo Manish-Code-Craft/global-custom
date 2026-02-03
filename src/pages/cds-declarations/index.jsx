@@ -303,22 +303,7 @@ export default function Road ({ preview }) {
           </div>
         </div>
       </section>
-
-      {/* Industries Support */}
-      {/* <section className="py-16 bg-white">
-        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0 text-center">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">Industries We Support</h2>
-          <p className="text-slate-600 mb-8">We work with businesses across:</p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {['E-commerce', 'Automotive', 'Food & drink', 'Pharmaceuticals', 'Retail', 'Manufacturing', 'Logistics & freight forwarding', 'Amazon FBA sellers'].map((ind, i) => (
-              <span key={i} className="px-6 py-3 rounded-full bg-slate-50 text-slate-700 font-medium border border-slate-200">
-                {ind}
-              </span>
-            ))}
-          </div>
-          <p className="text-slate-900 font-medium">Whether you import small parcels or full containers, we can support your needs.</p>
-        </div>
-      </section> */}
+    
 
       {/* Industries Support */}
       <section className="py-24 bg-white">

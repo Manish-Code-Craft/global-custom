@@ -7,13 +7,16 @@ import { Ship, Plane,AlertCircle,} from 'lucide-react';
 import {
   FileText,
   CheckCircle2,
-  ShieldCheck,
-  MapPin,
+  Send,
+  FileWarning,
+  Receipt,
+  AlertTriangle,
   Warehouse,
-  Globe2,
-  Clock,
+  Calculator,
+  Edit3,
   Truck,
   CheckCircle, 
+  Headphones,
   Link as LinkIcon, 
 } from "lucide-react";
 
@@ -26,9 +29,9 @@ import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
 export default function Road ({ preview }) {
 
   const PageMeta = {
-   title: "T1 Transit Documents  | Custom Clearance Services UK",
-   description:" Fast, compliant T1 transit document services for goods moving to Europe. Ensure smooth customs transit with Global Customs.",
-   keywords:"T1 transit documents, customs transit UK, export transit paperwork, European transit declarations, customs clearance Europe, T1 document services, UK export compliance, Global Customs T1 services",
+   title: "Urgent Customs Clearance | Custom Clearance Services UK",
+   description:"Get fast, reliable urgent customs clearance services in the UK. Expert support for import/export compliance & smooth border crossings.",
+   keywords:"urgent customs clearance, customs clearance UK, import customs clearance, export customs clearance, fast customs clearance, same-day customs clearance, emergency customs clearance, customs brokerage UK, border clearance services, urgent import/export services",
  };
 
 
@@ -39,25 +42,49 @@ export default function Road ({ preview }) {
   };
 
   const services = [
-    { title: "T1 Creation", desc: "We create T1 documents quickly and accurately.", icon: <FileText /> },
-    { title: "T1 Discharge", desc: "We ensure the T1 is closed correctly at the destination.", icon: <CheckCircle2 /> },
-    { title: "Transit Guarantee Coverage", desc: "We operate under approved transit guarantees.", icon: <ShieldCheck /> },
-    { title: "Port & Border Support", desc: "Including Dover, Eurotunnel, Felixstowe, Southampton, and more.", icon: <MapPin /> },
-    { title: "Inland Border Facility (IBF) Support", desc: "We handle T1 movements through Sevington, Ashford, and other IBFs.", icon: <Warehouse /> },
-    { title: "Multi-Country Transit Movements", desc: "For goods moving across several EU/UK borders.", icon: <Globe2 /> },
-    { title: "Urgent & Same-Day T1s", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
-    { title: "Support for Freight Forwarders & Hauliers", desc: "White-label transit services for logistics providers.", icon: <Truck /> },
+    { title: "Same-Day Import Declarations (CDS)", desc: "Fast, accurate import declarations for goods entering the UK.", icon: <FileText /> },
+    { title: "Same-Day Export Declarations", desc: "Priority export filings for goods leaving the UK.", icon: <Send /> },
+    { title: "Emergency HS Code Classification", desc: "Correct commodity codes to avoid delays.", icon: <AlertTriangle /> },
+    { title: "Urgent T1 Transit Documents", desc: "Creation and discharge of T1s for stuck shipments.", icon: <Truck /> },
+    { title: "Document Code Corrections", desc: "Fixing missing or incorrect document references.", icon: <FileWarning /> },
+    { title: "Supplier Invoice Corrections", desc: "We help correct inaccurate or incomplete invoices.", icon: <Receipt /> },
+    { title: "Duty & VAT Recalculations", desc: "Ensuring correct charges and compliance.", icon: <Calculator /> },
+    { title: "Post-Clearance Amendments", desc: "Fixing errors on previously submitted declarations.", icon: <Edit3 /> },
+    { title: "24/7 Support for Time-Critical Shipments", desc: "We act immediately when your goods are held.", icon: <Headphones /> },
   ];
 
   const risks = [
-    "Goods being held at the border",
-    "Delays at ports and inland border facilities",
-    "Fines or penalties",
-    "Missed delivery deadlines",
-    "Supply chain disruption",
-    "Additional customs checks"
+    {
+      title: "Incorrect or missing HS codes",
+      description: "Leads to declaration rejection."
+    },
+    {
+      title: "Wrong CPC codes",
+      description: "Causes delays or incorrect duty charges."
+    },
+    {
+      title: "Missing document codes",
+      description: "CDS requires specific references for many goods."
+    },
+    {
+      title: "Supplier invoice errors",
+      description: "Incorrect values, missing descriptions, or wrong Incoterms."
+    },
+    {
+      title: "Licensing or certification issues",
+      description: "Some goods require additional documentation."
+    },
+    {
+      title: "Transit (T1) problems",
+      description: "Incorrect or undischarged T1s can cause holds."
+    },
+    {
+      title: "Random HMRC checks",
+      description: "Even compliant shipments can be selected."
+    }
   ];
-
+  
+  
   const locations = [
     {
       title: "Major Ports",
@@ -158,48 +185,47 @@ export default function Road ({ preview }) {
         <Layout preview={preview}>
           
       <NewInnerBanner
-        title="T1 Transit Documents"
+        title="Urgent Customs Clearance"
         backgroundImage="/images/road-bg.jpg"
         bannerDescription={[
-          "Fast, Compliant Transit Movement Support Across the UK & EU", 
-          "When goods move through the UK or EU without being released into free circulation, a T1 transit document is required. This document ensures that customs duties and VAT are suspended while the goods travel from one customs territory to another. Whether you’re transporting goods from the EU into the UK, moving shipments from the UK into Europe, or routing cargo through multiple countries, the T1 process must be completed accurately to avoid delays, fines, or goods being held at the border"        
+          "Fast, Priority UK Import & Export Support", 
+          "When your goods are stuck at the border, every minute matters. Delays can lead to missed delivery deadlines, production stoppages, failed Amazon FBA check-ins, spoiled goods, or costly storage and demurrage fees. Whether your shipment is held at Dover, Felixstowe, Heathrow, or any other UK port, you need a customs agent who can act immediately."        
         ]}
       />
 
       <ServiceHero
-        title="T1 Transit Documents"
+        title="Urgent Customs Clearance"
         description={[
-          "Global Customs provides fast, compliant T1 transit documents for hauliers, freight forwarders, importers, exporters, and logistics providers. We handle the entire process — from creating the T1 to ensuring it is safely discharged at the destination — so your goods move smoothly across borders.",
-          "This page explains how T1 transit works, when you need it, what documents are required, and why businesses across the UK trust Global Customs for reliable, expert transit support.",         
+          "Global Customs provides urgent, same-day customs clearance for importers, exporters, hauliers, freight forwarders, and e-commerce businesses. Our team works around the clock to resolve customs issues quickly, submit emergency declarations, and get your goods moving again.",
+          "This page explains how our urgent clearance service works, the problems we solve, and why businesses across the UK rely on Global Customs when time is critical.",         
         ]}
         image1="/images/road-big.jpg"
         image2="/images/road-small.jpg"
         image3="/images/road-smaal2.jpg"
       />
-
+      
       <section className="py-20 bg-slate-50">     
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
 
           {/* Title */}
           <h2 className="text-3xl font-bold text-slate-900 mb-10 ">
-            What Is a <span className="text-[#3daee0]">T1 Transit Document?</span>
+            What Is a <span className="text-[#3daee0]">Urgent Customs Clearance?</span>
           </h2>
 
           {/* Description */}
           <p className="text-lg text-gray-600 leading-relaxed mb-10">
-            A T1 is an official customs transit document that allows goods to move
-            under customs control from one location to another without paying
-            duties or VAT at the border. Taxes and duties are only settled once the
-            goods reach their final destination.
+          Urgent customs clearance is a priority service designed for shipments that:
           </p>
 
           {/* Use cases */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              "Goods entering the UK from the EU but destined for another country",
-              "Goods moving from the UK into the EU under transit",
-              "Shipments passing through multiple EU or UK borders",
-              "Goods stored in a bonded warehouse before final release",
+              "Are stuck at the border",
+              "Require immediate customs intervention",
+              "Have missing or incorrect documentation",
+              "Need same-day clearance",
+              "Are time-sensitive or perishable",
+              "Are required for production or retail deadlines",
             ].map((item, index) => (
               <div
                 key={index}
@@ -218,9 +244,7 @@ export default function Road ({ preview }) {
           {/* Footer note */}
           <div className="mt-12 p-6 rounded-xl bg-[#3daee0]/5 border-l-4 border-[#3daee0]">
             <p className="text-gray-700">
-              The T1 process ensures full compliance with customs regulations while
-              keeping goods moving efficiently across borders without unnecessary
-              financial delays.
+            We step in quickly to resolve the issue and clear your goods.
             </p>
           </div>
 
@@ -230,26 +254,37 @@ export default function Road ({ preview }) {
       
       <section className="py-24  font-sans">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <div className="flex flex-col lg:flex-row gap-16 items-start">
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
             
             {/* Left Side: The "Why" & The "Risks" */}
             <div className="lg:w-3/5">             
               <h2 className="text-3xl font-bold text-slate-900 mb-10">
-                Why T1 Transit Matters
+              Why Shipments Get Delayed at Customs
               </h2>
               
               <p className="text-xl text-slate-500 mb-8 font-medium">
-               Incorrect or incomplete T1 documents can cause:
+              Common reasons include:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {risks.map((risk, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
-                    <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                    <span className="text-slate-700 font-semibold">{risk}</span>
-                  </div>
-                ))}
-              </div>
+                  {risks.map((risk, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3 p-4 shadow-md bg-white rounded-xl border border-slate-100"
+                    >
+                      <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0 mt-1" />
+
+                      <div>
+                        <p className="text-slate-700 font-semibold mb-1">
+                          {risk.title}
+                        </p>
+                        <p className="text-sm text-slate-500 leading-relaxed">
+                          {risk.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
             </div>
 
             {/* Right Side: The Resolution Card */}
@@ -260,7 +295,7 @@ export default function Road ({ preview }) {
                     <CheckCircle2 className="text-[#3daee0] w-10 h-10" />
                   </div>
                   <p className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
-                  Global Customs ensures your T1 is created correctly and discharged properly.
+                  We resolve these issues quickly and professionally.
                   </p>
                   <div className="mt-8 pt-8 border-t border-slate-100">
                     <Btn link="/contact" title="Contact Us"/>                  
@@ -277,8 +312,8 @@ export default function Road ({ preview }) {
       <section className="py-20 bg-slate-50 ">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900">Our T1 Transit Services</h2>
-            <p className="mt-4 text-slate-600">We provide a complete range of T1 services:</p>
+            <h2 className="text-3xl font-bold text-slate-900">Our Urgent Customs Clearance Services</h2>
+            <p className="mt-4 text-slate-600">We provide a complete range of emergency customs services:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -311,11 +346,11 @@ export default function Road ({ preview }) {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Who Needs a T1 Transit Document?</h2>
-              <p className="text-slate-600 mb-6">Our T1 services support:</p>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Who Needs Urgent Customs Clearance?</h2>
+              <p className="text-slate-600 mb-6">Our urgent services support:</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {[
-                   'Hauliers', 'Freight forwarders', 'Importers','Exporters', 
+                   'Importers','Exporters', 'Hauliers', 'Freight forwarders', 
                   'Retailers', 'Manufacturers', 'E-commerce sellers', 
                   'Amazon FBA merchants', 'Automotive suppliers', 'Food & drink distributors'
                 ].map((item, i) => (
@@ -325,48 +360,12 @@ export default function Road ({ preview }) {
                 ))}
               </div>
               <p className="text-lg font-medium text-slate-900 bg-blue-50 p-4 rounded-lg border border-blue-100">
-                If your goods are moving across borders without being released into free circulation, you likely need a T1.
+              If your goods are stuck, delayed, or time-critical, we can help.
               </p>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* When You Need a T1 */}
-      <section className="bg-gray-900 py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-          <div>
-            <p className="text-[#3daee0] font-bold tracking-widest uppercase text-sm mb-2">Requirements</p>
-            <h2 className="text-3xl font-bold text-white">When You Need a T1</h2>
-          </div>
-          <div className="hidden md:block h-[2px] flex-grow mx-8 mb-4 bg-slate-200" />
-        </div>
-
-        <div className="space-y-4">
-          {points.map((item, index) => (
-            <div 
-              key={index}
-              className="group flex flex-col md:flex-row md:items-center bg-white p-6 rounded-2xl border-2 border-slate-200 transition-all duration-300 hover:border-[#3daee0] hover:shadow-xl hover:shadow-[#3daee010]"
-            >
-              <div className="flex items-start gap-4 flex-1">
-                <div className="mt-1">
-                  <CheckCircle2 className="w-6 h-6 text-[#3daee0]" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[#3daee0] transition-colors">
-                    {item.condition}
-                  </h3>
-                  <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-xs font-medium uppercase tracking-wider">
-                    {item.example.startsWith('Example:') ? item.example : `Example: ${item.example}`}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>    
 
       {/* Requirements Section */}
       <section className="py-20 bg-slate-50">
@@ -483,7 +482,8 @@ export default function Road ({ preview }) {
        />
        <SiteCta
           title="Need fast, reliable T1 transit documents?"
-          description="Contact Global Customs today for expert support, accurate filings, and 24/7 assistance"
+          description="Contact Global Customs today for expert support, accurate filings, and 24/7
+assistance"
           buttonText="Contact us"
           buttonLink="/contact"
           backgroundImage="/images/road-service.png"
