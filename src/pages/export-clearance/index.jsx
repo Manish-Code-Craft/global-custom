@@ -49,7 +49,7 @@ export default function Road ({ preview }) {
     { title: "Customs Procedure Codes (CPCs)", desc: "Correct CPC selection to avoid delays.", icon: <Search /> },
     { title: "Document Code Validation", desc: "Ensuring all required certificates and licences are included.", icon: <CheckCircle /> },
     { title: "Export Accompanying Documents (EAD)", desc: "For goods moving under EU export procedures.", icon: <ShieldCheck /> },
-    { title: "T1 Transit Documents", desc: "Creation and discharge of transit movements.", icon: <Truck /> },
+    { title: "T1 Transit Documents", desc: "Creation and discharge of transit movements for goods destined for Europe.", icon: <Truck /> },
     { title: " Certificates of Origin & Supporting Documents", desc: "Guidance on origin requirements for trade agreements.", icon: <Globe /> },
     { title: "Urgent & Same-Day Clearance", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
     { title: "Support for Freight Forwarders & Hauliers", desc: "White-label customs services for logistics providers.", icon: <FileText /> },
@@ -86,18 +86,17 @@ export default function Road ({ preview }) {
     { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes (if known)", "Value", "Currency", "Incoterms"] },
     { title: "Packing List", details: ["Details of weights, quantities, and packaging."] },
     { title: "Transport Document", details: ["Bill of lading", "Airway bill", "CMR"] },
-    { title: "EORI Number", details: ["Required for all UK importers and exporters."] },
-    { title: "VAT Number (if applicable)", details: ["For postponed VAT accounting."] },
+    { title: "EORI Number", details: ["Required for all UK exporters."] },   
     { title: "Licences or Certificates", details: ["If required for restricted goods."] },
-    { title: "Country of Origin", details: ["Determines duty rates and trade agreement eligibility."] }
+    { title: "Destination Country Requirements", details: ["Some countries require additional documentation."] }
   ];
 
   const problems = [
-    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid overpayment." },
+    { title: "Incorrect HS Codes", desc: "We classify goods accurately to ensure compliance." },
     { title: "Wrong CPC Codes", desc: "Incorrect procedure codes can cause delays or rejected declarations." },
     { title: "Missing Document Codes", desc: "CDS requires specific document references for many goods." },
-    { title: "Incorrect Valuation", desc: "Errors in customs value can trigger audits or penalties." },
-    { title: "Duty Relief Misuse", desc: "We ensure reliefs are applied correctly and legally." },
+    { title: "Incorrect Valuation", desc: "Errors in customs value can cause issues with overseas customs." },
+    { title: "Incorrect Origin Documentation", desc: "We ensure correct certificates for trade agreements." },
     { title: "Post-Clearance Errors", desc: "We handle amendments and corrections on your behalf." }
   ];
 
@@ -109,21 +108,21 @@ export default function Road ({ preview }) {
     { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." }
   ];
 
-  const importFaq = [
+  const exportFaq = [
     {
-      question: "How long does import clearance take in the UK?",
+      question: "How long does export clearance take in the UK?",
       answer:
-        "Most import declarations are processed quickly. However, the exact timeframe depends on documentation accuracy, port traffic, and any HMRC checks.",
+        "Most export declarations are processed quickly. However, the exact timeframe depends on documentation accuracy, port traffic, and any HMRC checks.",
     },
     {
-      question: "Do you support CDS import declarations?",
+      question: "Do you support CDS export declarations?",
       answer:
-        "Yes — all import declarations are fully processed through the Customs Declaration Service (CDS).",
+        "Yes — all export declarations are fully processed through the Customs Declaration Service (CDS).",
     },
     {
       question: "Can you handle urgent or same-day shipments?",
       answer:
-        "Absolutely. We offer priority processing for urgent and time-critical shipments.",
+        "Absolutely. We offer priority processing for urgent and time-critical goods.",
     },
     {
       question: "Do you work with freight forwarders?",
@@ -133,9 +132,10 @@ export default function Road ({ preview }) {
     {
       question: "What if I don’t know my HS codes?",
       answer:
-        "No worries. Our customs experts can accurately classify your goods and apply the correct HS codes.",
+        "No problem. Our customs specialists can accurately classify your goods and apply the correct HS codes.",
     },
   ];
+  
   
     return(
       <>
@@ -239,7 +239,7 @@ export default function Road ({ preview }) {
               Ports & Airports We Cover <span className="text-[#3daee0]">Across the UK</span>
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Wherever your goods enter the UK, we can handle the customs process with full coverage at all major entry points.
+             We provide full export clearance coverage at all major UK exit points, including:
             </p>
           </div>
 
@@ -268,7 +268,7 @@ export default function Road ({ preview }) {
           {/* Footer Note */}
           <div className="mt-12 text-center p-6 bg-[#3daee0] rounded-lg">
             <p className="text-white font-medium text-lg">
-              Ready to clear your cargo? Our team is available at every major UK gateway.
+               Wherever your goods leave the UK, we can handle the customs process.
             </p>
           </div>
         </div>
@@ -291,10 +291,10 @@ export default function Road ({ preview }) {
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Who We Work With</h2>
-              <p className="text-slate-600 mb-6">Our CDS services support:</p>
+              <p className="text-slate-600 mb-6">Our clients include:</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {[
-                  'Importers', 'Exporters', 'Freight forwarders', 'Hauliers', 
+                  'Exporters', 'Freight forwarders', 'Hauliers', 
                   'Retailers', 'Manufacturers', 'E-commerce sellers', 
                   'Amazon FBA merchants', 'Automotive suppliers', 'Food & drink distributors'
                 ].map((item, i) => (
@@ -304,7 +304,7 @@ export default function Road ({ preview }) {
                 ))}
               </div>
               <p className="text-lg font-medium text-slate-900 bg-blue-50 p-4 rounded-lg border border-blue-100">
-                Whether you move one shipment a month or hundreds per week, we tailor our service to your needs.
+              Whether you move one shipment a month or hundreds per week, we tailor our service to your needs.
               </p>
             </div>
           </div>
@@ -315,8 +315,8 @@ export default function Road ({ preview }) {
       <section className="py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">What You Need for Import Clearance</h2>
-            <p className="text-slate-600 mt-4">To process your import declaration quickly, we typically require:</p>
+            <h2 className="text-3xl font-bold text-slate-900">What You Need for Export Clearance</h2>
+            <p className="text-slate-600 mt-4">To process your export declaration quickly, we typically require:</p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
@@ -346,7 +346,7 @@ export default function Road ({ preview }) {
       {/* How We Ensure Fast Filing */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Import Clearance</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Export Clearance</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((item, i) => (
               <div key={i} className="bg-slate-50 p-6 rounded-lg border border-slate-100">
@@ -362,7 +362,7 @@ export default function Road ({ preview }) {
       {/* Common Problems */}
       <section className="py-20 bg-[#0ea5e9] text-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Common Import Problems We Solve</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Common Export Problems We Solve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {problems.map((prob, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
@@ -408,7 +408,7 @@ export default function Road ({ preview }) {
           </div>
 
           <p className="text-slate-900 text-center font-medium">
-            Whether you import small parcels or full containers, we can support your needs.
+          Whether you export small parcels or full containers, we can support your needs.
           </p>
 
         </div>
@@ -419,13 +419,13 @@ export default function Road ({ preview }) {
        <Testimonials/>
        <SiteFAQs
          sectionTitle="FAQs"
-         sectionDescription="Get clear answers for faster, hassle-free UK import clearance."
+         sectionDescription="UK export clearance and CDS support, explained."
          buttonText="get a quote"
          buttonLink="/contact"
-         faqs={importFaq}
+         faqs={exportFaq}
        />
        <SiteCta
-          title="Need fast, reliable import clearance anywhere in the UK?"
+          title="Need fast, reliable export clearance anywhere in the UK?"
           description="Contact Global Customs today for expert support, accurate declarations, and 24/7 assistance."
           buttonText="Contact us"
           buttonLink="/contact"
