@@ -181,7 +181,7 @@ export default function Road ({ preview }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {risks.map((risk, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
+                  <div key={index} className="flex items-center gap-3 p-4 shadow-md bg-white rounded-xl border border-slate-100">
                     <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
                     <span className="text-slate-700 font-semibold">{risk}</span>
                   </div>

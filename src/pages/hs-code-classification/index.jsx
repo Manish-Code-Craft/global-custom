@@ -203,7 +203,7 @@ export default function Road ({ preview }) {
             ].map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 p-5 rounded-xl border border-gray-200 hover:border-[#3daee0] transition-colors duration-300"
+                className="flex items-start gap-4 p-5 rounded-xl bg-white shadow-md hover:shadow-lg border border-gray-200 hover:border-[#3daee0] transition-colors duration-300"
               >
                 <span className="mt-1 flex flex-shrink-0 h-6 w-6 items-center justify-center rounded-full bg-[#3daee0] text-white text-sm font-semibold">
                   ✓
@@ -242,7 +242,7 @@ export default function Road ({ preview }) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {risks.map((risk, index) => (
-                  <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-100">
+                  <div key={index} className="flex items-center gap-3 p-4 bg-white shadow-md rounded-xl border border-slate-100">
                     <AlertCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
                     <span className="text-slate-700 font-semibold">{risk}</span>
                   </div>
