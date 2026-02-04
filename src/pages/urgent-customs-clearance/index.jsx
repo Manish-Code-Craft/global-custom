@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import { Ship, Plane,AlertCircle,} from 'lucide-react';
+import { Ship, Plane,AlertCircle,Zap, MapPin} from 'lucide-react';
 import {
   FileText,
   CheckCircle2,
@@ -369,7 +369,101 @@ export default function Road ({ preview }) {
             </div>
           </div>
         </div>
-      </section>    
+      </section>
+
+      <section className="bg-[#0f172a] py-24 px-6 font-sans">
+      <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="max-w-2xl">           
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+              Ports & Facilities We Cover
+            </h2>
+          </div>
+          <p className="text-slate-400 text-lg max-w-sm">
+            We provide urgent clearance across all major UK ports, ensuring your supply chain never stops.
+          </p>
+        </div>
+
+        {/* The Main Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          {/* Dover - Featured Large Card */}
+          <div className="md:col-span-2 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition-all group">
+            <div className="flex justify-between items-start">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Dover</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-slate-400 gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                    Roll-on/roll-off traffic
+                  </li>
+                  <li className="flex items-center text-slate-400 gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                    High-volume EU trade
+                  </li>
+                </ul>
+              </div>
+              <Ship className="text-slate-700 group-hover:text-blue-500 transition-colors w-12 h-12" />
+            </div>
+          </div>
+
+          {/* Eurotunnel */}
+          <div className="bg-blue-600 rounded-3xl p-8 flex flex-col justify-between hover:bg-blue-500 transition-colors">
+            <Zap className="text-white w-10 h-10 mb-8" />
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-1">Eurotunnel</h3>
+              <p className="text-blue-100 text-sm italic">(Folkestone)</p>
+              <p className="text-blue-50 font-medium mt-4">Fast cross-channel movements</p>
+            </div>
+          </div>
+
+          {/* Felixstowe */}
+          <div className="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition-all group">
+            <h3 className="text-xl font-bold text-white mb-4">Felixstowe</h3>
+            <p className="text-slate-400">Containerised imports</p>
+          </div>
+
+          {/* Southampton */}
+          <div className="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition-all group">
+            <h3 className="text-xl font-bold text-white mb-4">Southampton</h3>
+            <p className="text-slate-400">Deep-sea shipments</p>
+          </div>
+
+          {/* London Gateway */}
+          <div className="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition-all group">
+            <h3 className="text-xl font-bold text-white mb-4">London Gateway</h3>
+            <p className="text-slate-400">Containerised freight</p>
+          </div>
+
+          {/* Air Freight Section - Full Width */}
+          <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-slate-800/30 border border-slate-700 rounded-3xl p-8 flex items-center gap-6">
+              <div className="bg-slate-800 p-4 rounded-2xl"><Plane className="text-blue-400" /></div>
+              <div>
+                <h3 className="text-xl font-bold text-white">Heathrow & Gatwick</h3>
+                <p className="text-slate-400">Air freight imports</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 flex items-center justify-between group cursor-default">
+              <div>
+                <h3 className="text-xl font-bold text-slate-900">Inland Border Facilities (IBFs)</h3>
+                <p className="text-slate-500 text-sm mt-1">Sevington • Ashford • Dover Western Docks</p>
+              </div>
+              <MapPin className="text-blue-600 animate-bounce" />
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Intervention Quote */}
+        <div className="mt-12 text-center">
+          <p className="text-slate-500 font-medium text-lg italic">
+            "Wherever your goods are held, <span className="text-white not-italic font-bold">we can intervene.</span>"
+          </p>
+        </div>
+      </div>
+    </section>    
 
       {/* Requirements Section */}
       <section className="py-20 bg-slate-50">
