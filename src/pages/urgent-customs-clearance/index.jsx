@@ -104,56 +104,60 @@ export default function Road ({ preview }) {
   ];
  
   const requirements = [
-    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes", "Value", "Currency", "Incoterms"] },
+    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes (if known)", "Value", "Currency", "Incoterms"] },
     { title: "Packing List", details: ["Details of weights, quantities, and packaging."] },
     { title: "Transport Document", details: ["Bill of lading", "Airway bill", "CMR"] },
-    { title: "EORI Number", details: ["Required for all UK/EU movements."] },   
-    { title: "Destination Details", details: ["Bonded warehouse", "Customs office or,", "Final delivery point"] },
-    { title: "Vehicle & Driver Details", details: ["For road transport."] }
+    { title: "EORI Number", details: ["Required for all UK importers and exporters."] },   
+    { title: "VAT Number (if applicable)", details: ["For postponed VAT accounting."] },   
+    { title: "Any Missing Documents", details: ["Licences, certificates, or origin documents.t"] },    
   ];
 
   const problems = [
-    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid delays." },
-    { title: "Wrong Office of Destination", desc: "We ensure the correct customs office is selected." },
-    { title: "Missing Transit Guarantee", desc: "We operate under approved guarantees." },
-    { title: "Incorrect Valuation", desc: "Errors in customs value can cause T1 rejection." },
-    { title: "Failed Discharge", desc: "We ensure the T1 is closed properly." },
-    { title: "Border Delays", desc: "We help prevent holds at ports and IBFs." },
+    { title: "Incorrect HS Codes", desc: "We classify goods accurately." },
+    { title: "Wrong CPC Codes", desc: "We select the correct customs procedure." },
+    { title: "Missing Document Codes", desc: "We add required references." },
+    { title: "Incorrect Valuation", desc: "We correct customs value errors." },
+    { title: "Transit (T1) Issues", desc: "We create or discharge T1s." },
+    { title: "Supplier Invoice Errors", desc: "We correct missing or inaccurate details." },
+    { title: "Post-Clearance Amendments", desc: "We fix errors on previously submitted declarations." },
   ];
+  
   
 
   const features = [
-    { title: "Expert Knowledge of Transit Rules", desc: "We stay up to date with all UK and EU transit regulations." },
-    { title: "Fast Turnaround", desc: "We process T1s quickly to keep your goods moving." },
-    { title: "Compliance-First Approach", desc: "We ensure every T1 meets customs requirements." },
+    { title: "Immediate Response", desc: "We act as soon as you contact us." },
+    { title: "Expert Problem-Solving", desc: "We identify and fix the issue quickly." },
+    { title: "Direct Communication with HMRC", desc: "We liaise with customs to resolve holds." },
+    { title: "Fast, Accurate Declarations", desc: "We ensure compliance and speed." },
     { title: "Transparent Pricing", desc: "Clear, competitive rates with no hidden fees." },
-    { title: "Nationwide Coverage", desc: "We support all major UK ports and airports." },
-    { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." },
+    { title: "24/7 Availability", desc: "We’re here whenever you need us." },
   ];
   
+  
 
-  const t1Faq = [
+  const urgentClearanceFaq = [
     {
-      question: "How long does a T1 take to create?",
-      answer: "Most T1s are processed quickly, depending on documentation and customs traffic.",
+      question: "How fast is urgent customs clearance?",
+      answer: "We act immediately — timing depends on documentation and HMRC response.",
     },
     {
-      question: "Do you support T1s for both UK and EU movements?",
-      answer: "Yes — we handle transit movements in both directions.",
+      question: "Do you support urgent import and export declarations?",
+      answer: "Yes — we handle both.",
     },
     {
-      question: "Can you handle urgent or same-day T1s?",
-      answer: "Absolutely. We offer priority processing for time-critical goods.",
+      question: "Can you fix rejected declarations?",
+      answer: "Absolutely — we specialise in resolving errors.",
     },
     {
-      question: "Do you work with freight forwarders?",
-      answer: "Yes — we provide white-label transit services for logistics companies.",
+      question: "Do you work with freight forwarders and hauliers?",
+      answer: "Yes — we provide white-label urgent clearance services.",
     },
     {
-      question: "What if I don’t know my HS codes?",
-      answer: "We can classify your goods accurately.",
+      question: "What if I don’t know what the problem is?",
+      answer: "We diagnose the issue and fix it.",
     },
   ];
+  
   
   
   const points = [
@@ -371,8 +375,8 @@ export default function Road ({ preview }) {
       <section className="py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">What You Need for a T1 Transit Document</h2>
-            <p className="text-slate-600 mt-4">To create a T1 quickly, we typically require:</p>
+            <h2 className="text-3xl font-bold text-slate-900">What You Need for Urgent Clearance</h2>
+            <p className="text-slate-600 mt-4">To resolve issues quickly, we typically require:</p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
@@ -402,7 +406,7 @@ export default function Road ({ preview }) {
       {/* How We Ensure Fast Filing */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Transit</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Resolves Urgent Issues Quickly</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((item, i) => (
               <div key={i} className="bg-slate-50 p-6 rounded-lg border border-slate-100">
@@ -418,7 +422,7 @@ export default function Road ({ preview }) {
       {/* Common Problems */}
       <section className="py-20 bg-[#0ea5e9] text-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Common T1 Problems We Solve</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Common Urgent Problems We Solve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {problems.map((prob, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
@@ -464,7 +468,7 @@ export default function Road ({ preview }) {
           </div>
 
           <p className="text-slate-900 text-center font-medium">
-          Whether you move small parcels or full trailers, we can support your needs.
+          Whether you import small parcels or full containers, we can support your needs.
           </p>
 
         </div>
@@ -475,15 +479,14 @@ export default function Road ({ preview }) {
        <Testimonials/>
        <SiteFAQs
          sectionTitle="FAQs"
-         sectionDescription="Common questions about T1 transit processing and support."
+         sectionDescription="Contact Global Customs immediately for fast, expert support and 24/7 assistance."
          buttonText="get a quote"
          buttonLink="/contact"
-         faqs={t1Faq}
+         faqs={urgentClearanceFaq}
        />
        <SiteCta
-          title="Need fast, reliable T1 transit documents?"
-          description="Contact Global Customs today for expert support, accurate filings, and 24/7
-assistance"
+          title="Need urgent customs clearance right now?"
+          description="Contact Global Customs today for expert support, accurate filings, and 24/7 assistance"
           buttonText="Contact us"
           buttonLink="/contact"
           backgroundImage="/images/road-service.png"
