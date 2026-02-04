@@ -266,8 +266,8 @@ export default function Road ({ preview }) {
           </div>
           
           {/* Footer Note */}
-          <div className="mt-12 text-center p-6 bg-[#3daee0] rounded-lg">
-            <p className="text-white font-medium text-lg">
+          <div className="mt-12 text-center p-6 text-slate-900 bg-blue-50 rounded-lg">
+            <p className="text-slate-900 font-medium text-lg">
               Ready to clear your cargo? Our team is available at every major UK gateway.
             </p>
           </div>
