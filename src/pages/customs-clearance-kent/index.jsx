@@ -41,6 +41,15 @@ export default function Services({preview}){
     { title: "Support for Freight Forwarders & Hauliers", desc: "White-label customs services for logistics providers.", icon: <Users /> },
   ];
 
+  const requirements = [
+    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes", "Value", "Currency", "Incoterms"] },
+    { title: "Packing List", details: ["Details of weights, quantities, and packaging."] },
+    { title: "Transport Document", details: ["Bill of lading", "Airway bill", "CMR"] },
+    { title: "EORI Number", details: ["Required for all UK/EU movements."] },   
+    { title: "Destination Details", details: ["Bonded warehouse", "Customs office or,", "Final delivery point"] },
+    { title: "Vehicle & Driver Details", details: ["For road transport."] }
+  ];
+
   const features = [
     { title: "Local Expertise", desc: "We understand Kent’s ports, routes, and logistics network." },
     { title: "Fast Turnaround", desc: "We process declarations quickly to keep your goods moving." },
@@ -162,6 +171,38 @@ export default function Services({preview}){
                     <p className="text-slate-600 text-sm leading-relaxed">{service.desc}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Requirements Section */}
+          <section className="py-20 bg-slate-50">
+            <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-slate-900">What You Need for a T1 Transit Document</h2>
+                <p className="text-slate-600 mt-4">To create a T1 quickly, we typically require:</p>
+              </div>
+
+              <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+                <div className="space-y-8">
+                  {requirements.map((req, i) => (
+                    <div key={i} className="flex flex-col md:flex-row gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
+                      <div className="md:w-1/3">
+                        <h4 className="font-bold text-lg text-slate-900">{req.title}</h4>
+                      </div>
+                      <div className="md:w-2/3">
+                        <ul className="list-disc pl-5 space-y-1 text-slate-600">
+                          {req.details.map((detail, j) => (
+                            <li key={j}>{detail}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-8 pt-8 border-t border-slate-100 text-center">
+                  <p className="font-bold text-[#0ea5e9]">If you’re unsure about any of this, we guide you step-by-step.</p>
+                </div>
               </div>
             </div>
           </section>
