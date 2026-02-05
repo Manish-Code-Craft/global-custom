@@ -32,7 +32,7 @@ export default function Navigation() {
         <ul className="sub-menu">
             <li><NavSubLink href="/industries/ecommerce" name="E-commerce" /></li>
             <li><NavSubLink href="/industries/automotive" name="Automotive" /></li>
-            <li><NavSubLink href="/industries/food-drink" name="Food & Drink" /></li>
+            <li><NavSubLink href="/industries/food-and-drink" name="Food & Drink" /></li>
             <li><NavSubLink href="/industries/pharmaceuticals" name="Pharmaceuticals" /></li>
             <li><NavSubLink href="/industries/manufacturing" name="Manufacturing" /></li>
             <li><NavSubLink href="/industries/retail" name="Retail" /></li>

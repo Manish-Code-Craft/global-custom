@@ -3,39 +3,20 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import { Ship, Plane,AlertCircle,} from 'lucide-react';
-import {
-  FileText,
-  CheckCircle2,
-  Warehouse,
-  Hash,
-  Boxes,
-  Globe,
-  PoundSterling,
-  Calculator,
-  Clock,
-  Truck,
-  CheckCircle, 
-  Link as LinkIcon, 
-} from "lucide-react";
-
+import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle, Link as LinkIcon,} from "lucide-react";
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
-import Btn from "@/components/ui/Btns/Btn";
 import ServiceHero from "@/components/ui/New/ServiceHero";
 import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
 
 export default function Road ({ preview }) {
-
   const PageMeta = {
    title: "E-Commerce Customs Clearance Services UK | Global Customs",
    description:"Get fast, reliable e-commerce customs clearance services in the UK with Global Customs. Expert support for smooth international shipping.",
    keywords:"e-commerce customs clearance, UK customs services, international shipping, Global Customs, customs brokerage, online retail logistics",
  };
 
-
  const [activeFaq, setActiveFaq] = useState(null);
-
   const toggleFaq = (index) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
@@ -51,33 +32,6 @@ export default function Road ({ preview }) {
     { title: "Urgent & Same-Day Clearance", desc: "Priority processing for time-critical shipments.", icon: <Clock /> },
     { title: "Support for Freight Forwarders & 3PLs", desc: "White-label customs services for logistics providers.", icon: <Truck /> },
   ];
-
-  const risks = [
-    "Goods being held at the border",
-    "Delays at ports and inland border facilities",
-    "Fines or penalties",
-    "Missed delivery deadlines",
-    "Supply chain disruption",
-    "Additional customs checks"
-  ];
-
-  const locations = [
-    {
-      title: "Major Ports",
-      icon: <Ship className="w-8 h-8 text-[#3daee0]" />,
-      items: ["Felixstowe", "Southampton", "London Gateway", "Dover", "Liverpool", "Hull", "Immingham", "Bristol", "Tilbury"]
-    },
-    {
-      title: "Airports",
-      icon: <Plane className="w-8 h-8 text-[#3daee0]" />,
-      items: ["Heathrow", "Gatwick", "Manchester", "East Midlands", "Birmingham", "Stansted"]
-    },
-    {
-      title: "Inland Border Facilities",
-      icon: <Warehouse className="w-8 h-8 text-[#3daee0]" />,
-      items: ["Sevington", "Ashford", "Dover Western Docks", "Birmingham", "Warrington"]
-    }
-  ];
  
   const requirements = [
     { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes (if known)", "Value", "Currency", "Incoterms"] },
@@ -88,16 +42,6 @@ export default function Road ({ preview }) {
     { title: "SKU List", details: ["For multi-product shipments."] }
   ];
 
-  const problems = [
-    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid overpaying duty." },
-    { title: "Low-Value Goods Confusion", desc: "We ensure correct VAT treatment for goods under £135." },
-    { title: "Amazon FBA Delivery Deadlines", desc: "We help avoid delays that affect stock availability." },
-    { title: "Supplier Invoice Errors", desc: "We correct incomplete or inaccurate invoices." },
-    { title: "Multi-SKU Shipments", desc: "We handle complex declarations with many product lines." },
-    { title: "Post-Clearance Errors", desc: "We handle amendments and corrections on your behalf." },
-  ]; 
-  
-
   const features = [
     { title: "E-commerce Expertise", desc: "We understand the unique needs of online sellers." },
     { title: "Fast Turnaround", desc: "We process declarations quickly to keep your stock moving." },
@@ -106,7 +50,15 @@ export default function Road ({ preview }) {
     { title: "Nationwide Coverage", desc: "We support all major UK ports and airports." },
     { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." },
   ]; 
-  
+
+  const problems = [
+    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid overpaying duty." },
+    { title: "Low-Value Goods Confusion", desc: "We ensure correct VAT treatment for goods under £135." },
+    { title: "Amazon FBA Delivery Deadlines", desc: "We help avoid delays that affect stock availability." },
+    { title: "Supplier Invoice Errors", desc: "We correct incomplete or inaccurate invoices." },
+    { title: "Multi-SKU Shipments", desc: "We handle complex declarations with many product lines." },
+    { title: "Post-Clearance Errors", desc: "We handle amendments and corrections on your behalf." },
+  ]; 
 
   const ecommerceFaq = [
     {
@@ -129,31 +81,7 @@ export default function Road ({ preview }) {
       question: "What if I don’t know my HS codes?",
       answer: "We can classify your goods accurately.",
     },
-  ]; 
-  
-  
-  const points = [
-    {
-      condition: "Goods enter the UK from the EU but are not staying in the UK",
-      example: "France → UK → Ireland"
-    },
-    {
-      condition: "Goods move from the UK into the EU under transit",
-      example: "UK → Belgium → Germany"
-    },
-    {
-      condition: "Goods are destined for a bonded warehouse",
-      example: "Duties and VAT are suspended until release"
-    },
-    {
-      condition: "Goods pass through multiple borders",
-      example: "Transit ensures smooth movement"
-    },
-    {
-      condition: "Goods are non-EU origin entering the EU",
-      example: "T1 prevents immediate duty charges"
-    }
-  ];
+  ];   
   
     return(
       <>
@@ -185,7 +113,7 @@ export default function Road ({ preview }) {
 
           {/* Title */}
           <h2 className="text-3xl font-bold text-slate-900 mb-4 ">
-          Why <span className="text-[#3daee0]">E-commerce Imports</span>  Are Dierent        
+          Why <span className="text-[#3daee0]">E-commerce Imports</span>  Are Different        
           </h2>
 
           {/* Description */}
@@ -352,11 +280,11 @@ export default function Road ({ preview }) {
       </section>     
 
       {/* Industries Support */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
 
           <div className=" text-left lg:text-center">
-            <h2 className="text-3xl font-semibold text-slate-900 mb-4">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
               Industries We Support
             </h2>
             <p className="text-slate-600 mb-10">
@@ -366,14 +294,7 @@ export default function Road ({ preview }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-[#3daee0] mb-12">
             {[
-              "Fashion",
-              "Electronics",
-              "Homeware",
-              "Toys & games",
-              "Beauty & cosmetics",
-              "Supplements",
-              "Consumer goods",
-              "Private-label brands"
+              "Fashion","Electronics","Homeware","Toys & games","Beauty & cosmetics","Supplements", "Consumer goods", "Private-label brands"
             ].map((ind, i) => (
               <div
                 key={i}
