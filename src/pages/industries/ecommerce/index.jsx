@@ -80,56 +80,56 @@ export default function Road ({ preview }) {
   ];
  
   const requirements = [
-    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes", "Value", "Currency", "Incoterms"] },
+    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes (if known)", "Value", "Currency", "Incoterms"] },
     { title: "Packing List", details: ["Details of weights, quantities, and packaging."] },
     { title: "Transport Document", details: ["Bill of lading", "Airway bill", "CMR"] },
-    { title: "EORI Number", details: ["Required for all UK/EU movements."] },   
-    { title: "Destination Details", details: ["Bonded warehouse", "Customs office or,", "Final delivery point"] },
-    { title: "Vehicle & Driver Details", details: ["For road transport."] }
+    { title: "EORI Number", details: ["Required for all UK importers."] },   
+    { title: "VAT Number (if applicable)", details: ["For postponed VAT accounting."] },
+    { title: "SKU List", details: ["For multi-product shipments."] }
   ];
 
   const problems = [
-    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid delays." },
-    { title: "Wrong Office of Destination", desc: "We ensure the correct customs office is selected." },
-    { title: "Missing Transit Guarantee", desc: "We operate under approved guarantees." },
-    { title: "Incorrect Valuation", desc: "Errors in customs value can cause T1 rejection." },
-    { title: "Failed Discharge", desc: "We ensure the T1 is closed properly." },
-    { title: "Border Delays", desc: "We help prevent holds at ports and IBFs." },
-  ];
+    { title: "Incorrect HS Codes", desc: "We classify goods accurately to avoid overpaying duty." },
+    { title: "Low-Value Goods Confusion", desc: "We ensure correct VAT treatment for goods under £135." },
+    { title: "Amazon FBA Delivery Deadlines", desc: "We help avoid delays that affect stock availability." },
+    { title: "Supplier Invoice Errors", desc: "We correct incomplete or inaccurate invoices." },
+    { title: "Multi-SKU Shipments", desc: "We handle complex declarations with many product lines." },
+    { title: "Post-Clearance Errors", desc: "We handle amendments and corrections on your behalf." },
+  ]; 
   
 
   const features = [
-    { title: "Expert Knowledge of Transit Rules", desc: "We stay up to date with all UK and EU transit regulations." },
-    { title: "Fast Turnaround", desc: "We process T1s quickly to keep your goods moving." },
-    { title: "Compliance-First Approach", desc: "We ensure every T1 meets customs requirements." },
+    { title: "E-commerce Expertise", desc: "We understand the unique needs of online sellers." },
+    { title: "Fast Turnaround", desc: "We process declarations quickly to keep your stock moving." },
+    { title: "Compliance-First Approach", desc: "We ensure every declaration meets HMRC requirements." },
     { title: "Transparent Pricing", desc: "Clear, competitive rates with no hidden fees." },
     { title: "Nationwide Coverage", desc: "We support all major UK ports and airports." },
     { title: "24/7 Support", desc: "Urgent shipments? No problem — we’re always available." },
-  ];
+  ]; 
   
 
-  const t1Faq = [
+  const ecommerceFaq = [
     {
-      question: "How long does a T1 take to create?",
-      answer: "Most T1s are processed quickly, depending on documentation and customs traffic.",
+      question: "How long does e-commerce customs clearance take?",
+      answer: "Most declarations are processed quickly, depending on documentation and port traffic.",
     },
     {
-      question: "Do you support T1s for both UK and EU movements?",
-      answer: "Yes — we handle transit movements in both directions.",
+      question: "Do you support Amazon FBA imports?",
+      answer: "Yes — we specialise in FBA and 3PL clearance.",
     },
     {
-      question: "Can you handle urgent or same-day T1s?",
-      answer: "Absolutely. We offer priority processing for time-critical goods.",
+      question: "Can you classify my SKUs?",
+      answer: "Absolutely — we offer full and bulk classification.",
     },
     {
-      question: "Do you work with freight forwarders?",
-      answer: "Yes — we provide white-label transit services for logistics companies.",
+      question: "Do you work with freight forwarders and 3PLs?",
+      answer: "Yes — we provide white-label customs services.",
     },
     {
       question: "What if I don’t know my HS codes?",
       answer: "We can classify your goods accurately.",
     },
-  ];
+  ]; 
   
   
   const points = [
@@ -184,7 +184,7 @@ export default function Road ({ preview }) {
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
 
           {/* Title */}
-          <h2 className="text-3xl font-bold text-slate-900 mb-10 ">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4 ">
           Why <span className="text-[#3daee0]">E-commerce Imports</span>  Are Dierent        
           </h2>
 
@@ -230,16 +230,16 @@ export default function Road ({ preview }) {
     </section>  
 
       {/* Services Grid */}
-      <section className="py-20 bg-slate-50 ">
+      <section className="py-20  ">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900">Our E-commerce Customs Clearance Services</h2>
-            <p className="mt-4 text-slate-600">We provide a complete range of customs services for online sellers:</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our E-commerce Customs Clearance Services</h2>
+            <p className=" text-slate-600">We provide a complete range of customs services for online sellers:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, i) => (
-              <div key={i} className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                <div className="text-[#0ea5e9] mb-4">
+              <div key={i} className="bg-white p-8 rounded-xl shadow-md border border-slate-100 hover:shadow-lg transition-all">
+                <div className="text-[#3daee0] mb-4">
                   {React.cloneElement(service.icon, { size: 32 })}
                 </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2">{service.title}</h3>
@@ -252,7 +252,7 @@ export default function Road ({ preview }) {
      
 
       {/* Who We Work With - Image 2 */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
@@ -267,20 +267,13 @@ export default function Road ({ preview }) {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Who We Work With</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">Who We Work With</h2>
               <p className="text-slate-600 mb-6">Our e-commerce services support:</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {[
-                   "Amazon FBA sellers",
-                  "Shopify stores",
-                  "eBay sellers",
-                  "Etsy sellers",
-                  "TikTok Shop sellers",
-                  "Online retailers",
-                  "Private-label brands",
-                  "Dropshippers",
-                  "Freight forwarders",
-                  "3PL warehouses"
+                   "Amazon FBA sellers","Shopify stores","eBay sellers", "Etsy sellers",
+                  "TikTok Shop sellers","Online retailers", "Private-label brands",
+                  "Dropshippers", "Freight forwarders","3PL warehouses"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-slate-700 font-medium">
                     <CheckCircle className="text-[#0ea5e9] h-4 w-4" /> {item}
@@ -294,52 +287,16 @@ export default function Road ({ preview }) {
           </div>
         </div>
       </section>
-
-      {/* When You Need a T1 */}
-      <section className="bg-gray-900 py-20 px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-          <div>
-            <p className="text-[#3daee0] font-bold tracking-widest uppercase text-sm mb-2">Requirements</p>
-            <h2 className="text-3xl font-bold text-white">When You Need a T1</h2>
-          </div>
-          <div className="hidden md:block h-[2px] flex-grow mx-8 mb-4 bg-slate-200" />
-        </div>
-
-        <div className="space-y-4">
-          {points.map((item, index) => (
-            <div 
-              key={index}
-              className="group flex flex-col md:flex-row md:items-center bg-white p-6 rounded-2xl border-2 border-slate-200 transition-all duration-300 hover:border-[#3daee0] hover:shadow-xl hover:shadow-[#3daee010]"
-            >
-              <div className="flex items-start gap-4 flex-1">
-                <div className="mt-1">
-                  <CheckCircle2 className="w-6 h-6 text-[#3daee0]" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[#3daee0] transition-colors">
-                    {item.condition}
-                  </h3>
-                  <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-xs font-medium uppercase tracking-wider">
-                    {item.example.startsWith('Example:') ? item.example : `Example: ${item.example}`}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
+      
       {/* Requirements Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 ">
         <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">What You Need for a T1 Transit Document</h2>
-            <p className="text-slate-600 mt-4">To create a T1 quickly, we typically require:</p>
+            <h2 className="text-3xl font-bold text-slate-900">What You Need for E-commerce Customs Clearance</h2>
+            <p className="text-slate-600 mt-4">To process your declaration quickly, we typically require:</p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+          <div className="bg-white rounded-2xl shadow-md border border-slate-200 p-8">
             <div className="space-y-8">
               {requirements.map((req, i) => (
                 <div key={i} className="flex flex-col md:flex-row gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
@@ -364,12 +321,12 @@ export default function Road ({ preview }) {
       </section>
 
       {/* How We Ensure Fast Filing */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Transit</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">How Global Customs Ensures Fast, Compliant Clearance</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((item, i) => (
-              <div key={i} className="bg-slate-50 p-6 rounded-lg border border-slate-100">
+              <div key={i} className="bg-white shadow-md p-6 rounded-lg border border-slate-100">
                 <CheckCircle className="text-[#0ea5e9] mb-4 h-8 w-8" />
                 <h4 className="font-bold text-lg text-slate-900 mb-2">{item.title}</h4>
                 <p className="text-slate-600">{item.desc}</p>
@@ -380,14 +337,14 @@ export default function Road ({ preview }) {
       </section>
 
       {/* Common Problems */}
-      <section className="py-20 bg-[#0ea5e9] text-white">
+      <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Common T1 Problems We Solve</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Common E-commerce Problems We Solve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {problems.map((prob, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
-                <h4 className="font-bold text-lg mb-2">{prob.title}</h4>
-                <p className="text-blue-50 text-sm">{prob.desc}</p>
+                <h4 className="font-bold text-[#0ea5e9] text-lg mb-2">{prob.title}</h4>
+                <p className="text-blue-50">{prob.desc}</p>
               </div>
             ))}
           </div>
@@ -403,20 +360,20 @@ export default function Road ({ preview }) {
               Industries We Support
             </h2>
             <p className="text-slate-600 mb-10">
-              We work with businesses across:
+            We work with online sellers across:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-[#3daee0] mb-12">
             {[
-              "E-commerce",
-              "Automotive",
-              "Food & drink",
-              "Pharmaceuticals",
-              "Retail",
-              "Manufacturing",
-              "Logistics & freight forwarding",
-              "Amazon FBA sellers",
+              "Fashion",
+              "Electronics",
+              "Homeware",
+              "Toys & games",
+              "Beauty & cosmetics",
+              "Supplements",
+              "Consumer goods",
+              "Private-label brands"
             ].map((ind, i) => (
               <div
                 key={i}
@@ -428,32 +385,28 @@ export default function Road ({ preview }) {
           </div>
 
           <p className="text-slate-900 text-center font-medium">
-          Whether you move small parcels or full trailers, we can support your needs.
+          Whether you import small parcels or full containers, we can support your needs.
           </p>
 
         </div>
       </section>
 
-
-
        <Testimonials/>
        <SiteFAQs
          sectionTitle="FAQs"
-         sectionDescription="Common questions about T1 transit processing and support."
+         sectionDescription="Answers to common e-commerce customs clearance questions."
          buttonText="get a quote"
          buttonLink="/contact"
-         faqs={t1Faq}
+         faqs={ecommerceFaq}
        />
        <SiteCta
-          title="Need fast, reliable T1 transit documents?"
-          description="Contact Global Customs today for expert support, accurate filings, and 24/7 assistance"
+          title="Need fast, reliable customs clearance for your e-commerce business?"
+          description="Contact Global Customs today for expert support, accurate declarations, and 24/7 assistance."
           buttonText="Contact us"
           buttonLink="/contact"
           backgroundImage="/images/road-service.png"
           overlayOpacity={0.4}
         />
-
-    
 
     </Layout>
     </>
