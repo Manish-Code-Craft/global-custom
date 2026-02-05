@@ -22,8 +22,8 @@ export default function Header() {
 
     <header className="header">
         <Container>
-            <div className="flex items-center justify-between py-3">
-                <div className="w-[200px] md:w-[250px] leading-[0]">
+            <div className="flex items-center justify-between py-2">
+                <div className="w-[200px] md:w-[210px] leading-[0]">
                     <Link title="Global Custom Clearance,UK" href="/">
                    <Image src="/images/GCC_LOGO.webp" width={396} height={125}  alt="logo"/>
                     </Link>

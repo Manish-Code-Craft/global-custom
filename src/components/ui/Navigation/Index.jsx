@@ -46,7 +46,7 @@ export default function Navigation() {
                 <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
                 <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
                 <li><NavSubLink href="/customs-clearance-southampton" name="Custom Clearance in Southampton" /></li>
-                <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Tilbury" /></li>
+                <li><NavSubLink href="/customs-clearance-tilbury" name="Customs Clearance Tilbury" /></li>
                 <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Kent" /></li>
                 <li><NavSubLink href="/customs-clearance-medway" name="Customs Clearance Medway" /></li>
                 <li><NavSubLink href="/customs-clearance-gillingham" name="Customs Clearance Gillingham" /></li>
