@@ -14,6 +14,8 @@ import {
   Clock,
   ShoppingCart,
   Users,
+  DownloadCloud, 
+  UploadCloud, Info,
   CheckCircle,
 } from "lucide-react";
 import Testimonials from "@/components/ui/Testimonials"
@@ -202,67 +204,78 @@ export default function Services({preview}){
           </section>
 
          {/* What You Need for Customs Clearance */}
-         <section className="py-24 bg-slate-50 relative overflow-hidden">
+          <section className="py-20 bg-slate-50 relative overflow-hidden">
             {/* Decorative background element to match modern logistics theme */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-50/50 skew-x-12 translate-x-1/2 -z-10" />
             
             <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-              <div className="max-w-3xl mb-16">
-                <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <div className="max-w-3xl mb-10">
+                <h2 className="text-3xl font-bold text-slate-900 mb-4">
                   What You Need for Customs Clearance in Kent
                 </h2>
-                <p className="text-lg text-slate-600 leading-relaxed">
+                <p className=" text-slate-600 leading-relaxed">
                   To process your customs declaration quickly, we typically require the following documentation and details:
                 </p>
               </div>
 
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Imports Card */}
-                <div className="group bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-200 hover:border-[#0ea5e9] transition-all duration-300">
+              {/* Using grid-cols-12 to allow the Imports wrapper to be wider (7 columns vs 5) for balance */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                {/* Imports Card - Occupies 7 columns */}
+                <div className="lg:col-span-7 group bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-200 hover:border-[#0ea5e9] transition-all duration-300">
                   <div className="flex items-center justify-between mb-8">
                     <h3 className="text-2xl font-bold text-slate-900">For Imports</h3>
                     <div className="h-12 w-12 bg-blue-50 rounded-xl flex items-center justify-center text-[#0ea5e9]">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="VerticalAlignBottom" />
-                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                      </svg>
+                      <DownloadCloud size={24} />
                     </div>
                   </div>
                   
-                  <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
-                    {[
-                      'Commercial invoice', 'Packing list', 'Bill of lading / CMR / airway bill',
-                      'HS codes (if known)', 'Country of origin', 'Incoterms',
-                      'CPC code', 'EORI number', 'VAT number (if applicable)',
-                      'Licences or certificates (if required)'
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-start gap-3 group/item">
-                        <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#0ea5e9] group-hover/item:scale-150 transition-transform" />
-                        <span className="text-slate-700 font-medium text-sm leading-tight">{item}</span>
-                      </div>
-                    ))}
+                  {/* Split into two columns: 1-7 in first, remaining in second */}
+                  <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5">
+                    {/* First Grid (Points 1-7) */}
+                    <div className="space-y-4">
+                      {[
+                        'Commercial invoice', 'Packing list', 'Bill of lading / CMR / airway bill',
+                        'HS codes (if known)', 'Country of origin', 'Incoterms', 
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 group/item">
+                          <CheckCircle className="text-[#0ea5e9] h-5 w-5 mt-0.5 flex-shrink-0" />
+                          <span className="text-slate-700 font-medium text-[15px] leading-tight">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Second Grid (Remaining) */}
+                    <div className="space-y-4">
+                      {[
+                        'CPC code','EORI number', 'VAT number (if applicable)', 'Licences or certificates (if required)'
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 group/item">
+                          <CheckCircle className="text-[#0ea5e9] h-5 w-5 mt-0.5 flex-shrink-0" />
+                          <span className="text-slate-700 font-medium text-[15px] leading-tight">{item}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
-                {/* Exports Card */}
-                <div className="group bg-slate-900 p-8 md:p-10 rounded-3xl shadow-xl border border-slate-800 hover:border-[#0ea5e9] transition-all duration-300">
+                {/* Exports Card - Occupies 5 columns */}
+                <div className="lg:col-span-5 group bg-slate-900 p-8 md:p-10 rounded-3xl shadow-xl border border-slate-800 hover:border-[#0ea5e9] transition-all duration-3000 h-full">
                   <div className="flex items-center justify-between mb-8">
                     <h3 className="text-2xl font-bold text-white">For Exports</h3>
-                    <div className="h-12 w-12 bg-white/10 rounded-xl flex items-center justify-center text-[#0ea5e9]">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                      </svg>
+                    <div className="h-12 w-12 bg-slate-50 rounded-xl flex items-center justify-center text-[#0ea5e9]">
+                      <UploadCloud size={24} />
                     </div>
                   </div>
                   
-                  <div className="grid sm:grid-cols-1 gap-y-4">
+                  <div className="space-y-4">
                     {[
                       'Commercial invoice', 'Packing list', 'Export commodity codes',
                       'Transport details', 'Destination country', 'EORI number'
                     ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-4 py-2 border-b border-white/5 last:border-0">
-                        <CheckCircle className="text-[#0ea5e9] h-5 w-5 flex-shrink-0" />
-                        <span className="text-slate-300 font-medium">{item}</span>
+                      <div key={i} className="flex items-start gap-3 group/item">
+                        <CheckCircle className="text-[#0ea5e9] h-5 w-5 mt-0.5 flex-shrink-0" />
+                        <span className="text-white font-medium text-[15px] leading-tight">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -270,8 +283,8 @@ export default function Services({preview}){
               </div>
 
               <div className="mt-12 flex items-center gap-4 p-6 bg-white rounded-2xl border-l-4 border-[#0ea5e9] shadow-sm max-w-2xl">
-                <div className="h-10 w-10 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#0ea5e9] font-bold">i</span>
+                <div className="h-10 w-10 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0 text-[#0ea5e9]">
+                  <Info size={20} strokeWidth={3} />
                 </div>
                 <p className="text-slate-700 font-medium">
                   If you’re unsure about any of this, we guide you step-by-step.
