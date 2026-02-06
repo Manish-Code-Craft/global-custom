@@ -4,20 +4,7 @@ import Layout from "@/components/ui/Layout"
 import Heroservice from "@/components/ui/Heroservice"
 import PageHead from "@/components/ui/PageHead"
 import Image from "next/image"
-import {
-  FileText,Anchor, Train, Box, MapPin, AlertCircle,
-  Send,
-  Truck,
-  Hash,
-  Calculator,
-  Briefcase,
-  Clock,
-  ShoppingCart,
-  Users,
-  DownloadCloud, 
-  UploadCloud, Info,
-  CheckCircle,
-} from "lucide-react";
+import { FileText,Anchor, Train, Box, MapPin, Send, Truck, Hash, Calculator, Briefcase, Clock, ShoppingCart, Users, DownloadCloud, UploadCloud, Info, CheckCircle,} from "lucide-react";
 import Testimonials from "@/components/ui/Testimonials"
 import SiteFAQs from "@/components/ui/SiteFAQs"
 import SiteCta from "@/components/ui/SiteCta"
@@ -156,20 +143,20 @@ export default function Services({preview}){
           {/* Why Kent Is Critical Section */}
           <section className="py-20 bg-slate-50 overflow-hidden">
             <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
-                
-                {/* Left Column: Narrative */}
-                <div className="">
-                  <h2 className="text-3xl font-bold text-slate-900 mb-6 leading-tight">
-                    Why Kent Is Critical for <br />
+                 <div className="text-center mb-12">
+                 <h2 className="text-3xl font-bold text-slate-900 mb-6 leading-tight">
+                    Why Kent Is Critical for 
                     <span className="text-[#0ea5e9]">UK Customs Clearance</span>
                   </h2>
-                  <p className=" text-slate-600 mb-8 leading-relaxed">
+                  <p className=" text-slate-600 mb-8 leading-relaxed max-w-4xl mx-auto">
                     Kent handles more international freight than any other county in the UK. Because of Kent’s strategic importance, customs delays here can disrupt supply chains nationwide.
                   </p>
-                  
+                 </div>
+              <div className="grid lg:grid-cols-2 gap-16 items-center">                
+                {/* Left Column: Narrative */}
+                <div className="">
                   <div className="space-y-6">
-                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div className="flex gap-4 p-5 rounded-2xl bg-white shadow-md border border-slate-100">
                       <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
                         <Anchor size={24} />
                       </div>
@@ -179,7 +166,7 @@ export default function Services({preview}){
                       </div>
                     </div>
 
-                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div className="flex gap-4 p-5 rounded-2xl bg-white shadow-md border border-slate-100">
                       <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
                         <Train size={24} />
                       </div>
@@ -189,7 +176,7 @@ export default function Services({preview}){
                       </div>
                     </div>
 
-                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div className="flex gap-4 p-5 rounded-2xl bg-white shadow-md border border-slate-100">
                       <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
                         <Box size={24} />
                       </div>
@@ -211,11 +198,7 @@ export default function Services({preview}){
                       <div className="flex items-center gap-3 mb-8">
                         <MapPin className="text-[#0ea5e9]" size={28} />
                         <h3 className="text-2xl font-bold text-white">Inland Border Facilities (IBFs)</h3>
-                      </div>
-                      
-                      <p className="text-slate-400 mb-8">
-                        These facilities handle checks, inspections, and customs processes for goods entering or leaving the UK:
-                      </p>
+                      </div>                     
 
                       <ul className="grid grid-cols-1 gap-4">
                         {['Sevington', 'Ashford', 'Dover Western Docks'].map((facility, i) => (
@@ -225,24 +208,20 @@ export default function Services({preview}){
                           </li>
                         ))}
                       </ul>
-
-                      <div className="mt-10 pt-8 border-t border-white/10">
-                        <div className="flex gap-4 items-start text-blue-200">
-                          <AlertCircle className="shrink-0 text-[#0ea5e9]" size={20} />
-                          <p className="text-sm italic">
-                            Key trade routes include some of the most time-sensitive logistics corridors in the world.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    </div>  
+                  </div>                 
                 </div>
-
+              </div>
+              <div className="mt-12 flex items-center justify-center gap-4 p-6 bg-white rounded-2xl border-l-4 border-r-4 border-[#0ea5e9] shadow-sm ">
+                <div className="h-10 w-10 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0 text-[#0ea5e9]">
+                  <Info size={20} strokeWidth={3} />
+                </div>
+                <p className="text-slate-700 font-medium">
+                These facilities handle checks, inspections, and customs processes for goods entering or leaving the UK
+                </p>
               </div>
             </div>
           </section>
-
-          
 
           {/* Services Grid */}
           <section className="py-20  ">
