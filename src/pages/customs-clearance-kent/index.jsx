@@ -5,7 +5,7 @@ import Heroservice from "@/components/ui/Heroservice"
 import PageHead from "@/components/ui/PageHead"
 import Image from "next/image"
 import {
-  FileText,
+  FileText,Anchor, Train, Box, MapPin, AlertCircle,
   Send,
   Truck,
   Hash,
@@ -42,12 +42,11 @@ export default function Services({preview}){
   ];
 
   const requirements = [
-    { title: "Commercial Invoice", details: ["Seller and buyer details", "Product descriptions", "HS codes", "Value", "Currency", "Incoterms"] },
-    { title: "Packing List", details: ["Details of weights, quantities, and packaging."] },
-    { title: "Transport Document", details: ["Bill of lading", "Airway bill", "CMR"] },
-    { title: "EORI Number", details: ["Required for all UK/EU movements."] },   
-    { title: "Destination Details", details: ["Bonded warehouse", "Customs office or,", "Final delivery point"] },
-    { title: "Vehicle & Driver Details", details: ["For road transport."] }
+    { title: "Port of Dover", details: ["Import & export declarations", "T1 transit documents", "Urgent clearance",] },
+    { title: "Eurotunnel (Folkestone)", details: ["Import & export declarations, Transit support"] },
+    { title: "Sheerness Port", details: ["Automotive imports", "Bulk cargo", "Containerised goods"] },
+    { title: "Thamesport", details: ["Containerised imports", "Deep-sea shipments"] },   
+    { title: "Inland Border Facilities", details: ["Sevington", "Ashford", "Dover IBF"] },   
   ];
 
   const features = [
@@ -154,12 +153,103 @@ export default function Services({preview}){
             </div>
           </section>
 
+          {/* Why Kent Is Critical Section */}
+          <section className="py-20 bg-slate-50 overflow-hidden">
+            <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                
+                {/* Left Column: Narrative */}
+                <div className="">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-6 leading-tight">
+                    Why Kent Is Critical for <br />
+                    <span className="text-[#0ea5e9]">UK Customs Clearance</span>
+                  </h2>
+                  <p className=" text-slate-600 mb-8 leading-relaxed">
+                    Kent handles more international freight than any other county in the UK. Because of Kent’s strategic importance, customs delays here can disrupt supply chains nationwide.
+                  </p>
+                  
+                  <div className="space-y-6">
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                      <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
+                        <Anchor size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-lg">Port of Dover</h4>
+                        <p className="text-slate-600">The busiest roll-on/roll-off port in Europe.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                      <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
+                        <Train size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-lg">Eurotunnel (Folkestone)</h4>
+                        <p className="text-slate-600">Fast movement of goods between the UK and France.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                      <div className="h-12 w-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#0ea5e9] shrink-0">
+                        <Box size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-lg">Sheerness & Thamesport</h4>
+                        <p className="text-slate-600">Important hubs for containers, automotive, and bulk cargo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column: Inland Facilities & Impact */}
+                <div className="">
+                  <div className="relative">
+                    {/* Background Highlight */}
+                    <div className="absolute -inset-4 bg-blue-50/50 rounded-3xl -z-10 rotate-1" />
+                    
+                    <div className="bg-slate-900 rounded-3xl p-8 md:p-10 shadow-2xl">
+                      <div className="flex items-center gap-3 mb-8">
+                        <MapPin className="text-[#0ea5e9]" size={28} />
+                        <h3 className="text-2xl font-bold text-white">Inland Border Facilities (IBFs)</h3>
+                      </div>
+                      
+                      <p className="text-slate-400 mb-8">
+                        These facilities handle checks, inspections, and customs processes for goods entering or leaving the UK:
+                      </p>
+
+                      <ul className="grid grid-cols-1 gap-4">
+                        {['Sevington', 'Ashford', 'Dover Western Docks'].map((facility, i) => (
+                          <li key={i} className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-xl text-white font-medium">
+                            <div className="h-2 w-2 rounded-full bg-[#0ea5e9]" />
+                            {facility}
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="mt-10 pt-8 border-t border-white/10">
+                        <div className="flex gap-4 items-start text-blue-200">
+                          <AlertCircle className="shrink-0 text-[#0ea5e9]" size={20} />
+                          <p className="text-sm italic">
+                            Key trade routes include some of the most time-sensitive logistics corridors in the world.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          
+
           {/* Services Grid */}
-          <section className="py-20 bg-slate-50 ">
+          <section className="py-20  ">
             <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
               <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-slate-900">Our T1 Transit Services</h2>
-                <p className="mt-4 text-slate-600">We provide a complete range of T1 services:</p>
+                <h2 className="text-3xl font-bold text-slate-900">Our Customs Clearance Services in Kent</h2>
+                <p className="mt-4 text-slate-600">We provide a complete range of customs services across the county:</p>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
                 {services.map((service, i) => (
@@ -179,8 +269,8 @@ export default function Services({preview}){
           <section className="py-20 bg-slate-50">
             <div className="max-w-5xl mx-auto px-[12px] md:px-[36px] xl:px-0">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-slate-900">What You Need for a T1 Transit Document</h2>
-                <p className="text-slate-600 mt-4">To create a T1 quickly, we typically require:</p>
+                <h2 className="text-3xl font-bold text-slate-900">Ports & Facilities We Cover in Kent</h2>
+                <p className="text-slate-600 mt-4">We provide full customs coverage across:</p>
               </div>
 
               <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
@@ -201,7 +291,7 @@ export default function Services({preview}){
                   ))}
                 </div>
                 <div className="mt-8 pt-8 border-t border-slate-100 text-center">
-                  <p className="font-bold text-[#0ea5e9]">If you’re unsure about any of this, we guide you step-by-step.</p>
+                  <p className="font-bold text-[#0ea5e9]">Wherever your goods enter or leave Kent, we can handle the customs process.</p>
                 </div>
               </div>
             </div>
@@ -354,7 +444,7 @@ export default function Services({preview}){
           <section className="py-20 bg-gray-900 text-white">
           <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
             <h2 className="text-3xl font-bold mb-12 text-center">
-              Common Food & Drink Customs Problems We Solve
+              Common Customs Problems We Solve in Kent
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
