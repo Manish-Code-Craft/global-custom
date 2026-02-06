@@ -1143,6 +1143,13 @@ h5.amarpreloader-text {
   display: flex;
   align-items: center;
 }
+.new-banner-section,
+.banner-content
+{
+  height: 70vh; 
+  display: flex;
+  align-items: center;
+}
 
 .banner-service-column .btn {
   padding: 15px;

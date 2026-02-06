@@ -7,17 +7,17 @@ export default function NewInnerBanner({
   backgroundImage,
 }) {
   return (
-    <div className="relative z-30 text-white banner-section bg-black">
+    <div className="relative z-30 text-white new-banner-section bg-black">
       {/* Background Image */}
       <div
-        className="banner-image absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50"
+        className=" absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 
       {/* Content */}
-      <div className="banner-text relative z-20 w-full">
+      <div className="banner-content relative z-20 w-full">
         <Container>
-          <div className="law-hero-area flex items-center justify-between hero-about">
+          <div className=" flex items-center justify-between hero-about">
             <div className="law-hero-info max-w-[650px] xl:max-w-[1100px]">
               <div className="law-hero__content">
                 {/* Title */}

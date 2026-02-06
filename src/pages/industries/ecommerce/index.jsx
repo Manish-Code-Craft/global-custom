@@ -3,11 +3,21 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle, Link as LinkIcon,} from "lucide-react";
+import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle,
+  Shirt, 
+  Smartphone, 
+  Home, 
+  Gamepad2, 
+  Sparkles, 
+  Pill, 
+  Tag, 
+  ShoppingBag,
+  Link as LinkIcon,} from "lucide-react";
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
 import ServiceHero from "@/components/ui/New/ServiceHero";
 import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
+import SupportedIndustries from "@/components/ui/New/SupportedIndustries";
 
 export default function Road ({ preview }) {
   const PageMeta = {
@@ -59,6 +69,17 @@ export default function Road ({ preview }) {
     { title: "Multi-SKU Shipments", desc: "We handle complex declarations with many product lines." },
     { title: "Post-Clearance Errors", desc: "We handle amendments and corrections on your behalf." },
   ]; 
+
+  const industries = [
+    { name: "Fashion", icon: <Shirt size={24} /> },
+    { name: "Electronics", icon: <Smartphone size={24} /> },
+    { name: "Homeware", icon: <Home size={24} /> },
+    { name: "Toys & Games", icon: <Gamepad2 size={24} /> },
+    { name: "Beauty & Cosmetics", icon: <Sparkles size={24} /> },
+    { name: "Supplements", icon: <Pill size={24} /> },
+    { name: "Consumer Goods", icon: <ShoppingBag size={24} /> },
+    { name: "Private-Label Brands", icon: <Tag size={24} /> },
+  ];
 
   const ecommerceFaq = [
     {
@@ -277,40 +298,15 @@ export default function Road ({ preview }) {
             ))}
           </div>
         </div>
-      </section>     
+      </section>  
 
-      {/* Industries Support */}
-      <section className="py-20 bg-white">
-        <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-
-          <div className=" text-left lg:text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">
-              Industries We Support
-            </h2>
-            <p className="text-slate-600 mb-10">
-            We work with online sellers across:
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-[#3daee0] mb-12">
-            {[
-              "Fashion","Electronics","Homeware","Toys & games","Beauty & cosmetics","Supplements", "Consumer goods", "Private-label brands"
-            ].map((ind, i) => (
-              <div
-                key={i}
-                className="border-b border-r border-[#3daee0] px-6 py-6 text-slate-900 font-medium"
-              >
-                {ind}
-              </div>
-            ))}
-          </div>
-
-          <p className="text-slate-900 text-center font-medium">
-          Whether you import small parcels or full containers, we can support your needs.
-          </p>
-
-        </div>
-      </section>
+      <SupportedIndustries
+        title="Industries We Support in Dover"
+        subtitle="Trusted by importers and exporters using the Port of Dover"
+        industries={industries}
+        bottomText="Whether you import small parcels or full containers, we can support your needs."
+        bg="bg-white"
+      />
 
        <Testimonials/>
        <SiteFAQs
