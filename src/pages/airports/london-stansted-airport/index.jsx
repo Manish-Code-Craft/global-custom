@@ -81,10 +81,10 @@ export default function Airports({ preview }) {
       <Layout preview={preview}>
         <div>
           <Heroservice
-            title="CUSTOMS CLEARANCE – LONDON GATWICK AIRPORT (LGW)
+            title="LONDON STANSTED AIRPORT (STN)
   "
             desc={[
-              "Fast • Accurate • Professional • 24/7 Air Cargo Support",
+              "Fast • Accurate • Specialist Air‑Cargo Customs Support",
             ]}
             backgroundImage="/images/service-bg.jpg"
           />
@@ -93,11 +93,12 @@ export default function Airports({ preview }) {
         <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-lg text-slate-700 leading-relaxed">
-          London Gatwick Airport (LGW) is one of the UK’s most important aviation hubs, handling a growing volume of imports, exports, e‑commerce traffic, and time‑critical air freight. To keep your goods moving smoothly, you need fast, compliant, and reliable customs clearance tailored specifically to Gatwick’s operating environment.
+          London Stansted Airport (STN) is one of the UK’s major cargo hubs, handling a huge share of express parcels, e‑commerce shipments, high‑volume freight, and overnight air cargo. With heavy courier and freight activity around the clock, speed and accuracy are essential.
+
           </p>
           <div className="mt-8 p-6 bg-blue-50 border-l-4 border-[#0ea5e9] rounded-r-xl">
             <p className="text-xl font-medium text-[#0ea5e9]">
-            We provide complete air‑freight customs solutions at Gatwick, ensuring your cargo is cleared  quickly, correctly, and without disruption.
+            We provide fully managed, fast, and compliant customs clearance for all shipments moving through Stansted Airport, ensuring your goods are processed without disruption — day or night.
             </p>
           </div>
         </div>
@@ -106,41 +107,41 @@ export default function Airports({ preview }) {
       {/* Why Choose Us */}
       <section className="py-20 bg-slate-50" id="services">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose Us for Gatwick Customs Clearance?</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose Us for Stansted Customs Clearance?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Zap className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Fast, Efficient Processing</h3>
-                <p className="text-sm text-slate-600">Rapid customs clearance to prevent storage charges and delays</p>
+                <h3 className="text-lg font-bold mb-2">Ultra‑Fast Clearance for Express & E‑CommerceCargo</h3>
+                <p className="text-sm text-slate-600">Processes built for high‑volume throughput.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Globe className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Experienced Gatwick Specialists</h3>
-                <p className="text-sm text-slate-600">Daily collaboration with LGW handlers, warehouses, and ground agents.</p>
+                <h3 className="text-lg font-bold mb-2">Local STN Expertise</h3>
+                <p className="text-sm text-slate-600">Daily work with handlers, ETSFs, couriers, integrators, and warehouses.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Activity className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">24/7 Operational Support</h3>
-                <p className="text-sm text-slate-600">Overnight flights, weekend arrivals, urgent shipments — all covered.</p>
+                <h3 className="text-lg font-bold mb-2">24/7 Operations</h3>
+                <p className="text-sm text-slate-600">Overnight arrivals and express parcels cleared immediately..</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Clock className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">All Cargo Types</h3>
-                <p className="text-sm text-slate-600">General freight, e‑commerce parcels, perishables, pharma, automotive, aerospace, high‑value goods.</p>
+                <h3 className="text-lg font-bold mb-2">HMRC‑Compliant Declarations</h3>
+                <p className="text-sm text-slate-600">Reduced queries anddelays.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <ShieldCheck className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Accurate, HMRC‑Compliant Declarations</h3>
-                <p className="text-sm text-slate-600">Our experts eliminate classification errors, valuation mistakes, and documentation issues.</p>
+                <h3 className="text-lg font-bold mb-2">All Cargo Types</h3>
+                <p className="text-sm text-slate-600">Parcels, pallets, perishables, pharma, automotive parts, AOG, high‑value freight.</p>
               </div>
             </div>
           </div>
@@ -150,7 +151,7 @@ export default function Airports({ preview }) {
       {/* Import & Export Sections */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export Clearance at LGW</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export Customs Clearance at STN </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Import */}
             <div className="bg-slate-50 p-8 rounded-2xl">
@@ -158,14 +159,13 @@ export default function Airports({ preview }) {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Truck className="text-[#0ea5e9] w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold">Import Clearance (Air Freight)</h3>
+                <h3 className="text-2xl font-bold">Import Clearance</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-2">• CDS import declarations</li>
-                <li className="flex items-start gap-2">• Duty & VAT calculations</li>
-                <li className="flex items-start gap-2">• Restricted/sensitive cargo handling</li>
-                <li className="flex items-start gap-2">• Full documentation checks</li>
-                <li className="flex items-start gap-2">• Real‑time progress updates</li>
+                <li className="flex items-start gap-2">• Duty/VAT,controlled goods</li>
+                <li className="flex items-start gap-2">• Document checks</li>
+                <li className="flex items-start gap-2">• Real‑time notifications</li>                
               </ul>
             </div>
 
@@ -179,10 +179,9 @@ export default function Airports({ preview }) {
               </div>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-2">• CDS export declarations</li>
-                <li className="flex items-start gap-2">• Airline‑ready documentation</li>
-                <li className="flex items-start gap-2">• ATA Carnet handling</li>
-                <li className="flex items-start gap-2">• Seamless processing to meet departure deadlines</li>
-                <li className="flex items-start gap-2">• Secure handling for controlled goods</li>
+                <li className="flex items-start gap-2">• Airline paperwork</li>
+                <li className="flex items-start gap-2">• ATA Carnet support</li>
+                <li className="flex items-start gap-2">• Fast pre‑departure processing</li>                
               </ul>
             </div>
           </div>
@@ -199,9 +198,9 @@ export default function Airports({ preview }) {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4">Urgent, Time‑Critical & AOG Supports</h2>
+              <h2 className="text-3xl font-bold mb-4">Time‑Critical, Overnight & Priority Shipments</h2>
               <p className="text-blue-100 mb-6 leading-relaxed">
-              Priority customs handling, immediate responses for urgent clearances, direct coordination with handlers, and 24/7 availability for AOG cargo.
+              Immediate handling for urgent shipments, fast processing for express operators, direct communication with handlers, 24/7 availability.
 
               </p>
             </div>
@@ -216,18 +215,18 @@ export default function Airports({ preview }) {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <FileCheck className="text-[#0ea5e9]" /> T1 Transit Documents
+                <FileCheck className="text-[#0ea5e9]" /> T1 Transit
               </h3>
               <p className="text-slate-600">
-              For onward movement to other airports, warehouses, or EU destinations.
+              T1 creation and monitoring for transitions to other airports, DCs, or EU destinations.
               </p>
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Box className="text-[#0ea5e9]" /> ETSF Support
+                <Box className="text-[#0ea5e9]" /> ETSF 
               </h3>
               <p className="text-slate-600">
-              Coordination with ETSFs around Gatwick for fast release
+              ETSF coordination for rapid release.
               </p>
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
@@ -235,8 +234,7 @@ export default function Airports({ preview }) {
                 <Box className="text-[#0ea5e9]" /> Bonded Processes
               </h3>
               <p className="text-slate-600">
-              Support for customs‑controlled storage and deferred declarations.
-
+              Bonded storage support for deferred declarations and controlled goods.
               </p>
             </div>
           </div>
