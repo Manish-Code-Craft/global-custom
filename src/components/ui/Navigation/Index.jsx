@@ -56,11 +56,17 @@ export default function Navigation() {
                 <li><NavSubLink href="/customs-clearance-london" name="Customs Clearance London" /></li>               
             </ul>
         </li>
-
         
-        <li className="group relative"><NavLink href="/testimonials" name="Testimonials" /></li>
-        <li className="group relative"><NavLink href="/about-us" name="About Us" /></li>
-        <li className="group relative"><NavLink href="/contact" name="Contact Us" /></li>
+        <li className="group relative"><NavLink href="/blog" name="Airports" /></li>      
+        <li className="group relative"><NavLink href="/blog" name="Knowledge Hub" /></li>      
+        <li className="group relative">
+        <NavLink href="#" name="About" />
+        <ul className="sub-menu">
+            <li><NavSubLink href="/testimonials" name="Testimonials" /></li>           
+        </ul>
+        </li>
+       
+        <li className="group relative"><NavLink href="/contact" name="Contact" /></li>
     </ul>
   );
 }

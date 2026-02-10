@@ -5,7 +5,7 @@ export default function NavLink({
 }) {
   return (
     <>
-    <Link href={href} className="text-primary  uppercase font-semibold text-[16px]">{name}</Link>
+    <Link href={href} className="text-primary   font-semibold text-[16px]">{name}</Link>
     </>
   );
 }
