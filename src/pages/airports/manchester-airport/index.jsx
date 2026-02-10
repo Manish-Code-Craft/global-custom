@@ -32,45 +32,45 @@ export default function Airports({ preview }) {
   const expectations = [
     {
       icon: Zap,
-      title: "Speed and Efficiency ",
+      title: "Speed",
       text:
-        "Fast declarations and proactive communication. ",
+        "Rapid processing to minimise dwell time ",
     },
     {
       icon: CheckCircle,
-      title: "Fully Managed Service",
-      text: " Paperwork, submissions, handler contact, compliance.",
+      title: "Accuracy",
+      text: " Correct declarations first time.",
     },
     {
       icon: Eye,
-      title: "Transparent Fees",
+      title: "Transparency",
       text:
-        "Clear pricing.",
+        "Straightforward pricing.",
     },
     {
       icon: Shield,
-      title: "Dedicated 24/7 Support",
+      title: "Dedicated Support",
       text:
-        "Experts ready whenever shipmentsarrive.",
+        "24/7 response.",
     },
   ];
 
   
   const heathrowFaq = [
     {
-      question: "How fast can you clear shipments at EMA?",
-      answer: "Express and urgent cargo receive priority handling.",
+      question: "How fast can you clear goods at MAN?",
+      answer: " Most shipments are processed quickly once documentation is received.",
     },
     {
-      question: "Do you provide 24/7 support at EMA? ",
+      question: "Do you operate 24/7 at MAN? ",
       answer: "Yes.",
     },
     {
-      question: "Do you manage T1 transit documents?",
+      question: "Can you handle T1 documents?",
       answer: "Absolutely.",
     },
     {
-      question: "Can you handle high‑volume e‑commerce shipments? ",
+      question: "Do you support high‑volume e‑commerce? ",
       answer: "Yes.",
     },
   ];
@@ -81,9 +81,9 @@ export default function Airports({ preview }) {
       <Layout preview={preview}>
         <div>
           <Heroservice
-            title="CUSTOMS CLEARANCE – EAST MIDLANDS AIRPORT (EMA)"
+            title="CUSTOMS CLEARANCE – MANCHESTER AIRPORT (MAN)"
             desc={[
-              "Fast • Accurate • 24/7 Customs Support for the UK’s Premier Air Cargo Hub",
+              "Fast • Accurate • 24/7 Air Cargo Customs Support Across the North",
             ]}
             backgroundImage="/images/service-bg.jpg"
           />
@@ -92,12 +92,11 @@ export default function Airports({ preview }) {
         <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-lg text-slate-700 leading-relaxed">
-           East Midlands Airport (EMA) is the UK’s largest dedicated air‑cargo airport, serving major integrators, express carriers, e‑commerce operators, freight forwarders, and time‑critical industries nationwide. With continuous overnight movements and high‑volume parcel traffic,speed, precision, and reliability in customs clearance are essential.
-
+          Manchester Airport (MAN) is the North of England’s largest air‑freight hub, supporting thousands of importers, exporters, manufacturers, e‑commerce operators, and logistics providers every day. With cargo moving rapidly through multiple terminals and freight facilities, fast and compliant customs clearance is essential.
           </p>
           <div className="mt-8 p-6 bg-blue-50 border-l-4 border-[#0ea5e9] rounded-r-xl">
             <p className="text-xl font-medium text-[#0ea5e9]">
-              We provide rapid, fully managed customs clearance at EMA — ensuring your goods move quickly, compliantly, and with zero disruption.
+              We provide fully managed, efficient, and compliant customs clearance services for all cargo passing through Manchester Airport — ensuring quick releases, minimal delays, and smooth supply‑chain operations.
             </p>
           </div>
         </div>
@@ -106,41 +105,41 @@ export default function Airports({ preview }) {
       {/* Why Choose Us */}
       <section className="py-20 bg-slate-50" id="services">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose Us for EMA Customs Clearance?</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose Us for MAN Customs Clearance?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Zap className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Built for High‑Volume, High‑Speed Operations</h3>
-                <p className="text-sm text-slate-600">Systems designed for express and e‑commerce networks.</p>
+                <h3 className="text-lg font-bold mb-2">Fast, Reliable Clearance</h3>
+                <p className="text-sm text-slate-600">Minimise delays, storagefees, and operational disruptions.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Globe className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Deep Local Experience</h3>
-                <p className="text-sm text-slate-600">Daily work whandlers, integrators, ETSFs, and bonded warehouses.</p>
+                <h3 className="text-lg font-bold mb-2">Manchester Specialists</h3>
+                <p className="text-sm text-slate-600">Close work with handlers, cargo facilities, and bonded warehouses.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Activity className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">24/7 Support</h3>
-                <p className="text-sm text-slate-600">Matching EMA’s strong overnight operations.</p>
+                <h3 className="text-lg font-bold mb-2">24/7 Availability</h3>
+                <p className="text-sm text-slate-600">Overnight flights and urgent shipments covered.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <Clock className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
-                <h3 className="text-lg font-bold mb-2">Accuracy That Prevents Delays</h3>
-                <p className="text-sm text-slate-600">Correct HS codes, valuation, documentation. </p>
+                <h3 className="text-lg font-bold mb-2">Compliance‑Focused</h3>
+                <p className="text-sm text-slate-600">Accurate classification, documentation, valuation.</p>
               </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex gap-4">
               <ShieldCheck className="text-[#0ea5e9] shrink-0 w-6 h-6" />
               <div>
                 <h3 className="text-lg font-bold mb-2">All Cargo Types</h3>
-                <p className="text-sm text-slate-600">Parcels, pallets, perishables, high‑value goods, urgent manufacturing parts.</p>
+                <p className="text-sm text-slate-600">E‑commerce parcels, high‑value freight, pharma, perishables, automotive parts, general cargo.</p>
               </div>
             </div>
           </div>
@@ -150,7 +149,7 @@ export default function Airports({ preview }) {
       {/* Import & Export Sections */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export at EMA Import Clearance</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export at MAN Import Clearance</h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Import */}
             <div className="bg-slate-50 p-8 rounded-2xl">
@@ -158,12 +157,12 @@ export default function Airports({ preview }) {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Truck className="text-[#0ea5e9] w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold">CDS Declarations</h3>
+                <h3 className="text-2xl font-bold">CDS Import Declarations</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
                 <li className="flex items-start gap-2">• Duty/VAT</li>
                 <li className="flex items-start gap-2">• Controlled Goods</li>
-                <li className="flex items-start gap-2">• Documentation Checks</li>
+                <li className="flex items-start gap-2">• Documentation validation</li>
                 <li className="flex items-start gap-2">• Real‑time updates</li>
               </ul>
             </div>
@@ -174,13 +173,14 @@ export default function Airports({ preview }) {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Plane className="text-[#0ea5e9] w-6 h-6 transform -rotate-45" />
                 </div>
-                <h3 className="text-2xl font-bold">Export Clearance </h3>
+                <h3 className="text-2xl font-bold">Export Clearance</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-2">• CDS Declarations</li>
-                <li className="flex items-start gap-2">• Airline Paperwork</li>
+                <li className="flex items-start gap-2">• CDS Export Declarations</li>
+                <li className="flex items-start gap-2">• Pre‑Flight Docs</li>
                 <li className="flex items-start gap-2">• ATA Carnet</li>
-                <li className="flex items-start gap-2">• Priority Submissions</li> 
+                <li className="flex items-start gap-2">• Fast Processing</li> 
+                <li className="flex items-start gap-2">• Secure Handling</li> 
               </ul>
             </div>
           </div>
@@ -197,9 +197,9 @@ export default function Airports({ preview }) {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4">Urgent, Overnight & Express Specialists</h2>
+              <h2 className="text-3xl font-bold mb-4">Urgent & Time‑Critical Freight</h2>
               <p className="text-blue-100 mb-6 leading-relaxed">
-                Immediate clearance for time‑critical shipments, priority handling for express/e‑commerce, direct coordination with handlers, 24/7 operations.
+                Immediate processing, priority handling, direct communication with handlers/carriers, 24/7 support.
               </p>
             </div>
           </div>
@@ -209,22 +209,22 @@ export default function Airports({ preview }) {
       {/* Transit & ETSF */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-10 text-center">Transit, T1, ETSF & Bonded Services</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">T1 Transit, ETSF & Bonded Support</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <FileCheck className="text-[#0ea5e9]" /> T1 Transit Documents
               </h3>
               <p className="text-slate-600">
-                T1 issuance and management for onward movement.
+                T1 documents for onward movement to UK/EU.
               </p>
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Box className="text-[#0ea5e9]" /> ETSF Coordination for fast release 
+                <Box className="text-[#0ea5e9]" /> ETSF Coordination for rapid release 
               </h3>
               <p className="text-slate-600">
-                Bonded warehousing support for deferred declarations and high‑value storage.
+               Bonded storage for deferred declarations and high‑value goods.
               </p>
             </div>
           </div>
@@ -234,22 +234,22 @@ export default function Airports({ preview }) {
       {/* Specialist Services */}
       <section className="py-20 bg-slate-50" id="specialist">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Industries We Support at EMA</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Industries We Support at MAN</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">E‑Commerce & Express Parcels</h4> 
-            </div>
+              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">E‑Commerce, Parcels & Fulfilment</h4> 
+            </div> 
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Retail & Consumer Goods</h4> 
-            </div>
-            <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Automotive & Manufacturing</h4> 
+              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Automotive Manufacturing</h4> 
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
               <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Aerospace & Engineering</h4> 
             </div>
+            <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
+              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Pharmaceutical & Medical</h4> 
+            </div>
              <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Perishables & Temperature‑Sensitive Goods</h4> 
+              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Retail & Consumer Goods</h4> 
             </div>
           </div>
         </div>
