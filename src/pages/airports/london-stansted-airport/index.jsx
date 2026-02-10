@@ -24,8 +24,8 @@ import SiteCta from "@/components/ui/SiteCta"
 export default function Airports({ preview }) {
   const PageMeta = {
     title: "Customs Clearance at London Gatwick Airport (LGW) | Fast, Compliant Air Freight Solutions",
-    description: "Specialist customs clearance services at London Gatwick Airport (LGW) for imports, exports, e‑commerce, and time‑critical air freight. Fast, accurate, compliant solutions tailored to LGW’s unique operating environment.",
-    keywords: "Gatwick customs clearance, LGW air freight customs, import clearance Gatwick, export clearance LGW, e‑commerce customs Gatwick, time‑critical air freight LGW, HMRC compliant declarations Gatwick, T1 transit LGW, ETSF support Gatwick, bonded services LGW",
+    description: "Specialist customs clearance services at London Gatwick Airport. Fast, accurate, and compliant solutions for imports, exports, e‑commerce, and time‑critical air freight. 24/7 support to keep your cargo moving smoothly through LGW.",
+    keywords: "Gatwick customs clearance, LGW air freight customs, import clearance Gatwick, export clearance LGW, e‑commerce customs Gatwick, time‑critical air freight LGW, 24/7 customs support Gatwick, HMRC compliant declarations LGW",
   };
 
   
