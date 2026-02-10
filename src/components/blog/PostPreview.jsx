@@ -20,14 +20,14 @@ export default function PostPreview({
 
   // Function to limit excerpt to 30 words
   const truncateExcerpt = (excerpt) => {
-    return excerpt.split(" ").slice(0, 100).join(" ") + (excerpt.split(" ").length > 100 ? "..." : "");
+    return excerpt.split(" ").slice(0, 30).join(" ") + (excerpt.split(" ").length > 30 ? "..." : "");
   };
 
   return (
     <div className="blogs-div">
-      {/* <div className="mb-5">
+      <div className="mb-5">
         <CoverImage title={title} coverImage={coverImage || fallbackImage} slug={slug} />
-      </div> */}
+      </div>
 
       <h3 className="text-[20px] font-semibold mb-3 letter-space">
         <Link
@@ -36,7 +36,7 @@ export default function PostPreview({
                      after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 
                      hover:after:w-full"
         >
-          {truncateTitle(title)}
+          {title}
         </Link>
       </h3>
 
