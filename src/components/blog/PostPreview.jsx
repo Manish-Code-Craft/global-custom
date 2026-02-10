@@ -20,7 +20,7 @@ export default function PostPreview({
 
   // Function to limit excerpt to 30 words
   const truncateExcerpt = (excerpt) => {
-    return excerpt.split(" ").slice(0, 30).join(" ") + (excerpt.split(" ").length > 30 ? "..." : "");
+    return excerpt.split(" ").slice(0, 100).join(" ") + (excerpt.split(" ").length > 100 ? "..." : "");
   };
 
   return (

@@ -66,7 +66,7 @@ return (
                     </div>
                     <div className="col-span-12 border rounded shadow-sm max-h-max lg:col-span-4 md:col-span-12">
                     <div className="pt-[5px] px-3">
-                        <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Recent Posts</h2>
+                        <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Important Links</h2>
                       </div>
                       <div className="flex flex-col gap-3">
                          {links.map((link, index) => (
@@ -83,13 +83,13 @@ return (
                 </div>
             </Container>
         </article>
-        <div className="pb-[1px]">
+        {/* <div className="pb-[1px]">
             <Container>
                 {morePosts.length > 0 && 
                 <MoreStories posts={morePosts} />
                 }
             </Container>
-        </div>
+        </div> */}
     </div>
     </>
     )}

@@ -62,9 +62,29 @@ export default function Navigation() {
         <li className="group relative">
         <NavLink href="/blog" name="Knowledge Hub" />
         <ul className="sub-menu">
-            <li><NavSubLink href="/hs-code-guides" name="HS Code Guides" /></li>            
+            <li><NavSubLink href="/hs-code-guides" name="HS Code Guides" /></li>
+            <li><NavSubLink href="/duty-relief-guides" name="Duty Relief Guides" /></li>
+            <li><NavSubLink href="/port-guides" name="Port Guides" /></li>
+            <li><NavSubLink href="/customs-glossary" name="Customs Glossary" /></li>
+            <li><NavSubLink href="/importer-checklists" name="Importer Checklists" /></li>
+            <li><NavSubLink href="/cds-vs-chief-guides" name="CDS vs CHIEF Guides" /></li>
+            <li><NavSubLink href="/how-to-avoid-port-delays" name="How to Avoid Port Delays" /></li>
+            <li><NavSubLink href="/how-to-classify-goods-correctly" name="How to Classify Goods Correctly" /></li>
+            <li><NavSubLink href="/post-brexit-customs-advice" name="Post-Brexit Customs Advice" /></li>
+            <li><NavSubLink href="/common-importer-mistakes" name="Common Importer Mistakes" /></li>
+            <li><NavSubLink href="/customs-audit-preparation" name="How to Prepare for a Customs Audit" /></li>
+            <li><NavSubLink href="/duty-relief-schemes" name="Understanding Duty Relief Schemes" /></li>
+            <li><NavSubLink href="/temporary-admission-explained" name="Temporary Admission Explained" /></li>
+            <li><NavSubLink href="/ata-carnet-guide" name="ATA Carnet Step-by-Step" /></li>
+            <li><NavSubLink href="/speed-up-customs-clearance" name="How to Speed Up Customs Clearance" /></li>
+            <li><NavSubLink href="/importers-2026-guide" name="What Importers Must Know in 2026" /></li>
+            <li><NavSubLink href="/reduce-duty-costs-legally" name="How to Reduce Duty Costs Legally" /></li>
+            <li><NavSubLink href="/ecommerce-importing-guide" name="E-commerce Importing Guide" /></li>
+            <li><NavSubLink href="/amazon-fba-import-guide" name="Amazon FBA Import Guide" /></li>
+            <li><NavSubLink href="/uk-border-changes-explained" name="UK Border Changes Explained" /></li>
         </ul>
-        </li>     
+        </li>
+    
 
         <li className="group relative">
         <NavLink href="#" name="About" />
