@@ -19,7 +19,7 @@ const FeatureImage = styled.div`
 
 export default function CoverImage({ title, coverImage, slug }: Props) {
   // Ensure a fallback image if coverImage or its properties are undefined
-  const amarCoverImage = coverImage?.node?.sourceUrl || "/images/amar-web-designer-post.webp";
+  const amarCoverImage = coverImage?.node?.sourceUrl || "/images/blog-fallback.webp";
 
   const image = (
     <Image

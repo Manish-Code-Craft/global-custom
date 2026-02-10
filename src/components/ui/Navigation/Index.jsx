@@ -72,14 +72,14 @@ export default function Navigation() {
             <li><NavSubLink href="/how-to-classify-goods-correctly" name="How to Classify Goods Correctly" /></li>
             <li><NavSubLink href="/post-brexit-customs-advice" name="Post-Brexit Customs Advice" /></li>
             <li><NavSubLink href="/common-importer-mistakes" name="Common Importer Mistakes" /></li>
-            <li><NavSubLink href="/customs-audit-preparation" name="How to Prepare for a Customs Audit" /></li>
-            <li><NavSubLink href="/duty-relief-schemes" name="Understanding Duty Relief Schemes" /></li>
+            <li><NavSubLink href="/how-to-prepare-for-a-customs-audit" name="How to Prepare for a Customs Audit" /></li>
+            <li><NavSubLink href="/understanding-duty-relief-schemes" name="Understanding Duty Relief Schemes" /></li>
             <li><NavSubLink href="/temporary-admission-explained" name="Temporary Admission Explained" /></li>
-            <li><NavSubLink href="/ata-carnet-guide" name="ATA Carnet Step-by-Step" /></li>
-            <li><NavSubLink href="/speed-up-customs-clearance" name="How to Speed Up Customs Clearance" /></li>
-            <li><NavSubLink href="/importers-2026-guide" name="What Importers Must Know in 2026" /></li>
-            <li><NavSubLink href="/reduce-duty-costs-legally" name="How to Reduce Duty Costs Legally" /></li>
-            <li><NavSubLink href="/ecommerce-importing-guide" name="E-commerce Importing Guide" /></li>
+            <li><NavSubLink href="/ata-carnet-step-by-step" name="ATA Carnet Step-by-Step" /></li>
+            <li><NavSubLink href="/how-to-speed-up-customs-clearance" name="How to Speed Up Customs Clearance" /></li>
+            <li><NavSubLink href="/what-importers-must-know-in-2026" name="What Importers Must Know in 2026" /></li>
+            <li><NavSubLink href="/how-to-reduce-duty-costs-legally" name="How to Reduce Duty Costs Legally" /></li>
+            <li><NavSubLink href="/e-commerce-importing-guide" name="E-commerce Importing Guide" /></li>
             <li><NavSubLink href="/amazon-fba-import-guide" name="Amazon FBA Import Guide" /></li>
             <li><NavSubLink href="/uk-border-changes-explained" name="UK Border Changes Explained" /></li>
         </ul>

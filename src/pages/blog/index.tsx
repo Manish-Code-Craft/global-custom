@@ -96,10 +96,12 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
             {filteredPosts.map(({ node }) => (
               <PostPreview
                 key={node.slug}
+                coverImage={node.featuredImage}
                 title={node.title}
                 date={node.date}
                 excerpt={node.excerpt}
                 slug={node.slug}
+                viewMode={viewMode}
               />
             ))}
           </div>

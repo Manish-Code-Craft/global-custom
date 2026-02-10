@@ -24,9 +24,27 @@ return
 }
 
 const links = [
-  
-  
-];
+  { href: "/hs-code-guides", text: "HS Code Guides" },
+  { href: "/duty-relief-guides", text: "Duty Relief Guides" },
+  { href: "/port-guides", text: "Port Guides" },
+  { href: "/customs-glossary", text: "Customs Glossary" },
+  { href: "/importer-checklists", text: "Importer Checklists" },
+  { href: "/cds-vs-chief-guides", text: "CDS vs CHIEF Guides" },
+  { href: "/how-to-avoid-port-delays", text: "How to Avoid Port Delays" },
+  { href: "/how-to-classify-goods-correctly", text: "How to Classify Goods Correctly" },
+  { href: "/post-brexit-customs-advice", text: "Post-Brexit Customs Advice" },
+  { href: "/common-importer-mistakes", text: "Common Importer Mistakes" },
+  { href: "/how-to-prepare-for-a-customs-audit", text: "How to Prepare for a Customs Audit" },
+  { href: "/understanding-duty-relief-schemes", text: "Understanding Duty Relief Schemes" },
+  { href: "/temporary-admission-explained", text: "Temporary Admission Explained" },
+  { href: "/ata-carnet-step-by-step", text: "ATA Carnet Step-by-Step" },
+  { href: "/how-to-speed-up-customs-clearance", text: "How to Speed Up Customs Clearance" },
+  { href: "/what-importers-must-know-in-2026", text: "What Importers Must Know in 2026" },
+  { href: "/how-to-reduce-duty-costs-legally", text: "How to Reduce Duty Costs Legally" },
+  { href: "/e-commerce-importing-guide", text: "E-commerce Importing Guide" },
+  { href: "/amazon-fba-import-guide", text: "Amazon FBA Import Guide" },
+  { href: "/uk-border-changes-explained", text: "UK Border Changes Explained" },
+  ];
 const PageMeta = {
     title: `${post.seo.title ? post.seo.title : post.title}`,
     description: post.seo.metaDesc ? post.seo.metaDesc : post.title,
@@ -66,7 +84,7 @@ return (
                     </div>
                     <div className="col-span-12 border rounded shadow-sm max-h-max lg:col-span-4 md:col-span-12">
                     <div className="pt-[5px] px-3">
-                        <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Important Links</h2>
+                        <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Knowledge Hub</h2>
                       </div>
                       <div className="flex flex-col gap-3">
                          {links.map((link, index) => (
