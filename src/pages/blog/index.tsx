@@ -28,7 +28,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
 
       <Layout preview={preview}>
         <Heroservice
-          title="Blog"
+          title="Knowledge Hub"
           desc="Global Custom Clearance Ltd."
           backgroundImage="/images/service-bg.jpg"
         />

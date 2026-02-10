@@ -57,8 +57,15 @@ export default function Navigation() {
             </ul>
         </li>
         
-        <li className="group relative"><NavLink href="/blog" name="Airports" /></li>      
-        <li className="group relative"><NavLink href="/blog" name="Knowledge Hub" /></li>      
+        <li className="group relative"><NavLink href="/#" name="Airports" /></li>     
+       
+        <li className="group relative">
+        <NavLink href="/blog" name="Knowledge Hub" />
+        <ul className="sub-menu">
+            <li><NavSubLink href="/hs-code-guides" name="HS Code Guides" /></li>            
+        </ul>
+        </li>     
+
         <li className="group relative">
         <NavLink href="#" name="About" />
         <ul className="sub-menu">
