@@ -32,45 +32,45 @@ export default function Airports({ preview }) {
   const expectations = [
     {
       icon: Zap,
-      title: "Speed & Efficiency ",
+      title: "Speed Without Compromise",
       text:
-        "Quick declarations and proactive communication.",
+        "Built for express and overnight throughput.",
     },
     {
       icon: CheckCircle,
-      title: "Zero Hassle",
-      text: "We handle documentation, declarations, compliance, and communication.",
+      title: "End‑to‑End Handling",
+      text: "Declarations, documentation, handler communication, compliance.",
     },
     {
       icon: Eye,
       title: "Transparent Pricing",
       text:
-        "Clear fees with no surprises.",
+        "No unexpected add‑ons.",
     },
     {
       icon: Shield,
-      title: "Dedicated Support",
+      title: "Dedicated 24/7 Support",
       text:
-        "24/7 readiness as soon as your cargo lands.",
+        "Real customs experts on call.",
     },
   ];
 
   
   const heathrowFaq = [
     {
-      question: "How fast can you clear goods at Gatwick?",
-      answer: "Most shipments are cleared quickly once documents are submitted",
+      question: "How fast can you clear goods at Stansted?",
+      answer: "Very quickly, especially for express and overnight cargo",
     },
     {
-      question: "Do you operate 24/7 at LGW?",
+      question: "Do you support 24/7 at STN?",
       answer: "Yes.",
     },
     {
-      question: "Do you handle T1 documents?",
+      question: "Do you manage T1 documents from Stansted?",
       answer: "Yes.",
     },
     {
-      question: "Can you handle e‑commerce and parcel shipments?",
+      question: "Can you handle high‑volume e‑commerce shipments?",
       answer: "Absolutely.",
     },
   ];
@@ -244,19 +244,19 @@ export default function Airports({ preview }) {
       {/* Specialist Services */}
       <section className="py-20 bg-slate-50" id="specialist">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Cargo Types We Specialise In</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Cargo Types We Specialise In at Stansted</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-gray-900">E‑Commerce & Fulfilment</h4>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Express Parcels & E‑Commerce</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-gray-900">Pharmaceutical & Temperature‑Controlled</h4>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Pharma & Temperature‑Sensitive</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-gray-900">Automotive & Aerospace</h4>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Automotive & Aerospace Components</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-gray-900">Consumer Goods & General Cargo</h4>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">High‑Value & Security‑Sensitive Goods</h4>
             </div>
           </div>
         </div>
