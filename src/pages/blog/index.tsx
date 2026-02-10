@@ -8,13 +8,37 @@ import PageHead from "@/components/ui/PageHead";
 import PostPreview from "@/components/blog/PostPreview";
 import { Search, LayoutGrid, List } from "lucide-react";
 
+/* =======================
+   TYPES
+======================= */
+
+interface PostNode {
+  title: string;
+  excerpt: string;
+  slug: string;
+  date: string;
+  featuredImage: any;
+}
+
+interface PostEdge {
+  node: PostNode;
+}
+
+interface AllPosts {
+  edges: PostEdge[];
+}
+
 interface IndexProps {
-  allPosts: any;
+  allPosts: AllPosts;
   preview: boolean;
 }
 
+/* =======================
+   COMPONENT
+======================= */
+
 const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
-  const posts = allPosts?.edges || [];
+  const posts: PostEdge[] = allPosts?.edges ?? [];
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [search, setSearch] = useState("");
 
@@ -118,11 +142,18 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
   );
 };
 
+/* =======================
+   DATA
+======================= */
+
 export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
   const allPosts = await getAllPostsForHome(preview);
 
   return {
-    props: { allPosts, preview },
+    props: {
+      allPosts,
+      preview,
+    },
     revalidate: 10,
   };
 };

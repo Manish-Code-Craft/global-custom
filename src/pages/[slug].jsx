@@ -60,7 +60,7 @@ return (
     <PostTitle>Loading…</PostTitle>
     ) : (
     <>
-    <div className="bg-white section">
+    <div className="bg-white section relative">
         <article>
             <Container>
                 <div className="grid grid-cols-12 gap-12 ">
@@ -82,21 +82,23 @@ return (
                             }
                         </footer>
                     </div>
-                    <div className="col-span-12 border rounded shadow-sm max-h-max lg:col-span-4 md:col-span-12">
-                    <div className="pt-[5px] px-3">
-                        <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Knowledge Hub</h2>
-                      </div>
-                      <div className="flex flex-col gap-3">
-                         {links.map((link, index) => (
-                          <Link
-                              key={index}
-                              href={link.href}
-                              className="py-[5px] px-3 border-b hover:translate-x-2 hover:text-[#3daee0] text-[18px] transition-transform duration-300 ease-in-out"
-                              >
-                              {link.text}
-                          </Link>
-                      ))}
-                      </div>
+                    <div className="col-span-12 lg:col-span-4 shadow-md  sticky top-24 h-fit border border-[#3daee0] p-4 "> 
+                        <div className="border  shadow-lg">
+                        <div className="pt-[5px] px-3">
+                            <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Knowledge Hub</h2>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            {links.map((link, index) => (
+                            <Link
+                                key={index}
+                                href={link.href}
+                                className="py-[5px] px-3 border-b text-sm hover:translate-x-2 hover:text-[#3daee0] text-[18px] transition-transform duration-300 ease-in-out"
+                                >
+                                {link.text}
+                            </Link>
+                        ))}
+                        </div>
+                        </div>
                     </div>
                 </div>
             </Container>
