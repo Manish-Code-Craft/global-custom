@@ -23,9 +23,9 @@ import SiteCta from "@/components/ui/SiteCta"
 
 export default function Airports({ preview }) {
   const PageMeta = {
-    title: "Customs Clearance Chatham | Medway Customs Brokers",
-    description: "Expert Customs Clearance in Chatham and Chatham Maritime. Fast, compliant import & export declarations for businesses near the M2 and Kent ports. Call now!",
-    keywords: "Customs Clearance Chatham, Chatham Maritime Customs, Medway Port Services, Import Export Chatham, Kent Customs Broker, CDS Declarations Medway",
+    title: "Customs Clearance at London Gatwick Airport (LGW) | Fast, Compliant Air Freight Solutions",
+    description: "Specialist customs clearance services at London Gatwick Airport. Fast, accurate, and compliant solutions for imports, exports, e‑commerce, and time‑critical air freight. 24/7 support to keep your cargo moving smoothly through LGW.",
+    keywords: "Gatwick customs clearance, LGW air freight customs, import clearance Gatwick, export clearance LGW, e‑commerce customs Gatwick, time‑critical air freight LGW, 24/7 customs support Gatwick, HMRC compliant declarations LGW",
   };
 
   
