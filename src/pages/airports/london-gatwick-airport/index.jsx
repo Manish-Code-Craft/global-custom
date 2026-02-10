@@ -32,46 +32,46 @@ export default function Airports({ preview }) {
   const expectations = [
     {
       icon: Zap,
-      title: "Speed",
+      title: "Speed & Efficiency ",
       text:
-        "Bespoke processes designed specifically around Heathrow air cargo environment.",
+        "Quick declarations and proactive communication.",
     },
     {
       icon: CheckCircle,
-      title: "Accuracy",
-      text: "Every declaration is submitted correctly — first time.",
+      title: "Zero Hassle",
+      text: "We handle documentation, declarations, compliance, and communication.",
     },
     {
       icon: Eye,
-      title: "Transparency",
+      title: "Transparent Pricing",
       text:
-        "Clear pricing, upfront communication, and no hidden charges.",
+        "Clear fees with no surprises.",
     },
     {
       icon: Shield,
-      title: "Reliability",
+      title: "Dedicated Support",
       text:
-        "A dedicated team available whenever your cargo lands, day or night.",
+        "24/7 readiness as soon as your cargo lands.",
     },
   ];
 
   
   const heathrowFaq = [
     {
-      question: "How fast can you clear goods at Heathrow?",
-      answer: "Clearances are processed rapidly once documents are received. We support urgent and time‑critical shipments 24/7.",
+      question: "How fast can you clear goods at Gatwick?",
+      answer: "Most shipments are cleared quickly once documents are submitted",
     },
     {
-      question: "Can you handle AOGshipments?",
-      answer: "Yes — AOG is one of our core competencies with priority handling.",
+      question: "Do you operate 24/7 at LGW?",
+      answer: "Yes.",
     },
     {
-      question: "Do you process CDS declarations?",
-      answer: "Absolutely — all import and export declarations are fully CDS‑compliant.",
+      question: "Do you handle T1 documents?",
+      answer: "Yes.",
     },
     {
-      question: "Can you assist with T1 documents?",
-      answer: "Yes, we issue and manage T1s for onward movement.",
+      question: "Can you handle e‑commerce and parcel shipments?",
+      answer: "Absolutely.",
     },
   ];
 
@@ -150,7 +150,7 @@ export default function Airports({ preview }) {
       {/* Import & Export Sections */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export Customs Clearance at LHR</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Import & Export Clearance at LGW</h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Import */}
             <div className="bg-slate-50 p-8 rounded-2xl">
@@ -161,11 +161,11 @@ export default function Airports({ preview }) {
                 <h3 className="text-2xl font-bold">Import Clearance (Air Freight)</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-2">• Air import declarations (CDS)</li>
+                <li className="flex items-start gap-2">• CDS import declarations</li>
                 <li className="flex items-start gap-2">• Duty & VAT calculations</li>
-                <li className="flex items-start gap-2">• Specialized handling for high‑value and restricted goods</li>
-                <li className="flex items-start gap-2">• Handling of certificates, licences, and compliance documentation</li>
-                <li className="flex items-start gap-2">• Real‑time updates from arrival to release</li>
+                <li className="flex items-start gap-2">• Restricted/sensitive cargo handling</li>
+                <li className="flex items-start gap-2">• Full documentation checks</li>
+                <li className="flex items-start gap-2">• Real‑time progress updates</li>
               </ul>
             </div>
 
@@ -175,13 +175,14 @@ export default function Airports({ preview }) {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Plane className="text-[#0ea5e9] w-6 h-6 transform -rotate-45" />
                 </div>
-                <h3 className="text-2xl font-bold">Export Clearance (Air Freight)</h3>
+                <h3 className="text-2xl font-bold">Export Clearance</h3>
               </div>
               <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-2">• Export declarations</li>
+                <li className="flex items-start gap-2">• CDS export declarations</li>
+                <li className="flex items-start gap-2">• Airline‑ready documentation</li>
                 <li className="flex items-start gap-2">• ATA Carnet handling</li>
-                <li className="flex items-start gap-2">• Ensuring goods are cleared before airline deadlines</li>
-                <li className="flex items-start gap-2">• Digital paperwork to prevent delays</li>
+                <li className="flex items-start gap-2">• Seamless processing to meet departure deadlines</li>
+                <li className="flex items-start gap-2">• Secure handling for controlled goods</li>
               </ul>
             </div>
           </div>
@@ -198,9 +199,10 @@ export default function Airports({ preview }) {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4">AOG / Time‑Critical Shipments</h2>
+              <h2 className="text-3xl font-bold mb-4">Urgent, Time‑Critical & AOG Supports</h2>
               <p className="text-blue-100 mb-6 leading-relaxed">
-                Aircraft‑on‑Ground (AOG) cargo requires immediate action to avoid operational disruption. We provide: priority handling, instant declarations for rapid release, 24/7 communication, and direct coordination with handling agents.
+              Priority customs handling, immediate responses for urgent clearances, direct coordination with handlers, and 24/7 availability for AOG cargo.
+
               </p>
             </div>
           </div>
@@ -210,14 +212,14 @@ export default function Airports({ preview }) {
       {/* Transit & ETSF */}
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-10 text-center">Transit, T1 & ETSF Services</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-bold mb-10 text-center">T1 Transit, ETSF & Bonded Services</h2>
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <FileCheck className="text-[#0ea5e9]" /> T1 Transit Documents
               </h3>
               <p className="text-slate-600">
-                We create and manage T1 documents for goods moving under transit to other airports, warehouses, or border points.
+              For onward movement to other airports, warehouses, or EU destinations.
               </p>
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
@@ -225,7 +227,16 @@ export default function Airports({ preview }) {
                 <Box className="text-[#0ea5e9]" /> ETSF Support
               </h3>
               <p className="text-slate-600">
-                If your cargo is held at an External Temporary Storage Facility (ETSF), we work directly with warehouse operators to release it smoothly.
+              Coordination with ETSFs around Gatwick for fast release
+              </p>
+            </div>
+            <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Box className="text-[#0ea5e9]" /> Bonded Processes
+              </h3>
+              <p className="text-slate-600">
+              Support for customs‑controlled storage and deferred declarations.
+
               </p>
             </div>
           </div>
@@ -235,23 +246,19 @@ export default function Airports({ preview }) {
       {/* Specialist Services */}
       <section className="py-20 bg-slate-50" id="specialist">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
-          <h2 className="text-3xl font-bold mb-12 text-center">Specialist Services for Heathrow Cargo</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Cargo Types We Specialise In</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Pharmaceutical & Cold‑Chain Cargo</h4>
-              <p className="text-sm text-slate-600">Temperature‑sensitive shipments cleared urgently to protect integrity.</p>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">E‑Commerce & Fulfilment</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">E‑Commerce & Consolidated Shipments</h4>
-              <p className="text-sm text-slate-600">Speed‑focused processes for parcels, fulfilment centres, and consolidators.</p>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Pharmaceutical & Temperature‑Controlled</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">Automotive & Aerospace Parts</h4>
-              <p className="text-sm text-slate-600">Expert HS‑code classification and rapid release for just‑in‑time supply chains.</p>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Automotive & Aerospace</h4>
             </div>
             <div className="bg-white p-6 rounded-xl border-b-4 border-[#0ea5e9] shadow-sm">
-              <h4 className="text-lg font-bold mb-3 text-[#0ea5e9]">High‑Value Goods</h4>
-              <p className="text-sm text-slate-600">Secure handling, full documentation checks, and compliant clearance.</p>
+              <h4 className="text-lg font-bold mb-3 text-gray-900">Consumer Goods & General Cargo</h4>
             </div>
           </div>
         </div>
