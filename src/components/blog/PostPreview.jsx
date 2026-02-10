@@ -25,14 +25,14 @@ export default function PostPreview({
 
   return (
     <div className="blogs-div">
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <CoverImage title={title} coverImage={coverImage || fallbackImage} slug={slug} />
-      </div>
+      </div> */}
 
       <h3 className="text-[20px] font-semibold mb-3 letter-space">
         <Link
           href={`/${slug || "#"}`}
-          className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 
+          className="relative text-2xl after:content-[''] after:absolute after:left-0 after:bottom-0 
                      after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 
                      hover:after:w-full"
         >
@@ -52,7 +52,7 @@ export default function PostPreview({
 
       {/* <Avatar author={author} /> */}
 
-      <Link href={`/${slug || "#"}`} className="flex items-center gap-2 pt-2 border-t  font-bold text-[#3daee0]">Read more</Link>
+      {/* <Link href={`/${slug || "#"}`} className="flex items-center gap-2 pt-2 border-t  font-bold text-[#3daee0]">Read more</Link> */}
     </div>
   );
 }
