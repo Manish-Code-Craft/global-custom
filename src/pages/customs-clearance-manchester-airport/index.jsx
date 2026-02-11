@@ -80,13 +80,13 @@ export default function Airports({ preview }) {
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
-        <div>
+        <div className="pt-[80px]">
           <Heroservice
-            title="CUSTOMS CLEARANCE – MANCHESTER AIRPORT (MAN)"
+            title="Customs Clearance Manchester Airport (MAN)"
             desc={[
               "Fast • Accurate • 24/7 Air Cargo Customs Support Across the North",
             ]}
-            backgroundImage="/images/service-bg.jpg"
+            backgroundImage="/images/airports-banner.webp"
           />
         </div>
 

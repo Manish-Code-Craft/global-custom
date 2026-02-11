@@ -27,8 +27,7 @@ export default function Navigation() {
             </ul>
         </li>
 
-        <li className="group relative">
-        <NavLink href="#" name="Industries" />
+        <li className="group relative"><NavLink href="#" name="Industries" />
         <ul className="sub-menu">
             <li><NavSubLink href="/industries/ecommerce" name="E-commerce" /></li>
             <li><NavSubLink href="/industries/automotive" name="Automotive" /></li>
@@ -69,8 +68,7 @@ export default function Navigation() {
             </ul>
         </li>
        
-        <li className="group relative">
-        <NavLink href="/blog" name="Knowledge Hub" />
+        <li className="group relative"><NavLink href="/blog" name="Knowledge Hub" />
         <ul className="sub-menu">
             <li><NavSubLink href="/hs-code-guides" name="HS Code Guides" /></li>
             <li><NavSubLink href="/duty-relief-guides" name="Duty Relief Guides" /></li>
@@ -96,8 +94,7 @@ export default function Navigation() {
         </li>
     
 
-        <li className="group relative">
-        <NavLink href="#" name="About" />
+        <li className="group relative"><NavLink href="#" name="About" />
         <ul className="sub-menu">
             <li><NavSubLink href="/testimonials" name="Testimonials" /></li>           
         </ul>

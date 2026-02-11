@@ -5,7 +5,7 @@ export default function Heroservice({ title, desc, backgroundImage }) {
   const paragraphs = Array.isArray(desc) ? desc : [desc];
 
   return (
-    <div className="relative z-30 text-white pt-20 lg:pt-40 pb-20 lg:pb-40 bg-black">
+    <div className="relative z-30 text-white py-20 lg:py-40 bg-black">
       
       <div
         className="banner-image absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50"
