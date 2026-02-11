@@ -78,7 +78,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
         {/* TOOLBAR */}
         {/* <div className="max-w-[800px] m-auto"> */}
         <Container ContainerClass="">
-          <div className="mt-[80px] mb-12 max-w-6xl mx-auto">
+          <div className="mt-[80px] mb-12 max-w-[1000px] mx-auto">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b pb-8">
               {/* Search */}
               <div className="relative w-full md:max-w-md">
@@ -120,7 +120,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
 
           {/* POSTS */}
           <div
-            className={`max-w-6xl mx-auto ${
+            className={`max-w-[1000px] mx-auto ${
               viewMode === "grid"
                 ? "grid gap-8 md:grid-cols-2 lg:grid-cols-3"
                 : "flex flex-col gap-6"
