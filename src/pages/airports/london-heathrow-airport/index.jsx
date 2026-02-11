@@ -14,7 +14,7 @@ import {
   FileCheck, 
   Activity,
   Box,
-  Zap,
+  Zap, 
   CheckCircle, Eye, Shield
 } from 'lucide-react';
 import Testimonials from "@/components/ui/Testimonials"
