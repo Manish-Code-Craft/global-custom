@@ -59,13 +59,13 @@ export default function Navigation() {
 
         <li className="group relative"><NavLink href="#" name="Airports" />
             <ul className="sub-menu">
-                <li><NavSubLink href="/airports/london-heathrow-airport" name="London Heathrow Airport (LHR)" /></li>                          
-                <li><NavSubLink href="/airports/london-gatwick-airport" name="LONDON GATWICK AIRPORT (LGW)" /></li>                          
-                <li><NavSubLink href="/airports/london-stansted-airport" name="LONDON STANSTED AIRPORT (STN)" /></li>                          
-                <li><NavSubLink href="/airports/birmingham-airport" name="BIRMINGHAM AIRPORT (BHX)" /></li>                          
-                <li><NavSubLink href="/airports/manchester-airport" name="MANCHESTER AIRPORT (MAN)" /></li>                          
-                <li><NavSubLink href="/airports/east-midlands-airport" name="EAST MIDLANDS AIRPORT (EMA)" /></li>                          
-                <li><NavSubLink href="/airports/liverpool-john-lennon-airport" name="LIVERPOOL JOHN LENNON AIRPORT (LPL)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-london-heathrow-airport" name="London Heathrow Airport (LHR)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-london-gatwick-airport" name="LONDON GATWICK AIRPORT (LGW)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-london-stansted-airport" name="LONDON STANSTED AIRPORT (STN)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-birmingham-airport" name="BIRMINGHAM AIRPORT (BHX)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-manchester-airport" name="MANCHESTER AIRPORT (MAN)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-east-midlands-airport" name="EAST MIDLANDS AIRPORT (EMA)" /></li>                          
+                <li><NavSubLink href="/customs-clearance-liverpool-john-lennon-airport" name="LIVERPOOL JOHN LENNON AIRPORT (LPL)" /></li>                          
             </ul>
         </li>
        
