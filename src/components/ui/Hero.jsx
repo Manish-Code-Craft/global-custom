@@ -14,20 +14,14 @@ export default function Hero() {
           <Container>
             <div className='lg:flex items-center'>
               <div className='text-column lg:w-[60%]'>
-                <h1 className="mobile-head leading-relaxed tracking-wider law-hero__content-title font-bold animate-float" data-aos="fade-up" data-aos-duration="2000">Say Goodbye to...<br/><span className='text-[#3daee0]'>CDS Complications</span></h1>
+                <h1 className="mobile-head leading-relaxed tracking-wider law-hero__content-title font-bold animate-float" data-aos="fade-up" data-aos-duration="2000">Fast, Reliable UK Customs Clearance <br/><span className='text-[#3daee0]'>Specialists Based in Kent</span></h1>
                 <div className=''>
-                  <div className='flex items-center mb-4'>
+                  <div className='flex items-center mt-4'>
                     <div className='icons-check'><FaCheckDouble /></div>
-                    <div className='text-[17px] ml-4 normal-case text-banner'>Your Import & Export declarations are in safe hands</div>
+                    <div className='text-[17px] ml-4 normal-case text-banner'>24/7 customs support for importers, exporters, freight forwarders and e-commerce
+                    businesses.</div>
                   </div>
-                  <div className='flex items-center mb-4'>
-                    <div className='icons_check'><FaCheckDouble /></div>
-                    <div className='text-[17px] ml-4 normal-case leading-6 text-banner'>We are more than platforms. We are the leading custom brokers to ensure all your import and export declarations are compliant with HMRC.</div>
-                  </div>
-                  <div className='flex items-center capitalize'>
-                    <div className='icons-check'><FaCheckDouble /></div>
-                    <div className='text-[17px] ml-4 text-banner normal-case'>Our experienced team can offer 24-hour service to ensure your Customs duty clearance is not delayed.</div>
-                  </div>
+                  
                 </div>
               </div>
               <div className='button-banner flex flex-col  items-end	 lg:w-[40%]'>

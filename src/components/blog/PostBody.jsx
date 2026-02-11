@@ -6,20 +6,23 @@ const PostContent = styled.div`
     margin-top:20px;
 
         @media (min-width:1100px) {
-            font-size:20px;
-            gap:40px;
+            font-size:18px;
+            gap:20px;
             
             h2 {
-                margin-top:60px;
+            font-size:22px;
+                margin-top:20px;
             }
         }
         h3 {
+            font-size:20px;
             color:var(--blue-color);
         }
         ul {
             display: flex;
             flex-direction: column;
-            gap:40px;
+            gap:10px;
+            font-size:18px;
         }
         ul li {
             list-style: none;
@@ -33,6 +36,7 @@ const PostContent = styled.div`
                 left: 0;
                 top: 3px;
             }
+        
         }
     .wp-block-image {
         background: #f5f9ff;

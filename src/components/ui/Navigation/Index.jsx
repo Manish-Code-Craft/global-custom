@@ -94,7 +94,7 @@ export default function Navigation() {
         </li>
     
 
-        <li className="group relative"><NavLink href="#" name="About" />
+        <li className="group relative"><NavLink href="/about-us" name="About" />
         <ul className="sub-menu">
             <li><NavSubLink href="/testimonials" name="Testimonials" /></li>           
         </ul>
