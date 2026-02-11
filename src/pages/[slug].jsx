@@ -64,7 +64,7 @@ return (
         <article>
             <Container>
                 <div className="grid grid-cols-12 gap-12 ">
-                    <div className="p-5 shadow-lg lg:col-span-8 md:col-span-12 col-span-12">
+                    <div className=" lg:col-span-8 md:col-span-12 col-span-12">
                         <PostHeader
                             title={post.title}
                             coverImage={post.featuredImage}
@@ -82,24 +82,23 @@ return (
                             }
                         </footer>
                     </div>
-                    <div className="col-span-12 lg:col-span-4 shadow-md   h-fit border border-[#3daee0] p-4 "> 
-                        <div className="border  shadow-lg">
-                        <div className="pt-[5px] px-3">
-                            <h2 className="pb-3 font-[800] text-[42px] mb-6 border-[#3daee0] border-b-4">Knowledge Hub</h2>
+                    
+                    <div className="col-span-12 lg:col-span-4 h-fit border shadow-lg pb-6 px-4">
+                        <div className="pt-2 ">
+                            <h2 className="pb-1 font-[800] text-[24px] mb-2 border-[#3daee0] border-b-4">Knowledge Hub</h2>
                         </div>
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-1">
                             {links.map((link, index) => (
                             <Link
                                 key={index}
                                 href={link.href}
-                                className="py-[5px] px-3 border-b text-sm hover:translate-x-2 hover:text-[#3daee0] text-[18px] transition-transform duration-300 ease-in-out"
+                                className="py-[5px]  border-b text-sm hover:translate-x-2 hover:text-[#3daee0] text-[18px] transition-transform duration-300 ease-in-out"
                                 >
                                 {link.text}
                             </Link>
                         ))}
                         </div>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
             </Container>
         </article>

@@ -9,6 +9,8 @@ export default function PostPreview({
   excerpt,
   slug,
   viewMode = "grid",
+  isSticky = false,
+  
 }) {
   const fallbackImage = "/images/amar-web-designer-post-sm.webp";
   const isList = viewMode === "list";
