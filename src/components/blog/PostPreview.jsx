@@ -22,42 +22,45 @@ export default function PostPreview({
 
   return (
     <article
-      className={`blogs-div bg-white border border-gray-100 rounded-2xl transition-all hover:shadow-md ${
-        isList ? "flex gap-6 p-6" : ""
-      }`}
-    >
-      {/* IMAGE */}
-      <div className={isList ? "w-60 h-40 flex-shrink-0" : "mb-5"}>
-        <CoverImage
-          title={title}
-          coverImage={coverImage || fallbackImage}
-          slug={slug}
-        />
-      </div>
+  className={`transition-all ${
+    isList
+      ? "pb-3 border-b border-gray-200"
+      : "bg-white border border-gray-100 hover:shadow-md"
+  }`}
+>
+            {/* IMAGE */}
+      {!isList && (
+        <div className="">
+          <CoverImage
+            title={title}
+            coverImage={coverImage || fallbackImage}
+            slug={slug}
+          />
+        </div>
+      )}
+
 
       {/* CONTENT */}
-      <div className="flex flex-col">
-        <h3 className="text-[20px] font-semibold mb-3 letter-space">
+      <div className={`flex flex-col ${isList ? "max-w-3xl" : " p-4"}`}>
+        <h3 className="">
           <Link
             href={`/${slug}`}
-            className="relative text-2xl after:content-[''] after:absolute after:left-0 after:bottom-0
-                       after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300
-                       hover:after:w-full"
+            className="text-[16px] font-bold text-[#3daee0]"
           >
             {title}
           </Link>
         </h3>
 
-        <div className="text-[14px] font-bold mb-4 text-[#3daee0]">
+        <div className="text-[12px]">
           <Date dateString={date} />
         </div>
 
-        <div
+        {/* <div
           className="text-lg leading-relaxed text-gray-600"
           dangerouslySetInnerHTML={{
             __html: truncateExcerpt(excerpt),
           }}
-        />
+        /> */}
       </div>
     </article>
   );

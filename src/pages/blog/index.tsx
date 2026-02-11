@@ -18,6 +18,7 @@ interface PostNode {
   slug: string;
   date: string;
   featuredImage: any;
+  isSticky?: boolean;
 }
 
 interface PostEdge {
@@ -39,13 +40,20 @@ interface IndexProps {
 
 const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
   const posts: PostEdge[] = allPosts?.edges ?? [];
-  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [viewMode, setViewMode] = useState<"grid" | "list">("list");
   const [search, setSearch] = useState("");
 
-  const filteredPosts = posts.filter(({ node }) =>
+  const filteredPosts = posts
+  .filter(({ node }) =>
     node.title.toLowerCase().includes(search.toLowerCase()) ||
     node.excerpt.toLowerCase().includes(search.toLowerCase())
-  );
+  )
+  .sort((a, b) => {
+    const aSticky = a.node.isSticky ? 1 : 0;
+    const bSticky = b.node.isSticky ? 1 : 0;
+    return bSticky - aSticky; // Sticky posts first
+  });
+
 
   const PageMeta = {
     title: "Knowledge Hub | Global Custom Clearance Ltd.",
@@ -68,6 +76,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
         />
 
         {/* TOOLBAR */}
+        {/* <div className="max-w-[800px] m-auto"> */}
         <Container ContainerClass="">
           <div className="mt-[80px] mb-12 max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b pb-8">
@@ -86,16 +95,6 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
               {/* View Toggle */}
               <div className="bg-gray-100 p-1 rounded-lg flex">
                 <button
-                  onClick={() => setViewMode("grid")}
-                  className={`p-2 rounded ${
-                    viewMode === "grid"
-                      ? "bg-white shadow text-[#3daee0]"
-                      : "text-gray-400"
-                  }`}
-                >
-                  <LayoutGrid className="h-4 w-4" />
-                </button>
-                <button
                   onClick={() => setViewMode("list")}
                   className={`p-2 rounded ${
                     viewMode === "list"
@@ -104,6 +103,16 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
                   }`}
                 >
                   <List className="h-4 w-4" />
+                </button>
+                <button
+                  onClick={() => setViewMode("grid")}
+                  className={`p-2 rounded ${
+                    viewMode === "grid"
+                      ? "bg-white shadow text-[#3daee0]"
+                      : "text-gray-400"
+                  }`}
+                >
+                  <LayoutGrid className="h-4 w-4" />
                 </button>
               </div>
             </div>
@@ -126,6 +135,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
                 excerpt={node.excerpt}
                 slug={node.slug}
                 viewMode={viewMode}
+                isSticky={node.isSticky}
               />
             ))}
           </div>
@@ -137,6 +147,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
             </div>
           )}
         </Container>
+        {/* </div> */}
       </Layout>
     </>
   );
