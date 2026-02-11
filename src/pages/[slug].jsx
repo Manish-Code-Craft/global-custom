@@ -83,7 +83,7 @@ return (
                         </footer>
                     </div>
                     
-                    <div className="col-span-12 lg:col-span-4 h-fit border shadow-lg pb-6 px-4">
+                    <div className="col-span-12 lg:col-span-4 h-fit border shadow-md pb-6 px-4">
                         <div className="pt-2 ">
                             <h2 className="pb-1 font-[800] text-[24px] mb-2 border-[#3daee0] border-b-4">Knowledge Hub</h2>
                         </div>
