@@ -15,6 +15,7 @@ import {
   Activity,
   Box,
   Zap,
+  Network,
   CheckCircle, Eye, Shield
 } from 'lucide-react';
 import Testimonials from "@/components/ui/Testimonials"
@@ -210,7 +211,7 @@ export default function Airports({ preview }) {
       <section className="py-20 bg-white">
         <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
           <h2 className="text-3xl font-bold mb-10 text-center">Transit, T1, ETSF & Bonded Services</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <FileCheck className="text-[#0ea5e9]" /> T1 Transit Documents
@@ -221,7 +222,15 @@ export default function Airports({ preview }) {
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Box className="text-[#0ea5e9]" /> ETSF Coordination for fast release 
+                <Box className="text-[#0ea5e9]" /> ETSF Support
+              </h3>
+              <p className="text-slate-600">
+                ETSF Coordination for fast release
+              </p>
+            </div>
+             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Network className="text-[#0ea5e9]" /> Bonded Processes
               </h3>
               <p className="text-slate-600">
                 Bonded warehousing support for deferred declarations and high‑value storage.

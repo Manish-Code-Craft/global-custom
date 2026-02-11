@@ -15,6 +15,7 @@ import {
   Activity,
   Box,
   Zap,
+  Network,
   CheckCircle, Eye, Shield
 } from 'lucide-react';
 import Testimonials from "@/components/ui/Testimonials"
@@ -232,7 +233,7 @@ export default function Airports({ preview }) {
             </div>
             <div className="border border-slate-200 p-8 rounded-xl hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Box className="text-[#0ea5e9]" /> Bonded Processes
+                <Network className="text-[#0ea5e9]" /> Bonded Processes
               </h3>
               <p className="text-slate-600">
               Support for customs‑controlled storage and deferred declarations.
