@@ -98,8 +98,7 @@ const Hero = () => {
           loop 
           muted 
           playsInline
-          className="w-full h-full object-cover opacity-80"
-        >
+          className="w-full h-full object-cover opacity-80"        >
           <source src="https://www.globalcust.co.uk/videos/banner-main.mp4" type="video/mp4" />
         </video>
       </div>
