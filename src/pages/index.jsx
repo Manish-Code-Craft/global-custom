@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import Link from "next/link";
 import PortSection from "@/components/ui/New/PortSection";
+import SiteButton from "@/components/ui/Btns/SiteButton";
 
 // --- Data ---
 
@@ -209,17 +210,8 @@ const HeroSection = () => {
             24/7 customs support for importers, exporters, freight forwarders, and e-commerce businesses. Speed and compliance guaranteed.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5">
-            <Link href="/contact" className="group relative px-8 py-4 bg-[#049fe1] text-white rounded-full font-bold text-lg shadow-[0_0_40px_-10px_rgba(4,159,225,0.5)] overflow-hidden transition-all duration-300 hover:shadow-[0_0_60px_-15px_rgba(4,159,225,0.6)] hover:-translate-y-1">
-              <span className="relative z-10 flex items-center gap-2">
-                Contact Us Today <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-            </Link>
-            
-            {/* <Link href="tel:+7653483432" className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-            +44 1634 565540
-            </Link> */}
+          <div className="flex flex-col sm:flex-row gap-5">           
+            <SiteButton href="/contact" label=" Contact Us Today"/> 
           </div>
         </div>
 
@@ -597,13 +589,9 @@ const CTASection = () => {
           Experience the fastest, most reliable customs clearance service in the UK. Get a quote in minutes, not days.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <Link href="/contact" className="px-10 py-5 bg-[#049fe1] text-white rounded-full font-bold text-xl shadow-[0_10px_30px_-10px_rgba(4,159,225,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(4,159,225,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
-            Get Your Quote <ArrowRight size={24} />
-          </Link>
-          <Link href="tel:+441634565540" className="px-10 py-5 bg-white border-2 border-[#049fe1] text-slate-700 rounded-full font-bold text-xl hover:border-[#049fe1] hover:text-[#049fe1] transition-all duration-300">
-            Talk to an Expert
-          </Link>
+        <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">         
+          <SiteButton href="/contact" label="Get Your Quote"/>
+          <SiteButton href="tel:+441634565540" label="Talk to an Expert" variant="outline"/>
         </div>
         
         <p className="mt-8 text-sm text-slate-400 font-medium flex items-center justify-center gap-2">

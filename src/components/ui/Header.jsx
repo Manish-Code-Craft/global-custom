@@ -12,6 +12,8 @@ import SidebarNav from "@/components/ui/Navigation/SidebarNav";
 import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SiteButton from "./Btns/SiteButton";
+import { MessagesSquare } from "lucide-react";
 export default function Header() {
     useEffect(() => {
         AOS.init();
@@ -33,7 +35,8 @@ export default function Header() {
                 </div>
                 <div className="ml-0 md:flex items-center gap-5">
                     <div className="hidden xl:flex">
-                    <BtnContact link="/contact" title="Get a Free Estimate" btnclass='contact-header'/>
+                    <SiteButton href="/contact" label="Get a Free Estimate" icon={null}/>   
+                    {/* <BtnContact link="/contact" title="Get a Free Estimate" btnclass='contact-header'/> */}
                     </div>
                     <div className="ml-0 xl:hidden">
                         <div className="mobile-nav-btn"><span></span><span></span></div>
