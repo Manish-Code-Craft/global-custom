@@ -384,18 +384,18 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          {/* Main Slider Container */}
-          <div className="relative min-h-[300px] md:min-h-[250px] flex items-center justify-center">
+          {/* Main Slider Container - Changed to grid to prevent overflowing tall content */}
+          <div className="grid items-center">
              {testimonials.map((testimonial, index) => {
                const isActive = index === currentIndex;
                return (
                  <div 
                     key={index}
-                    className={`absolute inset-0 transition-all duration-700 ease-in-out transform
-                      ${isActive ? 'opacity-100 translate-x-0 z-20' : 'opacity-0 translate-x-12 z-0'}
+                    className={`col-start-1 row-start-1 transition-all duration-700 ease-in-out transform
+                      ${isActive ? 'opacity-100 translate-x-0 z-20 pointer-events-auto' : 'opacity-0 translate-x-12 z-0 pointer-events-none'}
                     `}
                  >
-                   <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 text-center relative">
+                   <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 text-center relative h-full">
                       {/* Quote Icon */}
                       <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#049fe1] rounded-full flex items-center justify-center text-white shadow-lg ring-4 ring-slate-50">
                         <Quote size={20} fill="currentColor" />
