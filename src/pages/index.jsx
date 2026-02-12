@@ -78,23 +78,35 @@ const features = [
 
 const testimonials = [
   {
-    name: "James Anderson",
-    role: "Logistics Manager, TechImports Ltd",
-    content: "Global Customs has transformed our supply chain. Their speed on CDS declarations is unmatched, and the 24/7 support means we never worry about weekend arrivals.",
+    name: "Daniel Osborn",
+    role: "Happy Customer",
+    content: "It’s great it cleared everything quickly great company",
     rating: 5
   },
   {
-    name: "Sarah Jenkins",
-    role: "Director, FreshFoods UK",
-    content: "Dealing with perishable goods requires absolute precision. The team in Kent handles our clearances flawlessly. Highly recommended for anyone needing reliability.",
+    name: "Andy Barber",
+    role: "Happy Customer",
+    content: "Excellent service from Start to Finish, we was stuck at Customs in France from having the incorrect paperwork from Italy,We phoned Global Customs,,with there knowledge and professionalism they was able to assist us with getting the correct paperwork and we was able to continue our journey 👍👍",
     rating: 5
   },
   {
-    name: "Michael Chen",
-    role: "Operations Head, Global Trade Co",
-    content: "The transition to CDS was a nightmare until we switched to Global Customs. Their expertise saved us thousands in potential delays and duty overpayments.",
+    name: "Gavin Osborn",
+    role: "Happy Customer",
+    content: "Friendly and professional service.",
     rating: 5
-  }
+  },
+  {
+    name: "Amit Patel",
+    role: "Happy Customer",
+    content: "Service with Excellence.",
+    rating: 5
+  },
+  {
+    name: "Tajinder Singh",
+    role: "Happy Customer",
+    content: "Professional and reliable.",
+    rating: 5
+  },
 ];
 
 const faqs = [
