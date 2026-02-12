@@ -11,17 +11,17 @@ const ports = [
   {
     link:"/customs-clearance-southampton",
     name: "Southampton",
-    image: "/images/sea-custom.png",
+    image: "/images/port2.png",
   },
   {
     link:"/customs-clearance-dover",
     name: "Dover",
-    image: "/images/sea-custom.png",
+    image: "/images/port3.png",
   },
   {
     link:"/customs-clearance-london-gateway",
     name: "London Gateway",
-    image: "/images/sea-custom.png",
+    image: "/images/port4.png",
   },
 ];
 

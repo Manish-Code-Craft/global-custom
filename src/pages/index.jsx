@@ -510,7 +510,7 @@ const FAQSection = () => {
     <section className="py-24 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header - Centered */}
+        {/* Header */}
         <div className="text-center mb-16">
           <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">
             FAQ
@@ -578,9 +578,10 @@ const FAQSection = () => {
                     }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="pb-6 px-6 pt-0 text-slate-500 leading-relaxed font-medium">
-                      {faq.answer}
-                    </p>
+                    <div
+                      className="pb-6 px-6 pt-0 text-slate-500 leading-relaxed font-medium"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
                   </div>
                 </div>
               </div>
@@ -592,6 +593,7 @@ const FAQSection = () => {
     </section>
   );
 };
+
 
 const CTASection = () => {
   return (
