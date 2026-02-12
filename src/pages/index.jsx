@@ -19,9 +19,7 @@ import {
   Clock,
 } from 'lucide-react';
 import Link from "next/link";
-import WhyUsSection from "@/components/ui/New/WhyUsSection";
 import PortSection from "@/components/ui/New/PortSection";
-import Faq from "@/components/ui/Faq/Faq";
 
 // --- Data ---
 
