@@ -1,5 +1,6 @@
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
+import Hero from "@/components/ui/Hero";
 import React, { useState, useEffect } from 'react';
 import { 
   Ship, 
@@ -18,6 +19,7 @@ import {
 import Link from "next/link";
 import WhyUsSection from "@/components/ui/New/WhyUsSection";
 import PortSection from "@/components/ui/New/PortSection";
+import Faq from "@/components/ui/Faq/Faq";
 
 // --- Data ---
 
@@ -95,7 +97,7 @@ const testimonials = [
   }
 ];
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-slate-900">
       {/* Background Video */}
@@ -183,13 +185,13 @@ const ServicesSection = () => {
   return (
     <section className="py-32 bg-slate-50/50 relative">
       <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div className="max-w-2xl">
+        <div className="text-center mb-16 gap-6">
+          <div className="">
             <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">Our Expertise</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-6 tracking-tight">Comprehensive <br />Customs Solutions</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-6 mb-4 tracking-tight">Comprehensive Customs Solutions</h2>
           </div>
-          <p className="text-slate-500 max-w-md text-lg leading-relaxed">
-            Tailored services ensuring your goods move smoothly across borders with total compliance.
+          <p className="text-slate-500 max-w-[1200px] mx-auto text-lg leading-relaxed">
+          Over the years, we’ve learned that best customs clearance begins and ends with experienced and friendly professionals, which explains our rigorous hiring process. We believe that our team is the best in the business, and have complete and total confidence in every person providing Customs clearance services.
           </p>
         </div>
 
@@ -450,11 +452,13 @@ export default function Home() {
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout>
-    <Hero />
+    <Hero/>
+    {/* <HeroSection /> */}
       <ServicesSection />
       {/* <PortsSection /> */}
       <PortSection/>
       <TestimonialsSection />
+      <Faq/>
       <WhyUsSection/>
       {/* <WhyChooseUs /> */}
       <CTASection />

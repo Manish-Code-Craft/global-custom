@@ -31,13 +31,20 @@ export default function PortSection() {
       <Container>
          {/* Header */}
       <div className=" mb-8 lg:mb-10 ">
-        <div className="flex flex-col md:flex-row md:items-end justify-center text-center gap-6">
+        <div className=" text-center ">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Major UK Ports Covered
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl">
-              Seamless customs clearance across the UK’s busiest ports and logistical hubs.
+            <p className="text-lg text-gray-600 ">
+               We operate across key UK ports to ensure fast and efficient customs clearance for businesses of all sizes. Whether you're importing or exporting, our expertise spans major locations, including &nbsp;  
+                    
+                <a href="/customs-clearance-felixstowe" className="text-[#3daee0] font-semibold">Felixstowe</a>, &nbsp; 
+                <a href="/customs-clearance-southampton" className="text-[#3daee0] font-semibold">Southampton</a>,&nbsp; 
+                <a href="/customs-clearance-dover" className="text-[#3daee0] font-semibold">Dover</a>,&nbsp; and &nbsp;
+                <a href="/customs-clearance-london-gateway" className="text-[#3daee0] font-semibold">London Gateway</a>.  
+                
+                These strategic locations allow us to streamline your shipments, reduce delays, and keep your supply chain moving smoothly. No matter where your goods are, we have you covered!  
             </p>
           </div>
          
