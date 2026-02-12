@@ -15,6 +15,9 @@ import {
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
+import Link from "next/link";
+import WhyUsSection from "@/components/ui/New/WhyUsSection";
+import PortSection from "@/components/ui/New/PortSection";
 
 // --- Data ---
 
@@ -22,32 +25,38 @@ const services = [
   {
     title: "Customs Clearance",
     description: "Seamless clearance for imports and exports across all major UK ports.",
-    icon: <FileText className="w-6 h-6" />
+    icon: <FileText className="w-6 h-6" />,
+    link:"/customs-clearance-uk"
   },
   {
     title: "CDS Declarations",
     description: "Full compliance with the latest Customs Declaration Service (CDS) systems.",
-    icon: <CheckCircle2 className="w-6 h-6" />
+    icon: <CheckCircle2 className="w-6 h-6" />,
+    link:"/cds-declarations"
   },
   {
     title: "T1 Transit",
     description: "Efficient transit documentation for goods moving through the UK.",
-    icon: <Globe className="w-6 h-6" />
+    icon: <Globe className="w-6 h-6" />,
+    link:"/t1-transit-documents"
   },
   {
     title: "HS Code Classification",
     description: "Expert classification to ensure accurate duty payments and compliance.",
-    icon: <Box className="w-6 h-6" />
+    icon: <Box className="w-6 h-6" />,
+    link:"/hs-code-classification"
   },
   {
     title: "Duty Consultancy",
     description: "Strategic advice to optimize duty costs and navigate trade tariffs.",
-    icon: <ShieldCheck className="w-6 h-6" />
+    icon: <ShieldCheck className="w-6 h-6" />,
+    link:"/duty-vat-consultancy"
   },
   {
     title: "Get a Fast Quote",
     description: "Ready to move goods? Contact us now for a competitive price and immediate support.",
-    icon: <Zap className="w-6 h-6" />
+    icon: <Zap className="w-6 h-6" />,
+    link:"/contact"
   }
 ];
 
@@ -128,16 +137,16 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5">
-            <button className="group relative px-8 py-4 bg-[#049fe1] text-white rounded-full font-bold text-lg shadow-[0_0_40px_-10px_rgba(4,159,225,0.5)] overflow-hidden transition-all duration-300 hover:shadow-[0_0_60px_-15px_rgba(4,159,225,0.6)] hover:-translate-y-1">
+            <Link href="/contact" className="group relative px-8 py-4 bg-[#049fe1] text-white rounded-full font-bold text-lg shadow-[0_0_40px_-10px_rgba(4,159,225,0.5)] overflow-hidden transition-all duration-300 hover:shadow-[0_0_60px_-15px_rgba(4,159,225,0.6)] hover:-translate-y-1">
               <span className="relative z-10 flex items-center gap-2">
                 Contact Us Today <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </span>
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-            </button>
+            </Link>
             
-            <button className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-              View Services
-            </button>
+            <Link href="tel:+7653483432" className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+            +44 1634 565540
+            </Link>
           </div>
         </div>
       </div>
@@ -151,8 +160,8 @@ const Hero = () => {
   );
 };
 
-const ServiceCard = ({ icon, title, description, index }) => (
-  <div className="group relative p-8 bg-white rounded-3xl border border-slate-100 transition-all duration-500 hover:border-[#049fe1]/20 hover:shadow-2xl hover:shadow-slate-200/50 hover:-translate-y-1">
+const ServiceCard = ({ icon, title, description,link, index }) => (
+  <Link href={link} className="group relative p-8 bg-white rounded-3xl border border-slate-100 transition-all duration-500 hover:border-[#049fe1]/20 hover:shadow-2xl hover:shadow-slate-200/50 hover:-translate-y-1">
     <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
       <div className="text-[#049fe1] transform rotate-12 scale-150">{icon}</div>
     </div>
@@ -167,7 +176,7 @@ const ServiceCard = ({ icon, title, description, index }) => (
     <div className="mt-6 flex items-center gap-2 text-[#049fe1] font-semibold text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
       {index === 5 ? "Get started" : "Learn more"} <ArrowRight size={14} />
     </div>
-  </div>
+  </Link>
 );
 
 const ServicesSection = () => {
@@ -413,12 +422,12 @@ const CTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-          <button className="px-10 py-5 bg-[#049fe1] text-white rounded-full font-bold text-xl shadow-[0_10px_30px_-10px_rgba(4,159,225,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(4,159,225,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
+          <Link href="/contact" className="px-10 py-5 bg-[#049fe1] text-white rounded-full font-bold text-xl shadow-[0_10px_30px_-10px_rgba(4,159,225,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(4,159,225,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
             Get Your Quote <ArrowRight size={24} />
-          </button>
-          <button className="px-10 py-5 bg-white border-2 border-slate-100 text-slate-700 rounded-full font-bold text-xl hover:border-[#049fe1] hover:text-[#049fe1] transition-all duration-300">
+          </Link>
+          <Link href="tel:+441634565540" className="px-10 py-5 bg-white border-2 border-slate-100 text-slate-700 rounded-full font-bold text-xl hover:border-[#049fe1] hover:text-[#049fe1] transition-all duration-300">
             Talk to an Expert
-          </button>
+          </Link>
         </div>
         
         <p className="mt-8 text-sm text-slate-400 font-medium flex items-center justify-center gap-2">
@@ -443,9 +452,11 @@ export default function Home() {
     <Layout>
     <Hero />
       <ServicesSection />
-      <PortsSection />
+      {/* <PortsSection /> */}
+      <PortSection/>
       <TestimonialsSection />
-      <WhyChooseUs />
+      <WhyUsSection/>
+      {/* <WhyChooseUs /> */}
       <CTASection />
  </Layout>
 </>

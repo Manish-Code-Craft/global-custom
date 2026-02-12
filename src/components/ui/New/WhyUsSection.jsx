@@ -4,22 +4,22 @@ import { Globe, Clock, MessageCircle, ShieldCheck } from "lucide-react";
 
 export default function WhyUsSection() {
   return (
-    <section className="py-20  bg-slate-50 relative overflow-hidden">
+    <section className="py-20  bg-[#049fe1] relative overflow-hidden">
       
       {/* Decorative Background Shapes */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#3daee0]/10 rounded-bl-full -z-0"></div>
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-[#3daee0]/10 rounded-tr-full -z-0"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-white/10 rounded-bl-full -z-0"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-white/10 rounded-tr-full -z-0"></div>
 
       <Container>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Why Choose Us
             </h2>
 
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+            <p className="text-lg text-white/90 mb-10 leading-relaxed">
               As a Kent-based specialist, we bridge the gap between global trade regulations 
               and local logistical efficiency. Our team brings decades of experience 
               to every declaration.
@@ -92,10 +92,10 @@ function BenefitItem({ icon, title, desc }) {
       </div>
 
       <div>
-        <h4 className="text-lg font-semibold text-slate-900 mb-1">
+        <h4 className="text-lg font-semibold text-white mb-1">
           {title}
         </h4>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-white leading-relaxed">
           {desc}
         </p>
       </div>

@@ -9,29 +9,29 @@ const ports = [
     image: "/images/sea-custom.png",
   },
   {
-    link:"/ports/dfd",
+    link:"/customs-clearance-southampton",
     name: "Southampton",
     image: "/images/sea-custom.png",
   },
   {
-    link:"/ports/sgfss",
+    link:"/customs-clearance-dover",
     name: "Dover",
     image: "/images/sea-custom.png",
   },
   {
-    link:"/ports/sdgs",
+    link:"/customs-clearance-london-gateway",
     name: "London Gateway",
     image: "/images/sea-custom.png",
   },
 ];
 
-export default function PortsSection() {
+export default function PortSection() {
   return (
     <section className="pb-20  bg-white">
       <Container>
          {/* Header */}
-      <div className=" mb-14 lg:mb-16">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div className=" mb-8 lg:mb-10 ">
+        <div className="flex flex-col md:flex-row md:items-end justify-center text-center gap-6">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Major UK Ports Covered
