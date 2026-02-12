@@ -181,7 +181,7 @@ export default function Footer() {
               <div className="my-[30px] border-t-[1px] border-t-[rgb(49 46 46)]"></div>
               <div className="text-center mt-5">
                 {" "}
-                Copyright 2024, All Right reserved | <Link href="/gdpr-compliance" >GDPR Compilance</Link> - Website Design,
+                Copyright {new Date().getFullYear()}, All Right reserved | <Link href="/gdpr-compliance" >GDPR Compilance</Link> - Website Design,
                 Development & SEO By:{" "}
                 <a href="https://www.amrsoftec.com/">
                   <span className="text-[#3daee0] font-bold	">AMR Softec</span>

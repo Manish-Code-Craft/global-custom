@@ -14,7 +14,9 @@ import {
   Star,
   ChevronLeft,
   ChevronRight,
-  ChevronDown
+  ChevronDown,
+  Users,
+  Clock,
 } from 'lucide-react';
 import Link from "next/link";
 import WhyUsSection from "@/components/ui/New/WhyUsSection";
@@ -70,10 +72,11 @@ const ports = [
 ];
 
 const features = [
-  { title: "Local Expertise", desc: "Specialists based in Kent with deep knowledge of UK logistics." },
-  { title: "Fast Turnaround", desc: "Speed is our priority to keep your supply chain moving." },
-  { title: "24/7 Support", desc: "Round-the-clock customs support for peace of mind." },
-  { title: "Trusted Partner", desc: "Reliable partner for UK importers, exporters, and freight forwarders." }
+  { title: "Local Expertise", desc: "Specialists based in Kent with deep knowledge of UK logistics.", icon: <Users size={24} strokeWidth={2} /> },
+  { title: "Fast Turnaround", desc: "Speed is our priority to keep your supply chain moving.", icon: <Zap size={24} strokeWidth={2} /> },
+  { title: "24/7 Support", desc: "Round-the-clock customs support for peace of mind.", icon: <Clock size={24} strokeWidth={2} /> },
+  { title: "Trusted Partner", desc: "Reliable partner for UK importers, exporters, and freight forwarders.", icon: <ShieldCheck size={24} strokeWidth={2} /> },
+  
 ];
 
 const testimonials = [
@@ -454,62 +457,35 @@ const TestimonialsSection = () => {
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-32 bg-[#049fe1] relative overflow-hidden isolate">
+    <section className="py-24 bg-[#049fe1] relative overflow-hidden isolate">
       {/* Abstract Background */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-sky-300/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-white/10 rounded-full blur-3xl"></div>
 
-      <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
-        <div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-10 tracking-tight leading-tight">
-            Why Choose <br /> Global Customs?
+      <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
+        <div className="mb-10 text-center ">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+            Why Choose Global Customs?
           </h2>
-          <div className="grid gap-8">
-            {features.map((feature, idx) => (
-              <div key={idx} className="group flex gap-5">
-                <div className="mt-1 flex-shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center shadow-lg group-hover:bg-white group-hover:text-[#049fe1] transition-all duration-300">
-                    <CheckCircle2 size={18} strokeWidth={2.5} />
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-white mb-2">{feature.title}</h4>
-                  <p className="text-sky-50 leading-relaxed font-medium opacity-90">{feature.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-white/90 text-lg max-w-2xl mx-auto">
+            We maintain the highest standards of compliance, security, and efficiency in the industry, making us the preferred choice for your customs needs.
+          </p>
         </div>
 
-        <div className="relative lg:pl-10">
-          <div className="relative bg-white p-10 md:p-14 rounded-[2.5rem] shadow-2xl shadow-sky-900/20">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 bg-[#049fe1]/5 rounded-3xl flex items-center justify-center text-[#049fe1] mb-8 ring-8 ring-[#049fe1]/5">
-                <ShieldCheck size={40} />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {features.map((feature, idx) => (
+            <div 
+              key={idx} 
+              className="group bg-white rounded-2xl p-5 md:p-6 flex flex-row items-center gap-5 shadow-lg shadow-sky-900/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 hover:border-[#049fe1]/50 border border-transparent cursor-default"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-[#049fe1]/10 flex items-center justify-center text-[#049fe1] shrink-0 transition-all duration-300 group-hover:bg-[#049fe1] group-hover:text-white group-hover:scale-110 group-hover:rotate-6 shadow-sm">
+                {feature.icon}
               </div>
-              <h3 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">Certified Excellence</h3>
-              <p className="text-slate-500 mb-10 leading-relaxed">
-                We maintain the highest standards of compliance, security, and efficiency in the industry.
-              </p>
-              
-              <div className="flex gap-8 items-center justify-center w-full">
-                <div className="group flex flex-col items-center gap-3">
-                  <div className="h-20 w-32 bg-slate-50 rounded-xl flex items-center justify-center border border-slate-100 shadow-sm group-hover:border-[#049fe1] group-hover:shadow-md transition-all duration-300">
-                     <span className="font-black text-slate-300 text-3xl group-hover:text-[#049fe1] transition-colors">AEO</span>
-                  </div>
-                  <span className="text-[10px] uppercase tracking-widest font-bold text-slate-400">Standard</span>
-                </div>
-                <div className="w-px h-16 bg-slate-100"></div>
-                <div className="group flex flex-col items-center gap-3">
-                  <div className="h-20 w-32 bg-slate-50 rounded-xl flex items-center justify-center border border-slate-100 shadow-sm group-hover:border-[#049fe1] group-hover:shadow-md transition-all duration-300">
-                     <span className="font-black text-slate-300 text-3xl group-hover:text-[#049fe1] transition-colors">ISO</span>
-                  </div>
-                  <span className="text-[10px] uppercase tracking-widest font-bold text-slate-400">Certified</span>
-                </div>
+              <div className="flex-1">
+                <h4 className="text-lg md:text-xl font-bold text-slate-900 mb-1 group-hover:text-[#049fe1] transition-colors duration-300">{feature.title}</h4>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed group-hover:text-slate-700 transition-colors duration-300">{feature.desc}</p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -656,7 +632,7 @@ export default function Home() {
       <ServicesSection />     
       <PortSection/>
       <TestimonialsSection />      
-      <WhyUsSection/>
+      <WhyChooseUs />
       <FAQSection />     
       <CTASection />
  </Layout>
