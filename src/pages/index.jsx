@@ -194,7 +194,7 @@ const HeroSection = () => {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#049fe1]"></span>
             </span>
             <span className="text-white/90 text-xs font-bold uppercase tracking-widest">
-              Specialists Based in Kent
+              Specialists Based in UK
             </span>
           </div>
           
@@ -469,7 +469,7 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className=" max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           {features.map((feature, idx) => (
             <div 
               key={idx} 
@@ -583,7 +583,7 @@ const FAQSection = () => {
 
 const CTASection = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-blue-100 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-slate-50/50"></div>
       <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#049fe1]/10 border border-[#049fe1]/20 mb-6">
@@ -601,7 +601,7 @@ const CTASection = () => {
           <Link href="/contact" className="px-10 py-5 bg-[#049fe1] text-white rounded-full font-bold text-xl shadow-[0_10px_30px_-10px_rgba(4,159,225,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(4,159,225,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
             Get Your Quote <ArrowRight size={24} />
           </Link>
-          <Link href="tel:+441634565540" className="px-10 py-5 bg-white border-2 border-slate-100 text-slate-700 rounded-full font-bold text-xl hover:border-[#049fe1] hover:text-[#049fe1] transition-all duration-300">
+          <Link href="tel:+441634565540" className="px-10 py-5 bg-white border-2 border-[#049fe1] text-slate-700 rounded-full font-bold text-xl hover:border-[#049fe1] hover:text-[#049fe1] transition-all duration-300">
             Talk to an Expert
           </Link>
         </div>
