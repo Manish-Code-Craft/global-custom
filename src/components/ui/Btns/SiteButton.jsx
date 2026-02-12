@@ -20,7 +20,7 @@ const SiteButton = ({
     `,
     outline: `
       px-8 py-4 bg-white border-2 border-[#049fe1] box-border
-      text-slate-700 text-xl hover:-translate-y-1
+      text-slate-700 text-lg hover:-translate-y-1
       hover:text-[#049fe1]
     `,
   };
