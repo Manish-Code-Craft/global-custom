@@ -71,7 +71,7 @@ const ports = [
 ];
 
 const features = [
-  { title: "Local Expertise", desc: "Specialists based in Kent with deep knowledge of UK logistics.", icon: <Users size={24} strokeWidth={2} /> },
+  { title: "Local Expertise", desc: "Specialists based in UK with deep knowledge of UK logistics.", icon: <Users size={24} strokeWidth={2} /> },
   { title: "Fast Turnaround", desc: "Speed is our priority to keep your supply chain moving.", icon: <Zap size={24} strokeWidth={2} /> },
   { title: "24/7 Support", desc: "Round-the-clock customs support for peace of mind.", icon: <Clock size={24} strokeWidth={2} /> },
   { title: "Trusted Partner", desc: "Reliable partner for UK importers, exporters, and freight forwarders.", icon: <ShieldCheck size={24} strokeWidth={2} /> },
