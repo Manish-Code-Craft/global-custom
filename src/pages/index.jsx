@@ -1,6 +1,5 @@
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
-import Hero from "@/components/ui/Hero";
 import React, { useState, useEffect } from 'react';
 import { 
   Ship, 
@@ -14,7 +13,8 @@ import {
   Quote,
   Star,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  ChevronDown
 } from 'lucide-react';
 import Link from "next/link";
 import WhyUsSection from "@/components/ui/New/WhyUsSection";
@@ -97,6 +97,64 @@ const testimonials = [
   }
 ];
 
+const faqs = [
+  {
+    question: "What is customs clearance?",
+    answer: "Customs clearance is a process compulsory for all goods entering or leaving the EU. Customs clearance allows HM Customs &amp; Excise to account for any due charges, ensure correct documentation has been used and conformity to EU law. It also allows Customs to monitor which goods are coming into or leaving the UK."
+  },
+  {
+    question: "‍‍Why should I use a customs agent?",
+    answer: "Customs agents are there to facilitate a professional service between HM Customs &amp; Excise and importers/exporters. Our agents have significant understanding the Customs rules and regulations applicable and are therefore best suited to provide assistance."
+  },
+  {
+    question: "Where can you complete UK customs clearance?",
+    answer: "We can complete Import UK customs clearance for your shipments at the following Airports and Sea ports.<br><b>  Airports: </b>London Gatwick Airport, London Heathrow Airport, London Stansted Airport, London City Airport, London Luton Airport, Birmingham, East Midlands Airport, Manchester, Glasgow, Leeds and Edinburgh.<br><b>Sea Ports:</b> <b>Any UK port</b> including Felixstowe, London Gateway, Southampton, Grangemouth, Tilbury, Thames port, Dover and Greenock."
+  },
+  {
+    question: "‍How do we customs clear cargo in other ports?",
+    answer: "We are based in Southeast England. Thanks to changes in technology, remote access to other port community systems around the coasts of the UK make it possible to access all systems from one location."
+  },
+  {
+    question: "How long does customs clearance take?",
+    answer: "The customs clearance process can vary from shipment to shipment and is dependent on what goods are entering the country, once goods have entered the UK port. Certain products may need additional documentation checks or a physical examination to ensure that declarations are correct."
+  },
+  {
+    question: "‍What supporting customs clearance documentation do I require?",
+    answer: "Basic documentation would be:<br><b>1.</b> Shipping document ( Bill of Lading – original or telex)<br><b>2.</b> Supplier’s commercial invoice<br><b>3.</b> Packing list<br>Other documentation required for specific goods would be:<br><b>1.</b> Certificate of Origin<br><b>2.</b> Preference Certificates<br><b>3.</b> Health certificates ( for foodstuffs etc )<br><b>4.</b> COA<br><b>5.</b> Organic certificate<br><b>Note:</b> Importers should check before they ship if any special documentation is required."
+  },
+  {
+    question: "Who decides how much import duties and taxes I have to pay?",
+    answer: "UK VAT is currently 20%. Duty is dependent on the type of product being imported. All duty rates are set out by Brussels for the EU, and are payable upon free circulation within the EU.<br>All goods are classified into commodity codes. The duty and VAT amount vary for each commodity. Importers are responsible for the classification of the codes. However, if you need advice you can call 03000588454."
+  },
+  {
+    question: "‍How to calculate customs clearance charges?",
+    answer: "There are a number of methods that will help you calculate your customs clearance charges. You might be looking to calculate the transactional value or price payable ‍The duration of customs clearance can vary widely depending on several factors, including the nature of the goods, the efficiency of the customs authority, and the completeness and accuracy of the provided documentation. Typically, it can range from a few hours to several days.<br>Utilising experienced customs brokers and ensuring all documents are correctly filled out can significantly expedite this process."
+  },
+  {
+    question: "‍How can I pay for import duties and taxes?",
+    answer: "Your customs clearance agent will advise you how much duty and VAT is required to be paid. You can pay customs directly or you can pay us first and we will pay customs on your behalf."
+  },
+  {
+    question: "‍Where can I find more information on customs clearance?",
+    answer: "Further information on customs clearance, their rules and regulations, service standards and details of your local Customs clearance office can be found on their website: <b><a href='https://www.gov.uk/import-goods-into-uk' style='color:#3daee0'; target='_blank' rel='noopener noreferrer'>www.gov.uk/starting-to-import‍</a></b>"
+  },
+  {
+    question: "‍What happens after customs clearance?",
+    answer: "We provide you with copies of all documentation completed on your behalf, which have been lodged with HMRC. All documents will be archived for at least 4 years."
+  },
+  {
+    question: "‍I am importing for the first time – How do I know the products I will import are allowed into the EU?",
+    answer: "Some commodities, firearms and explosives for example, cannot be imported into the EU unless by an authorised person. If you have any doubts about whether your goods are approved in the EU, feel free to contact us prior to shipment. Details of restricted goods can be found on the UK Customs website:<b><a href='https://www.gov.uk/guidance/import-controls' style='color:#3daee0'; target='_blank' rel='noopener noreferrer'> www.gov.uk/guidance/import-controls.</a></b> Alternatively, please check with a member of our experienced team who would be happy to assist."
+  },
+  {
+    question: "‍I am moving my personal effects/ moving abroad, what do I do?",
+    answer: "In order to attain VAT and duty relief for personal effects upon import, specific conditions must be met. If you have recently returned to the UK, lived overseas for a minimum of one year, and have owned the goods for 6 months, no VAT and duty are required. Goods can still be imported if they do not fall under these criteria but duty and VAT may be applicable. If you are importing a car, the relief of VAT and duty will depend on the purpose of the vehicle."
+  },
+  {
+    question: "‍Can I import foodstuffs?",
+    answer: "The majority of foodstuffs are okay to import when accompanied by relevant official documentation. Certain food items would need additional documentation to be lodged with port health. Importers are required to ensure all documents are in place before goods are imported."
+  }
+];
 const HeroSection = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-slate-900">
@@ -115,7 +173,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 w-full pt-16">
+      <div className="relative z-20 xl:max-w-[1400px] 2xl:max-w-[1500px] lg:flex items-center mx-auto px-6 w-full pt-16">
         <div className="md:w-3/4 lg:w-2/3">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 animate-fade-in-up">
             <span className="relative flex h-2.5 w-2.5">
@@ -146,15 +204,54 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
             </Link>
             
-            <Link href="tel:+7653483432" className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+            {/* <Link href="tel:+7653483432" className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all duration-300">
             +44 1634 565540
-            </Link>
+            </Link> */}
           </div>
         </div>
+
+        <div className='button-banner flex flex-col  items-end text-white	 lg:w-[40%]'>
+                <p className="text-[16px] text-banner">Call the Team Now on: <Link href="tel:+441634565540" className='text-[24px] font-bold banner-email'>+44 1634 565540</Link></p>
+                <p className="text-[16px] text-banner ">Email us at: <Link href="mailto:imports@globalcust.co.uk" className='text-[24px] font-bold banner-email'>imports@globalcust.co.uk</Link></p>
+                <div className=' grid lg:block grid-cols-2 gap-2'>
+                <Link className="button mt-6" href='/document/global customs direct rep.docx' download="global customs direct rep.docx" target='_blank'>
+                      <span className="text">Open a New Account</span>
+                      <div className="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right">
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </div>
+                    </Link>
+                    <div className=' lg:hidden '>
+                    <Link className="button mt-6" href='/document/gcc-document.xlsx' download="gcc-document.xlsx" target='_blank'>
+                      <span className="text">Download Instructions</span>
+                      <div className="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right">
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </div>
+                    </Link>
+                    </div>
+                  </div>
+                <p className='max-w-[250px] text-right text-[14px]'>Please request forms to be emailed to imports@globalcust.co.uk</p>
+                <div className='hidden lg:flex '>
+                <Link className="button mt-6" href='/document/gcc-document.xlsx' download="gcc-document.xlsx" target='_blank'>
+                      <span className="text">Download Instructions</span>
+                      <div className="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right">
+                          <path d="M5 12h14" />
+                          <path d="m12 5 7 7-7 7" />
+                        </svg>
+                      </div>
+                    </Link>
+                    </div>
+              </div>
       </div>
 
       {/* Modern Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-2 opacity-50">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-2 opacity-50 ">
         <span className="text-[10px] uppercase tracking-widest text-white/70">Scroll</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-white/0 via-white/50 to-white/0"></div>
       </div>
@@ -406,6 +503,95 @@ const WhyChooseUs = () => {
     </section>
   );
 };
+const FAQSection = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  return (
+    <section className="py-24 bg-slate-50 relative">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Header - Centered */}
+        <div className="text-center mb-16">
+          <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">
+            FAQ
+          </span>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6 mb-6 tracking-tight">
+            Got questions? <br /> We've got answers.
+          </h2>
+
+          <p className="text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto">
+            Navigating customs can be complex. Here are answers to some of the most
+            common questions our clients ask us to help you understand the process better.
+          </p>
+        </div>
+
+        {/* FAQ List */}
+        <div className="flex flex-col gap-4 max-w-5xl mx-auto">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={index}
+                className={`border rounded-2xl transition-all duration-300 overflow-hidden
+                  ${isOpen
+                    ? "border-[#049fe1] bg-white shadow-md"
+                    : "border-slate-200 bg-white hover:border-[#049fe1]/50"
+                  }`}
+              >
+                <button
+                  className="w-full text-left px-6 py-6 flex items-center justify-between focus:outline-none group"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                >
+                  <span
+                    className={`font-bold text-lg pr-4 transition-colors
+                      ${isOpen
+                        ? "text-[#049fe1]"
+                        : "text-slate-800 group-hover:text-[#049fe1]"
+                      }`}
+                  >
+                    {faq.question}
+                  </span>
+
+                  <div
+                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0
+                      ${isOpen
+                        ? "bg-[#049fe1] text-white"
+                        : "bg-slate-50 text-slate-400 group-hover:bg-[#049fe1]/10 group-hover:text-[#049fe1]"
+                      }`}
+                  >
+                    <ChevronDown
+                      className={`transform transition-transform duration-300 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      size={18}
+                    />
+                  </div>
+                </button>
+
+                <div
+                  className={`grid transition-all duration-300 ease-in-out
+                    ${isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                    }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="pb-6 px-6 pt-0 text-slate-500 leading-relaxed font-medium">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
+    </section>
+  );
+};
 
 const CTASection = () => {
   return (
@@ -452,15 +638,12 @@ export default function Home() {
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout>
-    <Hero/>
-    {/* <HeroSection /> */}
-      <ServicesSection />
-      {/* <PortsSection /> */}
+      <HeroSection />
+      <ServicesSection />     
       <PortSection/>
-      <TestimonialsSection />
-      <Faq/>
+      <TestimonialsSection />      
       <WhyUsSection/>
-      {/* <WhyChooseUs /> */}
+      <FAQSection />     
       <CTASection />
  </Layout>
 </>
