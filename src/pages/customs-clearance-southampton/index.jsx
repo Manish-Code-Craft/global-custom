@@ -1,23 +1,23 @@
-import NewService from "@/components/Home/Services/NewService"
-import Layout from "@/components/ui/Layout"
-import Head  from "next/head"
-import Servicedef from "@/components/ui/Servicedef"
-import Heroservice from "@/components/ui/Heroservice"
+import NewService from "@/components/Home/Services/NewService";
+import Layout from "@/components/ui/Layout";
+import Head from "next/head";
+import Servicedef from "@/components/ui/Servicedef";
+import Heroservice from "@/components/ui/Heroservice";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import PageHead from "@/components/ui/PageHead"
-import SounthamptonWhyChoose from "../../components/Pages/SouthamptonWhyCoose"
-import React, { useState, useEffect } from 'react';
-import { 
-  Ship, 
-  Globe, 
-  CheckCircle2, 
-  ShieldCheck, 
-  FileText, 
-  Box, 
-  ArrowRight, 
+import PageHead from "@/components/ui/PageHead";
+import SounthamptonWhyChoose from "../../components/Pages/SouthamptonWhyCoose";
+import React, { useState, useEffect } from "react";
+import {
+  Ship,
+  Globe,
+  CheckCircle2,
+  ShieldCheck,
+  FileText,
+  Box,
+  ArrowRight,
   Zap,
   Quote,
   Star,
@@ -36,152 +36,173 @@ import {
   Beaker,
   Utensils,
   Anchor,
-  Navigation
-} from 'lucide-react';
-import SiteButton from '@/components/ui/Btns/SiteButton';
+  Navigation,
+} from "lucide-react";
+import SiteButton from "@/components/ui/Btns/SiteButton";
 gsap.registerPlugin(ScrollTrigger);
-export default function Services({preview}){
-    const container = useRef();
-    useGSAP(() => {  
-       let scrollTriggers = gsap.utils.toArray(".scroll-trigger");
-       let scrollItem = gsap.utils.toArray(".scroll-item");
-       scrollTriggers.forEach((scrollTrigger, index) => {
-           ScrollTrigger.create({
-               trigger: scrollTrigger,
-               start: 'top bottom',
-               end: 'bottom top',
-               toggleClass: { targets: scrollItem[index], className: "c-active" }
-           });
-       });
-       
-     });
+export default function Services({ preview }) {
+  const container = useRef();
+  useGSAP(() => {
+    let scrollTriggers = gsap.utils.toArray(".scroll-trigger");
+    let scrollItem = gsap.utils.toArray(".scroll-item");
+    scrollTriggers.forEach((scrollTrigger, index) => {
+      ScrollTrigger.create({
+        trigger: scrollTrigger,
+        start: "top bottom",
+        end: "bottom top",
+        toggleClass: { targets: scrollItem[index], className: "c-active" },
+      });
+    });
+  });
 
-   const PageMeta = {
+  const PageMeta = {
     title: "Leading Customs Clearance Services Southampton",
-    description:"In search of  best custom clearance services in Southampton? Trust Global Customs Clearance Ltd for hassle-free customs clearance solutions. Call now!",
-    keywords:"Custom Clearance Southampton, Southampton Customs Brokers, UK Customs Clearance Services, Global Customs Clearance, Import Export Clearance Southampton,",
+    description:
+      "In search of  best custom clearance services in Southampton? Trust Global Customs Clearance Ltd for hassle-free customs clearance solutions. Call now!",
+    keywords:
+      "Custom Clearance Southampton, Southampton Customs Brokers, UK Customs Clearance Services, Global Customs Clearance, Import Export Clearance Southampton,",
   };
 
   const liverpoolFeatures = [
-    { 
-      title: "Rapid Turnaround Times", 
-      desc: "We process entries quickly and accurately, helping you avoid port delays and storage charges.", 
-      icon: <Clock size={24} /> 
+    {
+      title: "Fast, Accurate Processing",
+      desc: "We work quickly and precisely to keep your cargo moving and avoid quay rent, demurrage, or storage charges.",
+      icon: <Clock size={24} />,
     },
-    { 
-      title: "Full Import & Export Coverage", 
-      desc: "From import declarations, export declarations, T1 transit documents, and EX‑A, to specialist procedures — we handle it all.", 
-      icon: <Globe size={24} /> 
+    {
+      title: "Full Import & Export Coverage",
+      desc: "We handle all declaration types, including import entries, export declarations, T1 transit documents, and EX‑A.",
+      icon: <Globe size={24} />,
     },
-    { 
-      title: "Direct Experience at the Port of Liverpool", 
-      desc: "We work daily with carriers, port operators, and hauliers at Liverpool, giving you a seamless end‑to‑end service.", 
-      icon: <Ship size={24} /> 
+    {
+      title: "Daily Operations at Southampton",
+      desc: "We work closely with carriers, port operators, and hauliers at Southampton, ensuring seamless communication and efficient clearance.",
+      icon: <Ship size={24} />,
     },
-    { 
-      title: "Transparent Pricing", 
-      desc: "Clear, competitive rates with no hidden extras.", 
-      icon: <CheckCircle2 size={24} /> 
+    {
+      title: "Transparent, Competitive Pricing",
+      desc: "Clear, fair rates with no hidden extras.",
+      icon: <CheckCircle2 size={24} />,
     },
-    { 
-      title: "Dedicated Support", 
-      desc: "You get direct access to experienced customs specialists who keep you updated at every stage.", 
-      icon: <Users size={24} /> 
+    {
+      title: "Direct Access to Experienced Specialists",
+      desc: "You get real support from real customs experts — not automated systems or call centres.",
+      icon: <Users size={24} />,
     },
   ];
 
   const liverpoolServices = [
-    { 
-      title: "Import Customs Clearance", 
+    {
+      title: "Import Customs Clearance",
       intro: "We manage all import declarations into the UK, including:",
       items: [
         "Standard imports",
         "High‑value and controlled goods",
         "Preferential origin claims",
         "Duty and VAT calculations",
-        "Post‑clearance amendments"
+        "Post‑clearance amendments",
       ],
-      icon: <ArrowRight className="rotate-90" /> 
+      icon: <ArrowRight className="rotate-90" />,
     },
-    { 
-      title: "Export Customs Clearance", 
-      intro: "Smooth, compliant export processing:",
+    {
+      title: "Export Customs Clearance",
+      intro: "Reliable, compliant export processing:",
       items: [
         "EX‑A creation",
         "Export declarations for all commodity types",
-        "Support with carrier and port requirements"
+        "Support with carrier and port requirements",
       ],
-      icon: <ArrowRight className="-rotate-90" /> 
+      icon: <ArrowRight className="-rotate-90" />,
     },
-    { 
-      title: "T1 Transit Documents", 
-      intro: "If your goods are moving onward to the EU or bonded facilities, we can:",
+    {
+      title: "T1 Transit Documents",
+      intro:
+        "If your goods are moving onward to the EU or bonded facilities, we provide:",
       items: [
-        "Create T1 transit documents",
-        "Provide LRN numbers",
-        "Liaise with hauliers and port authorities",
-        "Ensure correct discharge at destination"
+        "T1 creation",
+        "LRN numbers",
+        "Liaison with hauliers and port authorities",
+        "Correct discharge at destination",
       ],
-      icon: <FileText /> 
+      icon: <FileText />,
     },
-    { 
-      title: "Specialist Procedures", 
+    {
+      title: "Specialist Customs Procedures",
       intro: "We also support:",
       items: [
         "Temporary admission",
         "Returned goods relief",
         "Inward/Outward processing",
-        "Customs warehousing"
+        "Customs warehousing",
       ],
-      icon: <Star /> 
+      icon: <Star />,
     },
   ];
 
   const industries = [
+    { name: "Automotive & RoRo", icon: <Truck /> },
     { name: "Retail & e‑commerce", icon: <ShoppingBag /> },
-    { name: "Automotive", icon: <Truck /> },
-    { name: "Food & drink", icon: <Utensils /> },
     { name: "Machinery & engineering", icon: <Factory /> },
-    { name: "Chemicals", icon: <Beaker /> },
+    { name: "Food & drink", icon: <Utensils /> },
     { name: "Consumer goods", icon: <Box /> },
+    { name: "Chemicals", icon: <Beaker /> },
   ];
 
   const whyPortItems = [
-    { text: "Fast access to the North West and Midlands", icon: <Truck size={28} /> },
-    { text: "Major container and RoRo terminals", icon: <Anchor size={28} /> },
-    { text: "Strong links with Ireland, Europe, and global trade routes", icon: <Globe size={28} /> },
+    {
+      text: "Major global container routes",
+      icon: <Truck size={28} />,
+    },
+    {
+      text: "One of Europe’s largest vehicle export hubs",
+      icon: <Anchor size={28} />,
+    },
+    {
+      text: "Fast access to the Midlands and South East",
+      icon: <Globe size={28} />,
+    },
+    { text: "Strong rail and road connectivity", icon: <Anchor size={28} /> },
   ];
-    return(
-        <>
-        <PageHead PageMeta={PageMeta} />
-        <Layout preview={preview}>
+  return (
+    <>
+      <PageHead PageMeta={PageMeta} />
+      <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance at the Port of Liverpool"         
+          title="Customs Clearance at the Port of Southampton"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Fast, Reliable Import & Export Support Across the County",           
-            "If you’re importing or exporting goods through the Port of Liverpool, you need a customs partner who understands the port, the processes, and the pressures of modern supply chains. We provide fast, accurate, and fully compliant customs clearance for businesses of all sizes, ensuring your cargo moves smoothly without delays or unexpected costs.",           
-            "Whether you’re shipping containers, groupage, RoRo, or specialised freight, our team handles every step of the customs process with precision.",           
-          ]} 
-          />
-        
-        <NewService/>
-        
+            "Fast, Reliable & Fully Compliant UK Customs Services",
+            "If your goods are moving through the Port of Southampton, you need a customs partner who understands the port’s processes, carriers, and operational requirements. We provide fast, accurate, and fully compliant customs clearance for importers, exporters, freight forwarders, and hauliers using Southampton — one of the UK’s leading deep‑sea ports for containers, RoRo, and global trade.",
+            "From containerised cargo to vehicles and specialist freight, our team ensures your goods clear customs smoothly, without delays or unexpected costs.",
+          ]}
+        />
+
+        <NewService />
+
         <section className="py-24 bg-[#049fe1] relative overflow-hidden isolate">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
-              <h2 className="text-4xl font-bold text-white mb-4">Why Choose Us for Customs Clearance at Liverpool Port?</h2>
+              <h2 className="text-4xl font-bold text-white mb-4">
+                Why Choose Us for Customs Clearance at Southampton Port?
+              </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {liverpoolFeatures.map((feature, idx) => (
-                <div key={idx} className="group bg-white rounded-2xl p-6 flex flex-row items-start gap-5 shadow-lg hover:-translate-y-1 transition-all duration-300 border border-transparent">
+                <div
+                  key={idx}
+                  className="group bg-white rounded-2xl p-6 flex flex-row items-start gap-5 shadow-lg hover:-translate-y-1 transition-all duration-300 border border-transparent"
+                >
                   <div className="w-12 h-12 rounded-xl bg-[#049fe1]/10 flex items-center justify-center text-[#049fe1] shrink-0 group-hover:bg-[#049fe1] group-hover:text-white transition-all mt-1">
                     {feature.icon}
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-bold text-slate-900 mb-2">{feature.title}</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">{feature.desc}</p>
+                    <h4 className="text-lg font-bold text-slate-900 mb-2">
+                      {feature.title}
+                    </h4>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {feature.desc}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -189,147 +210,206 @@ export default function Services({preview}){
           </div>
         </section>
 
-         {/* Services Grid - Redesigned */}
-      <section className="py-24 bg-slate-50">
-        <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">Our Services</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6">Our Customs Services at the Port of Liverpool</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {liverpoolServices.map((service, idx) => (
-              <div key={idx} className="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-                {/* Header Section */}
-                <div className="bg-slate-900 p-8 flex items-center justify-between relative overflow-hidden">
-                  <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
-                    <div className="h-1 w-12 bg-[#049fe1] rounded-full"></div>
-                  </div>
-                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-[#049fe1] relative z-10 backdrop-blur-sm group-hover:bg-[#049fe1] group-hover:text-white transition-all duration-500">
-                    {React.cloneElement(service.icon, { size: 32 })}
-                  </div>
-                  {/* Decorative faint background icon */}
-                  <div className="absolute -right-6 -bottom-6 text-white/5 transform rotate-12 scale-150 pointer-events-none">
-                     {React.cloneElement(service.icon, { size: 140 })}
-                  </div>
-                </div>
+        {/* Services Grid - Redesigned */}
+        <section className="py-24 bg-slate-50">
+          <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6">
+            <div className="text-center mb-16">
+              <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">
+                Our Services
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6">
+                Our Customs Services at the Port of Southampton
+              </h2>
+            </div>
 
-                {/* Content Section */}
-                <div className="p-8">
-                  <p className="text-slate-600 font-medium mb-6 text-lg leading-relaxed border-b border-slate-100 pb-6">
-                    {service.intro}
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
-                    {service.items.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-slate-600">
-                        <CheckCircle2 size={18} className="text-[#049fe1] shrink-0 mt-0.5" />
-                        <span className="text-sm font-medium">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Separated */}
-      <section className="py-20 bg-white border-y border-slate-100">
-        <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 text-center">
-            <h3 className="text-3xl font-bold text-slate-900 mb-4">Industries We Support</h3>
-            <p className="text-slate-500 mb-12 text-lg max-w-2xl mx-auto">We work with a wide range of sectors moving goods through Liverpool. If it moves through Liverpool, we can clear it.</p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {industries.map((ind, idx) => (
-                <div key={idx} className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-[#049fe1]/30 hover:-translate-y-1 transition-all duration-300 group">
-                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-[#049fe1] shadow-sm group-hover:bg-[#049fe1] group-hover:text-white transition-colors">
-                    {React.cloneElement(ind.icon, { size: 24 })}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {liverpoolServices.map((service, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group"
+                >
+                  {/* Header Section */}
+                  <div className="bg-slate-900 p-8 flex items-center justify-between relative overflow-hidden">
+                    <div className="relative z-10">
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {service.title}
+                      </h3>
+                      <div className="h-1 w-12 bg-[#049fe1] rounded-full"></div>
+                    </div>
+                    <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-[#049fe1] relative z-10 backdrop-blur-sm group-hover:bg-[#049fe1] group-hover:text-white transition-all duration-500">
+                      {React.cloneElement(service.icon, { size: 32 })}
+                    </div>
+                    {/* Decorative faint background icon */}
+                    <div className="absolute -right-6 -bottom-6 text-white/5 transform rotate-12 scale-150 pointer-events-none">
+                      {React.cloneElement(service.icon, { size: 140 })}
+                    </div>
                   </div>
-                  <span className="font-bold text-slate-700 text-sm group-hover:text-[#049fe1] transition-colors">{ind.name}</span>
+
+                  {/* Content Section */}
+                  <div className="p-8">
+                    <p className="text-slate-600 font-medium mb-6 text-lg leading-relaxed border-b border-slate-100 pb-6">
+                      {service.intro}
+                    </p>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
+                      {service.items.map((item, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 text-slate-600"
+                        >
+                          <CheckCircle2
+                            size={18}
+                            className="text-[#049fe1] shrink-0 mt-0.5"
+                          />
+                          <span className="text-sm font-medium">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               ))}
             </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      {/* Why Port of Liverpool - Standalone Section */}
-      <section className="py-24 bg-slate-900 relative overflow-hidden">
-         {/* Background Decoration */}
-         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#049fe1]/10 rounded-full blur-[100px] pointer-events-none translate-x-1/3 -translate-y-1/3"></div>
-         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-[100px] pointer-events-none -translate-x-1/3 translate-y-1/3"></div>
+        {/* Industries Separated */}
+        <section className="py-20 bg-white border-y border-slate-100">
+          <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 text-center">
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">
+              Industries We Support
+            </h3>
 
-         <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
+            <p className="text-slate-500 mb-12 text-lg max-w-2xl mx-auto">
+              We work with a wide range of sectors shipping through Southampton,
+              including:
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {industries.map((ind, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-[#049fe1]/30 hover:-translate-y-1 transition-all duration-300 group"
+                >
+                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-[#049fe1] shadow-sm group-hover:bg-[#049fe1] group-hover:text-white transition-colors">
+                    {React.cloneElement(ind.icon, { size: 24 })}
+                  </div>
+
+                  <span className="font-bold text-slate-700 text-sm group-hover:text-[#049fe1] transition-colors">
+                    {ind.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 pt-8  text-center">
+              <p className="font-bold text-[#0ea5e9]">
+                If it moves through Southampton, we can clear it.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Port of Liverpool - Standalone Section */}
+        <section className="py-24 bg-slate-900 relative overflow-hidden">
+          {/* Background Decoration */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#049fe1]/10 rounded-full blur-[100px] pointer-events-none translate-x-1/3 -translate-y-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-[100px] pointer-events-none -translate-x-1/3 translate-y-1/3"></div>
+
+          <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
               <div className="md:w-1/2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#049fe1]/10 border border-[#049fe1]/20 mb-6">
                   <span className="w-2 h-2 rounded-full bg-[#049fe1] animate-pulse"></span>
-                  <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">Strategic Gateway</span>
+                  <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">
+                    Strategic Gateway
+                  </span>
                 </div>
-                <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Why the <span className="text-[#049fe1]">Port of Liverpool?</span></h3>
+                <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                  Why the{" "}
+                  <span className="text-[#049fe1]">Port of Southampton?</span>
+                </h3>
                 <p className="text-slate-400 text-lg leading-relaxed ">
-                  Liverpool is one of the UK’s most important deep‑sea ports. Our local knowledge ensures your goods move through the port efficiently and compliantly.
+                  Southampton is one of the UK’s most important deep‑sea ports,
+                  offering:
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-end">
                 {/* Visual element or decorative icon could go here, for now keeping it clean space */}
-                 <div className="hidden md:block p-8 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm">
-                   <Anchor size={64} className="text-[#049fe1] opacity-80" />
-                 </div>
+                <div className="hidden md:block p-8 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm">
+                  <Anchor size={64} className="text-[#049fe1] opacity-80" />
+                </div>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-               {whyPortItems.map((item, i) => (
-                 <div key={i} className="bg-slate-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/5 hover:bg-slate-800 transition-colors group">
-                   <div className="w-16 h-16 bg-[#049fe1]/10 rounded-2xl flex items-center justify-center text-[#049fe1] mb-6 group-hover:scale-110 transition-transform duration-300">
-                     {item.icon}
-                   </div>
-                   <p className="text-white text-lg font-medium leading-relaxed">
-                     {item.text}
-                   </p>
-                 </div>
-               ))}
+              {whyPortItems.map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-slate-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/5 hover:bg-slate-800 transition-colors group"
+                >
+                  <div className="w-16 h-16 bg-[#049fe1]/10 rounded-2xl flex items-center justify-center text-[#049fe1] mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </div>
+                  <p className="text-white text-lg font-medium leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
             </div>
-         </div>
-      </section>
+            <div className="mt-12 pt-8 border-t border-slate-100 text-center">
+              <p className="font-bold text-lg text-[#0ea5e9]">
+                Our local expertise ensures your goods move through the port
+                efficiently and compliantly.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <section className="py-24 bg-blue-100 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-slate-50/50"></div>
-        <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#049fe1]/10 border border-[#049fe1]/20 mb-6">
+        <section className="py-24 bg-blue-100 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-slate-50/50"></div>
+          <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#049fe1]/10 border border-[#049fe1]/20 mb-6">
               <span className="w-2 h-2 rounded-full bg-[#049fe1] animate-pulse"></span>
-              <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">Ready to Ship?</span>
+              <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">
+                Ready to Ship?
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+              Get a Fast Quote for <br />{" "}
+              <span className="text-[#049fe1]">
+                Customs Clearance at Southampton
+              </span>
+            </h2>
+            <p className="text-xl text-slate-500 mb-4 max-w-4xl mx-auto leading-relaxed">
+              Whether you need a one‑off clearance or ongoing support, we’re
+              ready to help. Tell us about your shipment and we’ll provide a
+              quick, competitive quote.
+            </p>
+            <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
+             Contact us today for expert customs clearance at the Port of Southampton.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+              <SiteButton href="/contact" label="Get Your Quote" />
+              <SiteButton
+                href="tel:+441634565540"
+                label="Talk to an Expert"
+                variant="outline"
+              />
+            </div>
+
+            <p className="mt-8 text-sm text-slate-400 font-medium flex items-center justify-center gap-2">
+              <CheckCircle2 size={16} className="text-green-500" /> No hidden
+              fees
+              <span className="w-1 h-1 rounded-full bg-slate-300"></span>
+              <CheckCircle2 size={16} className="text-green-500" /> Fast
+              response time
+            </p>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
-            Get a Fast Quote for <br/> <span className="text-[#049fe1]">Customs Clearance at Liverpool</span>
-          </h2>
-          <p className="text-xl text-slate-500 mb-4 max-w-4xl mx-auto leading-relaxed">
-            Whether you need a one‑off clearance or ongoing support, we’re ready to help.
-            Tell us about your shipment and we’ll provide a quick, competitive quote.
-          </p>
-          <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Contact us today for expert customs clearance at the Port of Liverpool.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">         
-            <SiteButton href="/contact" label="Get Your Quote"/>
-            <SiteButton href="tel:+441634565540" label="Talk to an Expert" variant="outline"/>
-          </div>
-          
-          <p className="mt-8 text-sm text-slate-400 font-medium flex items-center justify-center gap-2">
-            <CheckCircle2 size={16} className="text-green-500" /> No hidden fees
-            <span className="w-1 h-1 rounded-full bg-slate-300"></span>
-            <CheckCircle2 size={16} className="text-green-500" /> Fast response time
-          </p>
-        </div>
-      </section>
+        </section>
         {/* <Heroservice title="Customs Clearance Southampton" desc="Navigating the complexities of customs clearance services for the United Kingdom can be a challenge, but Global Custom Clearance Ltd. is here to simplify the process. We offer comprehensive customs clearance services, including import, export, and transit, ensuring your shipments move smoothly and efficiently. Our team of experienced professionals is dedicated to providing accurate and timely customs clearance solutions that meet the highest compliance standards. Choose Global Custom Clearance Ltd. for reliable, efficient, and compliant customs clearance services." backgroundImage="/images/service-bg.jpg"/>
         <NewService/>
         <SounthamptonWhyChoose/>
         <Servicedef title="Expert Road Custom Clearance" description="Expedite your supply chain with our expert road customs clearance services. Our experienced professionals handle everything from HS code classification to meticulous documentation, ensuring smooth communication with customs authorities and compliant duty management. Enjoy faster clearance times, reduced costs, minimized risks, and a more efficient supply chain. We specialize in road clearance across various industries and boast a global network for seamless service. Contact us for a free quote and see how we can streamline your road customs clearance." image1="/images/service-road.jpg" title2="Port Badges" description2='Delays at seaport can cripple your business. Our expert sea customs clearance services ensure your ocean freight traverses borders efficiently. We navigate complex regulations with precision, handling HS code classification, comprehensive documentation, and duty & tax management. Our strong relationships with customs authorities guarantee smooth clearance and keep you informed with real-time shipment tracking. Experience faster clearance times, reduced costs, and minimized risks. We specialize in sea clearance across industries and operate a global network for seamless service. Contact us today for a free quote and unlock a smoother sea customs clearance experience.' image2="/images/service-sea.jpg" title3="Air Freight Made Easy" description3="Expedite your air cargo journey with our expert air freight clearance services. Our seasoned team ensures seamless navigation of customs complexities. We handle HS code classification for accurate duties, meticulously prepare paperwork, and leverage strong relationships with authorities for efficient clearance.  Enjoy faster release times, reduced costs, and peace of mind. We specialize in air freight across industries and boast a global network. Get a free quote and discover how we can streamline your air customs clearance." image3="/images/service-air.jpg" imageUrl="/images/service-air.jpg" /> */}
-        </Layout>
-        </>
-    )
+      </Layout>
+    </>
+  );
 }
