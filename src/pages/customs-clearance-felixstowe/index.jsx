@@ -64,31 +64,32 @@ export default function Services({preview}){
 
   const liverpoolFeatures = [
     { 
-      title: "Rapid Turnaround Times", 
-      desc: "We process entries quickly and accurately, helping you avoid port delays and storage charges.", 
+      title: "Rapid Processing & Zero-Delay Focus", 
+      desc: "We work quickly and accurately to keep your cargo moving and avoid quay rent or demurrage.", 
       icon: <Clock size={24} /> 
     },
     { 
       title: "Full Import & Export Coverage", 
-      desc: "From import declarations, export declarations, T1 transit documents, and EX‑A, to specialist procedures — we handle it all.", 
+      desc: "We handle all declaration types, including import entries, export declarations, T1 transit documents, and EX-A.", 
       icon: <Globe size={24} /> 
     },
     { 
-      title: "Direct Experience at the Port of Liverpool", 
-      desc: "We work daily with carriers, port operators, and hauliers at Liverpool, giving you a seamless end‑to‑end service.", 
+      title: "Daily Operations at Felixstowe", 
+      desc: "Our team works closely with carriers, port operators, and hauliers at Felixstowe, ensuring seamless communication and efficient clearance.", 
       icon: <Ship size={24} /> 
     },
     { 
-      title: "Transparent Pricing", 
-      desc: "Clear, competitive rates with no hidden extras.", 
+      title: "Transparent, Competitive Pricing", 
+      desc: "Clear, fair rates with no hidden extras.", 
       icon: <CheckCircle2 size={24} /> 
     },
     { 
-      title: "Dedicated Support", 
-      desc: "You get direct access to experienced customs specialists who keep you updated at every stage.", 
+      title: "Direct Access to Experienced Specialists", 
+      desc: "You get real support from real customs experts — not automated systems.", 
       icon: <Users size={24} /> 
     },
   ];
+  
 
   const liverpoolServices = [
     { 
@@ -96,18 +97,18 @@ export default function Services({preview}){
       intro: "We manage all import declarations into the UK, including:",
       items: [
         "Standard imports",
-        "High‑value and controlled goods",
+        "High-value and controlled goods",
         "Preferential origin claims",
-        "Duty and VAT calculations",
-        "Post‑clearance amendments"
+        "Duty & VAT calculations",
+        "Post-clearance amendments and corrections"
       ],
       icon: <ArrowRight className="rotate-90" /> 
     },
     { 
       title: "Export Customs Clearance", 
-      intro: "Smooth, compliant export processing:",
+      intro: "Reliable, compliant export processing:",
       items: [
-        "EX‑A creation",
+        "EX-A creation",
         "Export declarations for all commodity types",
         "Support with carrier and port requirements"
       ],
@@ -115,17 +116,17 @@ export default function Services({preview}){
     },
     { 
       title: "T1 Transit Documents", 
-      intro: "If your goods are moving onward to the EU or bonded facilities, we can:",
+      intro: "If your goods are moving onward to the EU or bonded facilities, we provide:",
       items: [
-        "Create T1 transit documents",
-        "Provide LRN numbers",
-        "Liaise with hauliers and port authorities",
-        "Ensure correct discharge at destination"
+        "T1 creation",
+        "LRN numbers",
+        "Liaison with hauliers and port authorities",
+        "Correct discharge at destination"
       ],
       icon: <FileText /> 
     },
     { 
-      title: "Specialist Procedures", 
+      title: "Specialist Customs Procedures", 
       intro: "We also support:",
       items: [
         "Temporary admission",
@@ -136,6 +137,7 @@ export default function Services({preview}){
       icon: <Star /> 
     },
   ];
+  
 
   const industries = [
     { name: "Retail & e‑commerce", icon: <ShoppingBag /> },
@@ -147,9 +149,10 @@ export default function Services({preview}){
   ];
 
   const whyPortItems = [
-    { text: "Fast access to the North West and Midlands", icon: <Truck size={28} /> },
-    { text: "Major container and RoRo terminals", icon: <Anchor size={28} /> },
-    { text: "Strong links with Ireland, Europe, and global trade routes", icon: <Globe size={28} /> },
+    { text: "Extensive global shipping routes", icon: <Truck size={28} /> },
+    { text: "High‑capacity container terminals", icon: <Anchor size={28} /> },
+    { text: "Fast access to the Midlands and South East", icon: <Globe size={28} /> },
+    { text: "Strong rail and road connectivity", icon: <Globe size={28} /> },
   ];
 
     return(
@@ -172,7 +175,7 @@ export default function Services({preview}){
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
-              <h2 className="text-4xl font-bold text-white mb-4">Why Choose Us for Customs Clearance at Liverpool Port?</h2>
+              <h2 className="text-4xl font-bold text-white mb-4">Why Choose Us for Customs Clearance at Felixstowe?</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {liverpoolFeatures.map((feature, idx) => (
@@ -195,7 +198,7 @@ export default function Services({preview}){
         <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-[#049fe1] font-bold tracking-widest text-xs uppercase bg-[#049fe1]/10 px-3 py-1 rounded-full">Our Services</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6">Our Customs Services at the Port of Liverpool</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-6">Our Customs Services at the Port of Felixstowe</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -240,7 +243,7 @@ export default function Services({preview}){
       <section className="py-20 bg-white border-y border-slate-100">
         <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 text-center">
             <h3 className="text-3xl font-bold text-slate-900 mb-4">Industries We Support</h3>
-            <p className="text-slate-500 mb-12 text-lg max-w-2xl mx-auto">We work with a wide range of sectors moving goods through Liverpool. If it moves through Liverpool, we can clear it.</p>
+            <p className="text-slate-500 mb-12 text-lg max-w-2xl mx-auto">We work with a wide range of sectors shipping through Felixstowe, including:</p>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {industries.map((ind, idx) => (
@@ -252,6 +255,9 @@ export default function Services({preview}){
                 </div>
               ))}
             </div>
+            <div className="mt-8 pt-8 border-t border-slate-100 text-center">
+                  <p className="font-bold text-lg text-[#0ea5e9]">If it moves through Felixstowe, we can clear it.</p>
+                </div>
         </div>
       </section>
 
@@ -268,9 +274,9 @@ export default function Services({preview}){
                   <span className="w-2 h-2 rounded-full bg-[#049fe1] animate-pulse"></span>
                   <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">Strategic Gateway</span>
                 </div>
-                <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Why the <span className="text-[#049fe1]">Port of Liverpool?</span></h3>
+                <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Why the <span className="text-[#049fe1]">Port of Felixstowe?</span></h3>
                 <p className="text-slate-400 text-lg leading-relaxed ">
-                  Liverpool is one of the UK’s most important deep‑sea ports. Our local knowledge ensures your goods move through the port efficiently and compliantly.
+                Our local expertise ensures your goods move through the port efficiently and compliantly. Felixstowe is the UK’s largest and busiest container port, offering:
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-end">
@@ -281,7 +287,7 @@ export default function Services({preview}){
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                {whyPortItems.map((item, i) => (
                  <div key={i} className="bg-slate-800/50 backdrop-blur-md p-8 rounded-3xl border border-white/5 hover:bg-slate-800 transition-colors group">
                    <div className="w-16 h-16 bg-[#049fe1]/10 rounded-2xl flex items-center justify-center text-[#049fe1] mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -304,14 +310,14 @@ export default function Services({preview}){
               <span className="text-[#049fe1] text-xs font-bold uppercase tracking-wider">Ready to Ship?</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
-            Get a Fast Quote for <br/> <span className="text-[#049fe1]">Customs Clearance at Liverpool</span>
+            Get a Fast Quote for <br/> <span className="text-[#049fe1]">Customs Clearance at Felixstowe</span>
           </h2>
           <p className="text-xl text-slate-500 mb-4 max-w-4xl mx-auto leading-relaxed">
-            Whether you need a one‑off clearance or ongoing support, we’re ready to help.
-            Tell us about your shipment and we’ll provide a quick, competitive quote.
+          Whether you need a one‑off clearance or ongoing support, we’re ready to help.
+          Tell us about your shipment and we’ll provide a quick, competitive quote.
           </p>
           <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Contact us today for expert customs clearance at the Port of Liverpool.
+          Contact us today for expert customs clearance at the Port of Felixstowe.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">         
