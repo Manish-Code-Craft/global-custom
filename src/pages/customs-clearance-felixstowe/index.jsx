@@ -256,8 +256,8 @@ export default function Services({preview}){
               ))}
             </div>
             <div className="mt-8 pt-8 border-t border-slate-100 text-center">
-                  <p className="font-bold text-lg text-[#0ea5e9]">If it moves through Felixstowe, we can clear it.</p>
-                </div>
+              <p className="font-bold text-lg text-[#0ea5e9]">If it moves through Felixstowe, we can clear it.</p>
+            </div>
         </div>
       </section>
 

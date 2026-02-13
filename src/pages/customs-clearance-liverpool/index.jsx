@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import NewService from "@/components/Home/Services/NewService"
 import Layout from "@/components/ui/Layout"
 import Head  from "next/head"
@@ -10,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import PageHead from "@/components/ui/PageHead"
 import Whychoose from "@/components/ui/Whychoose"
+import React, { useState, useEffect } from 'react';
 import { 
   Ship, 
   Globe, 
@@ -158,14 +158,14 @@ export default function Services({preview}){
         <PageHead PageMeta={PageMeta} />
         <Layout preview={preview}>
         <Heroservice
-        title="Customs Clearance at the Port of Liverpool"         
-        backgroundImage="/images/service-bg.jpg"
-        desc={[
-          "Fast, Reliable Import & Export Support Across the County",           
-          "If you’re importing or exporting goods through the Port of Liverpool, you need a customs partner who understands the port, the processes, and the pressures of modern supply chains. We provide fast, accurate, and fully compliant customs clearance for businesses of all sizes, ensuring your cargo moves smoothly without delays or unexpected costs.",           
-          "Whether you’re shipping containers, groupage, RoRo, or specialised freight, our team handles every step of the customs process with precision.",           
-        ]} 
-        />
+          title="Customs Clearance at the Port of Liverpool"         
+          backgroundImage="/images/service-bg.jpg"
+          desc={[
+            "Fast, Reliable Import & Export Support Across the County",           
+            "If you’re importing or exporting goods through the Port of Liverpool, you need a customs partner who understands the port, the processes, and the pressures of modern supply chains. We provide fast, accurate, and fully compliant customs clearance for businesses of all sizes, ensuring your cargo moves smoothly without delays or unexpected costs.",           
+            "Whether you’re shipping containers, groupage, RoRo, or specialised freight, our team handles every step of the customs process with precision.",           
+          ]} 
+          />
         
         <NewService/>
         
