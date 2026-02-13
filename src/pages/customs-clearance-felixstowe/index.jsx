@@ -14,11 +14,11 @@ import {
   Ship, 
   Globe, 
   CheckCircle2, 
-  ShieldCheck, 
+  Container, 
   FileText, 
   Box, 
   ArrowRight, 
-  Zap,
+  Train,
   Quote,
   Star,
   ChevronLeft,
@@ -149,11 +149,11 @@ export default function Services({preview}){
   ];
 
   const whyPortItems = [
-    { text: "Extensive global shipping routes", icon: <Truck size={28} /> },
-    { text: "High‑capacity container terminals", icon: <Anchor size={28} /> },
-    { text: "Fast access to the Midlands and South East", icon: <Globe size={28} /> },
-    { text: "Strong rail and road connectivity", icon: <Globe size={28} /> },
-  ];
+    { text: "Extensive global shipping routes", icon: <Ship size={28} /> },
+    { text: "High‑capacity container terminals", icon: <Container size={28} /> },
+    { text: "Fast access to the Midlands and South East", icon: <MapPin size={28} /> },
+    { text: "Strong rail and road connectivity", icon: <Train size={28} /> },
+  ]; 
 
     return(
         <>
