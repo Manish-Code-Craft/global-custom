@@ -16,7 +16,7 @@ export default function Footer() {
  const hideOnHome = router.pathname === "/";
   return (
     <>
-    {!hideOnHome && (
+    {/* {!hideOnHome && (
       <section className="relative z-10 overflow-hidden bg-[#f0f0f0] dark:bg-dark py-20 lg:py-[120px]">
         <Container>
           <div className="flex flex-wrap -mx-4 lg:justify-between">
@@ -78,7 +78,7 @@ export default function Footer() {
         </Container>
       </section>
 
-      )}
+      )} */}
 
       <section className="pt-[50px] xl:pt-[80px] pb-[50px] bg-[#101010] text-white">
         <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-3 lg:px-5">

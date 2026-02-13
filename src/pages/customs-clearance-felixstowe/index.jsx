@@ -35,10 +35,11 @@ export default function Services({preview}){
         <>
         <PageHead PageMeta={PageMeta} />
         <Layout preview={preview}>
-        <Heroservice title="Customs Clearance Felixstowe" desc="Navigating the complexities of customs clearance services for the United Kingdom can be a challenge, but Global Custom Clearance Ltd. is here to simplify the process. We offer comprehensive customs clearance services, including import, export, and transit, ensuring your shipments move smoothly and efficiently. Our team of experienced professionals is dedicated to providing accurate and timely customs clearance solutions that meet the highest compliance standards. Choose Global Custom Clearance Ltd. for reliable, efficient, and compliant customs clearance services." backgroundImage="/images/service-bg.jpg"/>
+          
+        {/* <Heroservice title="Customs Clearance Felixstowe" desc="Navigating the complexities of customs clearance services for the United Kingdom can be a challenge, but Global Custom Clearance Ltd. is here to simplify the process. We offer comprehensive customs clearance services, including import, export, and transit, ensuring your shipments move smoothly and efficiently. Our team of experienced professionals is dedicated to providing accurate and timely customs clearance solutions that meet the highest compliance standards. Choose Global Custom Clearance Ltd. for reliable, efficient, and compliant customs clearance services." backgroundImage="/images/service-bg.jpg"/>
         <NewService/>
         <FeliixstoweWhyChoose/>
-        <Servicedef  />
+        <Servicedef  /> */}
         </Layout>
         </>
     )
