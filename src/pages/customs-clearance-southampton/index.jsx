@@ -300,7 +300,7 @@ export default function Services({ preview }) {
               ))}
             </div>
             <div className="mt-12 pt-8  text-center">
-              <p className="font-bold text-[#0ea5e9]">
+              <p className="font-bold text-lg text-[#0ea5e9]">
                 If it moves through Southampton, we can clear it.
               </p>
             </div>
