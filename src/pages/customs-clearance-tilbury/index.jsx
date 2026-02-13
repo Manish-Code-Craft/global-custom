@@ -339,7 +339,7 @@ export default function Services({ preview }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {whyPortItems.map((item, i) => (
                 <div
                   key={i}
