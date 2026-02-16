@@ -3,11 +3,19 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle, Link as LinkIcon,} from "lucide-react";
+import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle,
+  Factory,
+  Settings,
+  BatteryCharging,
+  Flag,
+  Wrench,
+  Package,
+  Cpu, Link as LinkIcon,} from "lucide-react";
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
 import ServiceHero from "@/components/ui/New/ServiceHero";
 import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
+import SupportedIndustries from "@/components/ui/New/SupportedIndustries";
 
 export default function Road ({ preview }) {
 
@@ -56,6 +64,18 @@ export default function Road ({ preview }) {
     { title: "Multi-Part Shipments", desc: "We manage complex, high-volume declarations." },
     { title: "Post-Clearance Amendments", desc: "We handle corrections and HMRC queries." },
   ]; 
+
+  const industries = [
+    { name: "Vehicle manufacturing", icon: <Factory size={24} /> },
+    { name: "Automotive parts", icon: <Settings size={24} /> },
+    { name: "Electric vehicles", icon: <BatteryCharging size={24} /> },
+    { name: "Motorsport", icon: <Flag size={24} /> },
+    { name: "Aftermarket suppliers", icon: <Wrench size={24} /> },
+    { name: "Commercial vehicles", icon: <Truck size={24} /> },
+    { name: "Logistics & transport", icon: <Package size={24} /> },
+    { name: "Automotive technology", icon: <Cpu size={24} /> },
+  ];
+
 
   const automotiveFaq = [
     {
@@ -317,7 +337,7 @@ export default function Road ({ preview }) {
         </section>
 
         {/* Industries */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
             <div className="text-left lg:text-center">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
@@ -352,7 +372,15 @@ export default function Road ({ preview }) {
               From prototype parts to mass production, we keep your supply chain moving.
             </p>
           </div>
-        </section>
+        </section> */}
+
+        <SupportedIndustries 
+          title=" Industries We Support"
+          subtitle=" Our automotive customs services support:"
+          industries={industries}
+          bottomText=" From prototype parts to mass production, we keep your supply chain moving."
+          bg="bg-white"
+        />
 
         <Testimonials />
 
