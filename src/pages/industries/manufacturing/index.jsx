@@ -3,11 +3,21 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle, Link as LinkIcon,} from "lucide-react";
+import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle,
+  Factory,
+  Car,
+  Cpu,
+  Cog,
+  Plane,
+  Hammer,
+  Layers,
+  Settings,
+  Link as LinkIcon,} from "lucide-react";
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
 import ServiceHero from "@/components/ui/New/ServiceHero";
 import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
+import SupportedIndustries from "@/components/ui/New/SupportedIndustries";
 
 export default function Road ({ preview }) {
 
@@ -56,6 +66,17 @@ export default function Road ({ preview }) {
     { title: "High-Volume Shipments", desc: "We manage complex, bulk declarations." },
     { title: "Post-Clearance Amendments", desc: "We handle corrections and HMRC follow-ups." },
   ]; 
+
+  const industries = [
+    { name: "General manufacturing", icon: <Factory size={24} /> },
+    { name: "Automotive production", icon: <Car size={24} /> },
+    { name: "Electronics manufacturing", icon: <Cpu size={24} /> },
+    { name: "Industrial machinery", icon: <Cog size={24} /> },
+    { name: "Aerospace", icon: <Plane size={24} /> },
+    { name: "Metal fabrication", icon: <Hammer size={24} /> },
+    { name: "Plastics & polymers", icon: <Layers size={24} /> },
+    { name: "Engineering & fabrication", icon: <Settings size={24} /> },
+  ];
 
   const manufacturingFaq = [
     {
@@ -317,7 +338,7 @@ export default function Road ({ preview }) {
         </section>
 
         {/* Industries */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
             <div className="text-left lg:text-center">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
@@ -352,7 +373,15 @@ export default function Road ({ preview }) {
               When manufacturing efficiency matters, we deliver reliable customs clearance.
             </p>
           </div>
-        </section>
+        </section> */}
+
+         <SupportedIndustries 
+            title="Industries We Support"
+            subtitle="Our food and drink customs services support:"
+            industries={industries}
+            bottomText="From chilled imports to shelf-stable goods, we keep your products moving."
+            bg="bg-white"
+          />
 
         <Testimonials />
 
