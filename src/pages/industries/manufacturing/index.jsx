@@ -375,13 +375,13 @@ export default function Road ({ preview }) {
           </div>
         </section> */}
 
-         <SupportedIndustries 
-            title="Industries We Support"
-            subtitle="Our food and drink customs services support:"
-            industries={industries}
-            bottomText="From chilled imports to shelf-stable goods, we keep your products moving."
-            bg="bg-white"
-          />
+        <SupportedIndustries 
+          title="Industries We Support"
+          subtitle="Our food and drink customs services support:"
+          industries={industries}
+          bottomText="From chilled imports to shelf-stable goods, we keep your products moving."
+          bg="bg-white"
+        />
 
         <Testimonials />
 
