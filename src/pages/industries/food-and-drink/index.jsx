@@ -3,11 +3,19 @@ import Image from "next/image";
 import Layout from "@/components/ui/Layout";
 import PageHead from "@/components/ui/PageHead";
 import React, { useState } from 'react';
-import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle, Link as LinkIcon,} from "lucide-react";
+import {FileText, Warehouse, Hash, Boxes, Globe, PoundSterling, Calculator, Clock, Truck, CheckCircle,
+  Utensils,
+  Apple,
+  Fish,
+  Milk,
+  Wine,
+  Store,
+  ShoppingCart, Link as LinkIcon,} from "lucide-react";
 import SiteFAQs from "@/components/ui/SiteFAQs";
 import SiteCta from "@/components/ui/SiteCta";
 import ServiceHero from "@/components/ui/New/ServiceHero";
 import NewInnerBanner from "@/components/ui/New/NewInnerBanner";
+import SupportedIndustries from "@/components/ui/New/SupportedIndustries";
 
 export default function Road ({ preview }) {
 
@@ -56,6 +64,17 @@ export default function Road ({ preview }) {
     { title: "Mixed Food Consignments", desc: "We manage complex, multi-product shipments." },
     { title: "Post-Clearance Amendments", desc: "We handle corrections and HMRC follow-ups." },
   ]; 
+
+  const industries = [
+    { name: "Food manufacturing", icon: <Utensils size={24} /> },
+    { name: "Drink distribution", icon: <Truck size={24} /> },
+    { name: "Fresh produce", icon: <Apple size={24} /> },
+    { name: "Meat & seafood", icon: <Fish size={24} /> },
+    { name: "Dairy products", icon: <Milk size={24} /> },
+    { name: "Alcohol & beverages", icon: <Wine size={24} /> },
+    { name: "Retail & hospitality", icon: <Store size={24} /> },
+    { name: "E-commerce food sales", icon: <ShoppingCart size={24} /> },
+  ];
 
   const foodFaq = [
     {
@@ -317,7 +336,7 @@ export default function Road ({ preview }) {
         </section>
 
         {/* Industries */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="max-w-[1320px] mx-auto px-[12px] md:px-[36px] xl:px-0">
             <div className="text-left lg:text-center">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">
@@ -352,7 +371,15 @@ export default function Road ({ preview }) {
               From chilled imports to shelf-stable goods, we keep your products moving.
             </p>
           </div>
-        </section>
+        </section> */}
+
+        <SupportedIndustries 
+          title="Industries We Support"
+          subtitle="Our food and drink customs services support:"
+          industries={industries}
+          bottomText="From chilled imports to shelf-stable goods, we keep your products moving."
+          bg="bg-white"
+        />
 
         <Testimonials />
 
