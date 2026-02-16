@@ -377,9 +377,9 @@ export default function Road ({ preview }) {
 
         <SupportedIndustries 
           title="Industries We Support"
-          subtitle="Our food and drink customs services support:"
+          subtitle="Our manufacturing customs services support:"
           industries={industries}
-          bottomText="From chilled imports to shelf-stable goods, we keep your products moving."
+          bottomText="When manufacturing efficiency matters, we deliver reliable customs clearance."
           bg="bg-white"
         />
 
