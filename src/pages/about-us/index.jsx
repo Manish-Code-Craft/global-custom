@@ -278,6 +278,7 @@ export default function About({ preview }) {
         {/* <AboutArea/> */}  
         {/* <Whyus/> */}
       <Faq/>
+      
     </Layout>
     </>
   );
