@@ -31,7 +31,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div className="lg:col-span-2">
-              <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Navigation</h4>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Quick links</h4>
               <ul className="space-y-4 text-gray-400">
                 {['About Us', 'Services', 'Testimonials', 'Knowledge Hub', 'Contact'].map((item) => (
                   <li key={item}>

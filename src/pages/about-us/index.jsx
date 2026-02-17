@@ -1,8 +1,6 @@
 
 import PageHead from "@/components/ui/PageHead"
 import Layout from "@/components/ui/Layout";
-import AboutArea from "@/components/ui/AboutArea";
-import HeroAbout from "@/components/ui/HeroAbout";
 import Faq from "@/components/ui/Faq/Faq";
 import { useRef } from "react";
 import { gsap } from "gsap";
@@ -124,8 +122,7 @@ export default function About({ preview }) {
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout preview={preview}>
-        {/* <HeroAbout backgroundImage="/images/about-banner.jpg"/> */}
-        <Heroservice 
+       <Heroservice 
           title="About Global Custom" 
           desc={[
             "Our focus on personalized service, competitive rates and customer satisfaction ensures that we always meet and exceed expectations.",    
@@ -275,10 +272,7 @@ export default function About({ preview }) {
           </div>
         </section>
 
-        {/* <AboutArea/> */}  
-        {/* <Whyus/> */}
       <Faq/>
-      
     </Layout>
     </>
   );
