@@ -3,6 +3,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Btn from "@/components/ui/Btns/Btn";
 import FaqItem from '@/components/ui/Faq/FaqItem';
 import Head from 'next/head';
+import SiteButton from '../Btns/SiteButton';
 
 
 export default function Faq(){
@@ -96,7 +97,8 @@ export default function Faq(){
                             title="FAQs"
                             description="Looking for a complete, comprehensive customs clearance service?"/>
                             <div className='mt-5'>
-                                <Btn link="/contact" title="get a quote" />
+                                <SiteButton href="/contact" label="Get a Quote"/> 
+                                {/* <Btn link="/contact" title="get a quote" /> */}
                             </div>
                         </div>
                     </div>
