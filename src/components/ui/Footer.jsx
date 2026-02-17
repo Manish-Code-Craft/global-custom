@@ -8,102 +8,84 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-[#0f0f0f] text-white pt-[60px]">
-        <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-3 lg:px-5">
-
-          {/* Top Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[50px]">
-
-            {/* Brand */}
-            <div>
-              <img
-                src="/images/GCC_LOGO_white.png"
-                alt="Global Custom Clearance"
-                className="w-[260px]"
-              />
-              <p className="mt-5 text-gray-300 leading-relaxed">
-              We are more than a platform. We are the leading Custom Brokers to ensure all your import and export declarations are compliant to HMRC.
+      <footer className="relative bg-[#0a0a0a] text-white pt-20 overflow-hidden">
+        {/* Optional: Subtle background glow for depth */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-[#26aae3]/50 to-transparent" />
+        
+        <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+            
+            {/* Brand Column */}
+            <div className="lg:col-span-4">
+              <Link href="/" className="inline-block transform hover:scale-105 transition-transform duration-300">
+                <img
+                  src="/images/GCC_LOGO_white.png"
+                  alt="Global Custom Clearance"
+                  className="w-[240px] h-auto"
+                />
+              </Link>
+              <p className="mt-6 text-gray-400 leading-relaxed text-sm lg:text-base max-w-sm">
+              We are more than a platform. We are the leading <span className="text-white font-medium">Customs Brokers</span> to ensure all your import and export declarations are compliant to HMRC.
               </p>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact</h4>
-
-              <a
-                href="tel:+441634565540"
-                className="block text-2xl font-bold hover:text-[#26aae3] transition"
-              >
-                +44 1634 565540
-              </a>
-
-              <a
-                href="mailto:imports@globalcust.co.uk"
-                className="block mt-3 text-[#26aae3] font-medium hover:underline"
-              >
-                imports@globalcust.co.uk
-              </a>
-
-              <div className="mt-6 grid grid-cols-2 gap-4 max-w-[200px]">
-                <SocialLinks
-                  name="Linkedin"
-                  link="https://www.linkedin.com/company/global-custom-clearance-ltd/"
-                />
-                <SocialLinks
-                  name="Pinterest"
-                  link="https://uk.pinterest.com/globalcustomsclearanceltd/"
-                />
-              </div>
             </div>
 
             {/* Quick Links */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-3 text-gray-300">
-                <li>
-                  <Link href="/about-us" className="hover:text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-white">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/testimonials" className="hover:text-white">
-                    Testimonials
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="hover:text-white">
-                    Knowledge Hub
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-white">
-                    Contact
-                  </Link>
-                </li>
+            <div className="lg:col-span-2">
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Navigation</h4>
+              <ul className="space-y-4 text-gray-400">
+                {['About Us', 'Services', 'Testimonials', 'Knowledge Hub', 'Contact'].map((item) => (
+                  <li key={item}>
+                    <Link 
+                      href={`/${item.toLowerCase().replace(' ', '-')}`} 
+                      className="hover:text-white hover:translate-x-2 flex items-center transition-all duration-300"
+                    >
+                      <span className="h-px w-0 bg-[#26aae3] mr-0 transition-all duration-300 group-hover:w-3 group-hover:mr-2"></span>
+                      {item}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Registered Office */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Registered Office</h4>
-
-              <div className="text-gray-300 text-sm leading-relaxed space-y-2">
-                <p>Unit 1B, Cobalt House</p>
-                <p>Medway City Estate</p>
-                <p>Rochester, Kent</p>
-                <p className="font-medium text-white">ME2 4BQ</p>
+            {/* Contact Column */}
+            <div className="lg:col-span-3">
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Get In Touch</h4>
+              <div className="space-y-4">
+                <a
+                  href="tel:+441634565540"
+                  className="group block"
+                >
+                  <span className="block text-xs text-gray-500 mb-1">Support Line</span>
+                  <span className="text-xl font-bold group-hover:text-[#26aae3] transition-colors">+44 1634 565540</span>
+                </a>
+                <a
+                  href="mailto:imports@globalcust.co.uk"
+                  className="group block"
+                >
+                  <span className="block text-xs text-gray-500 mb-1">Email Inquiry</span>
+                  <span className="text-base text-gray-300 group-hover:text-white border-b border-gray-800 group-hover:border-[#26aae3] pb-1 transition-all">
+                    imports@globalcust.co.uk
+                  </span>
+                </a>
+                <div className="pt-4 flex items-center gap-4">
+                   <SocialLinks name="Linkedin" link="https://www.linkedin.com/company/global-custom-clearance-ltd/" />
+                   <SocialLinks name="Pinterest" link="https://uk.pinterest.com/globalcustomsclearanceltd/" />
+                </div>
               </div>
-
-              <p className="mt-4 text-xs text-gray-400">
-                United Kingdom
-              </p>
             </div>
 
+            {/* Address Column */}
+            <div className="lg:col-span-3">
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Headquarters</h4>
+              <div className="bg-[#161616] p-5 rounded-xl border border-gray-800/50">
+                <address className="not-italic text-gray-400 text-sm leading-relaxed">
+                  Unit 1B, Cobalt House<br />
+                  Medway City Estate<br />
+                  Rochester, Kent, <span className="text-white font-semibold underline decoration-[#26aae3]">ME2 4BQ</span><br />
+                  <span className="mt-2 block font-medium uppercase text-[10px] tracking-tighter text-gray-500">United Kingdom</span>
+                </address>
+              </div>
+            </div>
           </div>
 
           {/* Divider */}
