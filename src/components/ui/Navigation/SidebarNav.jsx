@@ -45,7 +45,7 @@ export default function Sidebarnav(){
                     <span className="icon mr-5"><Image src="/images/ofc-locaiton.webp" alt="" width={40} height={40} className="w-[60px]" /></span>
                     <span>
                          <span className="block mb-0">Office Address</span>
-                        <b><a href="https://maps.app.goo.gl/yMj9fZqRMfa2sWa68" target="_blank">Unit 1B, Cobalt House, Medway City Estate Rochester, Kent ME2 4BQ</a></b>
+                        <b><a href="https://maps.app.goo.gl/L6REkdvR6VHTnZBdA" target="_blank">Unit 1B, Cobalt House, Medway City Estate Rochester, Kent ME2 4BQ</a></b>
                     </span>
                 </div>
             </div>

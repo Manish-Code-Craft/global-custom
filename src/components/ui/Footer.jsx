@@ -78,12 +78,14 @@ export default function Footer() {
             <div className="lg:col-span-3">
               <h4 className="text-sm font-bold uppercase tracking-widest text-[#26aae3] mb-6">Headquarters</h4>
               <div className="bg-[#161616] p-5 rounded-xl border border-gray-800/50">
-                <address className="not-italic text-gray-400 text-sm leading-relaxed">
+               <Link href="https://maps.app.goo.gl/L6REkdvR6VHTnZBdA" target="_blank">
+               <address className="not-italic text-gray-400 text-sm leading-relaxed">
                   Unit 1B, Cobalt House<br />
                   Medway City Estate<br />
                   Rochester, Kent, <span className="text-white font-semibold underline decoration-[#26aae3]">ME2 4BQ</span><br />
                   <span className="mt-2 block font-medium uppercase text-[10px] tracking-tighter text-gray-500">United Kingdom</span>
                 </address>
+               </Link>
               </div>
             </div>
           </div>
