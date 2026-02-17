@@ -266,7 +266,7 @@ export default function About({ preview }) {
               At Global Custom, we believe customs clearance should be straightforward. Whether you’re moving a single case or coordinating a full production, we provide the same level of care, precision, and accountability.
             </p>
             <div className="inline-block p-8 bg-slate-50 rounded-3xl border border-slate-100">
-              <p className="text-2xl font-bold text-[#049fe1]">
+              <p className=" text-[20px] md:text-2xl font-bold text-[#049fe1]">
                 Your goods. Your deadlines. Your compliance. <br/>
                 <span className="text-slate-900">We make customs clearance work the way it should.</span>
               </p>
