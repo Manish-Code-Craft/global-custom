@@ -240,7 +240,8 @@ const HeroSection = () => {
                     </Link>
                     </div>
                   </div>
-                <p className='max-w-[250px] text-right text-[14px]'>Please request forms to be emailed to imports@globalcust.co.uk</p>
+                {/* <p className='max-w-[250px] text-right text-[14px]'>Please request forms to be emailed to imports@globalcust.co.uk</p> */}
+                <p className='max-w-[250px] text-right text-[14px]'>Please email completed forms to imports@globalcust.co.uk</p>
                 <div className='hidden lg:flex '>
                 <Link className="button mt-6" href='/document/gcc-document.xlsx' download="gcc-document.xlsx" target='_blank'>
                       <span className="text">Download Instructions</span>
