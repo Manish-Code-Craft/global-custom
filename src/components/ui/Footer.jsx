@@ -17,7 +17,7 @@ export default function Footer() {
             
             {/* Brand Column */}
             <div className="lg:col-span-4">
-              <Link href="/" className="inline-block transform hover:scale-105 transition-transform duration-300">
+              <Link href="/" className="inline-block ">
                 <img
                   src="/images/GCC_LOGO_white.png"
                   alt="Global Custom Clearance"
