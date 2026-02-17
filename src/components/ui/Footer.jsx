@@ -25,7 +25,7 @@ export default function Footer() {
                 />
               </Link>
               <p className="mt-6 text-gray-400 leading-relaxed text-sm lg:text-base max-w-sm">
-              We are more than a platform. We are the leading <span className="text-white font-medium">Customs Brokers</span> to ensure all your import and export declarations are compliant to HMRC.
+                We are more than a platform. We are the leading <span className="text-white font-medium">Customs Brokers</span> to ensure all your import and export declarations are compliant to HMRC.
               </p>
             </div>
 
