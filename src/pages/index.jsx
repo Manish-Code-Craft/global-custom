@@ -447,10 +447,7 @@ const TestimonialsSection = () => {
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-[#049fe1] relative overflow-hidden isolate">
-      {/* Abstract Background */}
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-
+    <section className="py-24 bg-[#049fe1] relative overflow-hidden isolate"> 
       <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
         <div className="mb-10 text-center ">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">

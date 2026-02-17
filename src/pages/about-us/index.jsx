@@ -178,7 +178,7 @@ export default function About({ preview }) {
                 {[
                   "Fast and accurate customs processing",
                   "Clear, jargon‑free communication",
-                  "Full compliance with regulations",
+                  "Full compliance with UK and international regulations",
                   "A single point of contact",
                   "Proactive support for time‑critical shipments"
                 ].map((item, i) => (
