@@ -122,7 +122,8 @@ export default function About({ preview }) {
     <>
     <PageHead PageMeta={PageMeta} />
     <Layout preview={preview}>
-       <Heroservice 
+      <div className="pt-[80px]">
+      <Heroservice 
           title="About Global Custom" 
           desc={[
             "Our focus on personalized service, competitive rates and customer satisfaction ensures that we always meet and exceed expectations.",    
@@ -130,6 +131,7 @@ export default function About({ preview }) {
           ]} 
           backgroundImage="/images/about-banner.jpg"
         />
+      </div>
        
        {/* Mission Banner */}
         <section className="bg-[#049fe1] py-16">
