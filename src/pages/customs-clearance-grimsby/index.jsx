@@ -9,17 +9,17 @@ import SiteButton from "@/components/ui/Btns/SiteButton";
 export default function Services({ preview }) {  
 
   const PageMeta = {
-    title: "Customs Clearance Grimbsy | Global Customs Clearance Ltd",
+    title: "Customs Clearance Grimsby | Global Customs Clearance Ltd",
     description:
-      "Ensure smooth customs clearance at Grimbsy with our expert services. We handle all import/export documentation, duty and VAT support, and transit procedures to keep your shipments moving efficiently through this key UK port.",
+      "Ensure smooth customs clearance at Grimsby with our expert services. We handle all import/export documentation, duty and VAT support, and transit procedures to keep your shipments moving efficiently through this key UK port.",
     keywords:
-      "Grimbsy customs clearance, import/export documentation, duty and VAT support, transit procedures, UK port logistics, efficient customs processing, HMRC compliance, Grimbsy freight handling",
+      "Grimsby customs clearance, import/export documentation, duty and VAT support, transit procedures, UK port logistics, efficient customs processing, HMRC compliance, Grimsby freight handling",
   };
 
   const features = [
     {
       title: "Expert Handling Across Humber Ports",
-      desc: "We support Grimbsy shipments with full coverage across the Humber region, ensuring unified documentation and compliance.",
+      desc: "We support Grimsby shipments with full coverage across the Humber region, ensuring unified documentation and compliance.",
       icon: <MapPin size={24} />,
     },
     {
@@ -41,19 +41,19 @@ export default function Services({ preview }) {
     
   const services = [
     {
-      title: "Grimbsy Port Capabilities",
-      desc: "Grimbsy offers:",
+      title: "Grimsby Port Capabilities",
+      desc: "Grimsby offers:",
       items: [
         "Access to Humber deep-water logistics via Immingham & Hull.",
         "Ship agency, stevedoring and port logistics for offshore wind, marine construction and supply vessels.",
         "Freight forwarding, warehousing and nationwide road links.",
       ],
       extra:
-        "These strengths make Grimbsy suitable for complex industrial cargo, project logistics, and multi-modal movements.",
+        "These strengths make Grimsby suitable for complex industrial cargo, project logistics, and multi-modal movements.",
       icon: <Anchor size={28} />,
     },
     {
-      title: "Documentation Required for Grimbsy Customs Clearance",
+      title: "Documentation Required for Grimsby Customs Clearance",
       desc: "You will need:",
       items: [
         "Commercial Invoice",
@@ -74,11 +74,11 @@ export default function Services({ preview }) {
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance Grimbsy"
+          title="Customs Clearance Grimsby"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Grimbsy is a key Humber-region port with strong links to UK and international supply chains. Historically known for fishing, Grimbsy today supports offshore wind operations, project cargo, automotive logistics, and general freight movements. As part of the wider Humber Ports complex, it benefits from shared infrastructure and customs systems spanning Hull, Immingham, Grimbsy and Killingholme, making accurate and efficient customs clearance essential for smooth cargo operations.",
-            "At Global Customs Clearance, we ensure your shipments through Grimbsy are processed quickly, compliantly and without disruption.",
+            "Grimsby is a key Humber-region port with strong links to UK and international supply chains. Historically known for fishing, Grimsby today supports offshore wind operations, project cargo, automotive logistics, and general freight movements. As part of the wider Humber Ports complex, it benefits from shared infrastructure and customs systems spanning Hull, Immingham, Grimsby and Killingholme, making accurate and efficient customs clearance essential for smooth cargo operations.",
+            "At Global Customs Clearance, we ensure your shipments through Grimsby are processed quickly, compliantly and without disruption.",
           ]}
         />
 
@@ -87,13 +87,13 @@ export default function Services({ preview }) {
         <section className="pb-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Grimbsy
+              Why Customs Clearance Matters at Grimsby
             </h2>
             <p className="text-xl text-slate-500 leading-relaxed mb-8">
-            Grimbsy handles a diverse mix of cargo including offshore energy equipment, bulk loads, vehicles and commercial freight. Customs requirements vary significantly depending on cargo type, meaning precise classification, correct HS codes and accurate documentation are essential to avoid inspections or delays.
+            Grimsby handles a diverse mix of cargo including offshore energy equipment, bulk loads, vehicles and commercial freight. Customs requirements vary significantly depending on cargo type, meaning precise classification, correct HS codes and accurate documentation are essential to avoid inspections or delays.
             </p>
             <p className="text-xl text-slate-500 leading-relaxed">
-            Because Grimbsy operates alongside Immingham and Hull in the Humber cluster, shipments frequently move between ports — making consistency and accuracy in your customs paperwork critical in ensuring seamless logistics.
+            Because Grimsby operates alongside Immingham and Hull in the Humber cluster, shipments frequently move between ports — making consistency and accuracy in your customs paperwork critical in ensuring seamless logistics.
             </p>
           </div>
         </section>       
@@ -102,7 +102,7 @@ export default function Services({ preview }) {
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose Us for Customs Clearance in Grimbsy
+              Why Choose Us for Customs Clearance in Grimsby
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -201,7 +201,7 @@ export default function Services({ preview }) {
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Let Us Handle Your <br />{" "}
               <span className="text-[#049fe1]">
-              Grimbsy Customs Clearance
+              Grimsby Customs Clearance
               </span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
