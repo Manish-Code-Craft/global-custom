@@ -50,47 +50,49 @@ export default function Services({ preview }) {
   ];
   
     
-const services = [
-  {
-    title: "Immingham Port Capabilities",
-    desc: "Immingham offers:",
-    items: [
-      "Largest UK port by tonnage – ~46m tonnes annually",
-      "Major hub for energy generation supply chains",
-      "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
-      "Deep-water container and Lo-Lo facilities for global trade routes",
-      "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",      
-    ],
-    extra:"This makes Immingham one of the most strategically important freight gateways in the UK.",
-    icon: <Anchor size={28} />,
-  },
-  {
-    title: "Documentation Required for Immingham Customs Clearance",
-    desc: "For smooth clearance, you must provide:",
-    items: [
-      "Commercial Invoice",
-      "Packing List",
-      "Bill of Lading / Airway Bill",
-      "Import/Export Licences (where required)",
-      "Customs Declaration (CDS)",
-    ],
-    extra:"Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
-    icon: <FileText size={28} />,
-  },
-  {
-    title: "Typical Customs Procedures at Immingham",
-    desc: "The customs process includes:",
-    items: [
-      "Pre-Arrival Notification submitted before vessel arrival.",
-      "Cargo Declaration upon arrival for HMRC processing.",
-      "Verification of Documentation (invoices, packing lists, origin certificates).",
-      "Physical Inspection when required by customs or risk assessment.",
-      "Payment of Duties & Taxes before release.",
-      "Release of Goods once all requirements are met",
-    ],
-    icon: <ClipboardList size={28} />,
-  },
-];
+  const services = [
+    {
+      title: "Port of Immingham Capabilities",
+      desc: "Immingham offers:",
+      items: [
+        "Largest UK port by tonnage – ~46m tonnes annually",
+        "Major hub for energy generation supply chains",
+        "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
+        "Deep-water container and Lo-Lo facilities for global trade routes",
+        "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",
+      ],
+      extra:
+        "This makes Immingham one of the most strategically important freight gateways in the UK.",
+      icon: <Anchor size={28} />,
+    },
+    {
+      title: "Documentation Required for Immingham Customs Clearance",
+      desc: "For smooth clearance, you must provide:",
+      items: [
+        "Commercial Invoice",
+        "Packing List",
+        "Bill of Lading / Airway Bill",
+        "Import/Export Licences (where required)",
+        "Customs Declaration (CDS)",
+      ],
+      extra:
+        "Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
+      icon: <FileText size={28} />,
+    },
+    {
+      title: "Typical Customs Procedures at Immingham",
+      desc: "The customs process includes:",
+      items: [
+        "Pre-Arrival Notification submitted before vessel arrival.",
+        "Cargo Declaration upon arrival for HMRC processing.",
+        "Verification of Documentation (invoices, packing lists, origin certificates).",
+        "Physical Inspection when required by customs or risk assessment.",
+        "Payment of Duties & Taxes before release.",
+        "Release of Goods once all requirements are met",
+      ],
+      icon: <ClipboardList size={28} />,
+    },
+  ];
   
   return (
     <>
