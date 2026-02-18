@@ -3,7 +3,7 @@ import Layout from "@/components/ui/Layout";
 import Heroservice from "@/components/ui/Heroservice";
 import PageHead from "@/components/ui/PageHead";
 import React from "react";
-import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList} from "lucide-react";
+import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList, Activity  } from "lucide-react";
 import SiteButton from "@/components/ui/Btns/SiteButton";
 
 export default function Services({ preview }) {  
@@ -106,22 +106,52 @@ const services = [
 
         <NewService />
 
-        <section className="pb-24 bg-white">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Immingham
-            </h2>
-            <p className="text-xl text-slate-500 leading-relaxed mb-8">
-              The Port of Immingham operates strict HMRC‑controlled procedures, requiring businesses to submit accurate declarations, proper classification and all mandatory supporting documentation.
-            </p>
-            <p className="text-lg text-slate-500 leading-relaxed">
-              Missing or incorrect paperwork can trigger port inspections, added costs or severe delays. Immingham handles a diverse mix of cargo — including timber, steel, bagged goods, forest products, containers and Ro‑Ro — making compliance essential for avoiding disruption to your supply chain.
-            </p>
+        <section className="py-24 bg-white">
+          <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                Why Customs Clearance <br/> <span className="text-[#049fe1]">Matters at Immingham</span>
+              </h2>
+              <p className="text-lg text-slate-500 leading-relaxed mb-6">
+                As one of the UK’s busiest freight hubs, Immingham processes millions of tonnes of imports and exports across industries including energy, retail, heavy manufacturing and logistics.
+              </p>
+              <p className="text-lg text-slate-500 leading-relaxed mb-6">
+                All cargo moving through the port must comply with HMRC requirements, including correct declarations, classification, valuation and any applicable licensing.
+              </p>
+              <div className="bg-amber-50 p-6 rounded-xl border border-amber-100">
+                <p className="text-amber-800 font-medium">
+                  Proper preparation of documentation and proactive compliance significantly reduce the risk of costly delays.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-slate-50 rounded-[2rem] p-10 border border-slate-100 shadow-sm">
+              <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <Activity size={24} className="text-[#049fe1]" />
+                The Customs Environment Includes:
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  "High-volume Ro‑Ro operations (30+ sailings per week to Northern Europe & Scandinavia)",
+                  "Bulk cargo inspections for sectors such as energy and chemicals",
+                  "Strict anti‑fraud, security and compliance controls to protect supply chains",
+                  "Random and risk‑based customs inspections as part of standard UK border control"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#049fe1] shrink-0"></div>
+                    <span className="text-slate-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+            </div>
           </div>
-        </section>       
+        </section>
 
+        
         <section className="py-24 bg-[#049fe1] relative overflow-hidden isolate">          
-          <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
+          <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
               Why Choose Us for Immingham Customs Clearance

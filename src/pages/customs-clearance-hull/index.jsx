@@ -19,27 +19,27 @@ export default function Services({ preview }) {
   const features = [
     {
       title: "Full Import & Export Declarations",
-      desc: "We manage HMRC-compliant customs entries for all cargo types at the Port of Hull using CDS/CHIEF-connected systems for fast, reliable clearance.",
+      desc: "We manage HMRC‑compliant customs entries for all types of goods at the Port of Hull, using CDS/CHIEF‑connected systems to ensure rapid processing and minimal delays.",
       icon: <FileText size={24} />,
     },
     {
-      title: "Expertise in Hull’s Specialised Cargo",
-      desc: "As the UK’s leading timber port, Hull handles timber, steel, and weather-sensitive cargo. We ensure correct documentation, tariff codes, and import controls for every shipment.",
+      title: "Expertise with Hull’s Specialized Cargo Types",
+      desc: "Hull is the UK’s leading timber port and hosts specialised handling for weather‑sensitive cargoes such as steel and bagged products. We ensure the correct document set, tariff codes and import controls are met for every shipment.",
       icon: <Package size={24} />,
     },
     {
-      title: "Fast, Pre-Lodged Customs Clearance",
-      desc: "Declarations are pre-submitted before vessel arrival, allowing goods to be released immediately upon landing wherever possible.",
+      title: "Fast, Pre‑Lodged Clearance",
+      desc: "We pre‑submit customs declarations before vessels arrive, ensuring your goods can be released immediately upon landing whenever possible",
       icon: <Clock size={24} />,
     },
     {
-      title: "Duties, VAT & Licensing Guidance",
-      desc: "We provide clear guidance on EORI registration, duty calculations, VAT, and licensing requirements including DEFRA-controlled and restricted goods.",
+      title: "Guidance on Duties, VAT & Licensing",
+      desc: "Whether you need help with EORI registration, duty calculations or licensing requirements (e.g., DEFRA‑controlled items or restricted goods), we provide clear guidance to keep you compliant",
       icon: <ShieldCheck size={24} />,
     },
     {
       title: "24/7 Status Updates & Proactive Compliance",
-      desc: "We monitor arrival, clearance, and release around the clock while maintaining audit-ready compliance reporting for your business.",
+      desc: "We monitor arrival, clearance and release 24/7 and maintain audit‑ready compliance reporting for your business.",
       icon: <Activity size={24} />,
     },
   ];
@@ -56,6 +56,7 @@ export default function Services({ preview }) {
         "Strong connectivity via M62, M18 and M1, plus inland waterway access",
         
       ],
+      extra: "This infrastructure makes Hull an efficient, well‑connected gateway for UK importers and exporters.",
       icon: <CheckCircle2 size={28} />
     },
     {
@@ -120,7 +121,7 @@ export default function Services({ preview }) {
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-                Why Choose Us for Customs Clearance at Hull Port?
+                Why Choose Us for Customs Clearance at Hull
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
