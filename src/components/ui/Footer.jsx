@@ -19,9 +19,9 @@ export default function Footer() {
             <div className="lg:col-span-4">
               <Link href="/" className="inline-block ">
                 <img
-                  src="/images/GCC_LOGO_white.png"
+                  src="/images/logo-animatef.gif"
                   alt="Global Custom Clearance"
-                  className="w-[240px] h-auto"
+                  className="w-[200px] h-auto"
                 />
               </Link>
               <p className="mt-6 text-gray-400 leading-relaxed text-sm lg:text-base max-w-sm">

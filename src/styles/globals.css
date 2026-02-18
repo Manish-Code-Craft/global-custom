@@ -1447,6 +1447,12 @@ h5.amarpreloader-text {
   position: relative;
   z-index: 30;
 }
+/* @media screen and (max-width: 767px) {
+  .new-service {
+    padding: 0px 50px 0px !important;
+  }
+  
+} */
 #about{
   padding-top: 0px!important;
 }

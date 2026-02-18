@@ -27,7 +27,7 @@ export default function Header() {
             <div className="flex items-center justify-between py-2">
                 <div className="w-[200px] md:w-[210px] leading-[0]">
                     <Link title="Global Custom Clearance,UK" href="/">
-                   <Image src="/images/GCC_LOGO.webp" width={396} height={125}  alt="logo"/>
+                   <Image src="/images/logo-animatef.gif" width={396} height={125}  alt="logo" className="w-[120px]"/>
                     </Link>
                 </div>
                 <div className="main-menu hidden xl:block">
@@ -36,7 +36,6 @@ export default function Header() {
                 <div className="ml-0 md:flex items-center gap-5">
                     <div className="hidden xl:flex">
                     <SiteButton href="/contact" label="Get a Free Estimate" icon={null}/>   
-                    {/* <BtnContact link="/contact" title="Get a Free Estimate" btnclass='contact-header'/> */}
                     </div>
                     <div className="ml-0 xl:hidden">
                         <div className="mobile-nav-btn"><span></span><span></span></div>

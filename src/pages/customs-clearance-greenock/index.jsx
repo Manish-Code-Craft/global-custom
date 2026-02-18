@@ -85,7 +85,7 @@ export default function Services({ preview }) {
 
         <NewService />
 
-        <section className="pb-24 bg-white">
+        <section className="py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
               Why Customs Clearance Matters at Greenock
