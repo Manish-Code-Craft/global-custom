@@ -3,104 +3,104 @@ import Layout from "@/components/ui/Layout";
 import Heroservice from "@/components/ui/Heroservice";
 import PageHead from "@/components/ui/PageHead";
 import React from "react";
-import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList} from "lucide-react";
+import { CheckCircle2, FileText, Clock, ShieldCheck, Boxes, AlertTriangle, MapPin, Anchor, ClipboardList} from "lucide-react";
 import SiteButton from "@/components/ui/Btns/SiteButton";
 
 export default function Services({ preview }) {  
 
   const PageMeta = {
-    title: "Customs Clearance Immingham | Global Customs Clearance Ltd",
+    title: "Customs Clearance Teesport | Global Customs Clearance Ltd",
     description:
-      "Ensure fast, compliant customs clearance at the Port of Immingham with Global Customs Clearance. Our expert brokers handle all cargo types, providing accurate declarations, duty guidance and 24/7 support to keep your goods moving without delay.",
+      "Ensure smooth customs clearance at Teesport with our expert import/export services. We handle all cargo types, documentation and HMRC compliance to keep your goods moving without delays.",
     keywords:
-      "customs clearance immingham, immingham customs broker, import export immingham, hmrc customs immingham, cds chief immingham, immingham port customs, customs declarations immingham, duty vat immingham, immingham cargo clearance",
+      "Teesport customs clearance, import/export services, HMRC compliance, cargo handling, duty and VAT support, Scottish trade solutions",
   };
 
   const features = [
     {
       title: "Full Import & Export Declarations",
-      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring HMRC compliance and smooth clearance through the UK frontier.",
+      desc: "We handle end-to-end customs entries for all cargo types, ensuring declarations are accurate, compliant and submitted on time.",
       icon: <FileText size={24} />,
     },
     {
-      title: "Pre-Lodged Entries to Avoid Delays",
-      desc: "With Immingham’s high traffic volumes, we pre-submit customs declarations before arrival so goods can be released immediately upon landing.",
+      title: "Pre-Lodged Entries for Faster Release",
+      desc: "We submit documentation before vessel arrival, reducing clearance delays and enabling quicker onward movement.",
       icon: <Clock size={24} />,
     },
     {
-      title: "Sector-Specific Expertise",
-      desc: "Immingham is a major hub for energy goods, raw materials, and industrial freight. We apply the correct tariffs, licensing, and compliance controls every time.",
-      icon: <Factory size={24} />,
-    },
-    {
-      title: "Duties, VAT & Compliance Support",
-      desc: "We manage duty calculations, VAT treatment, customs valuation, and classification to minimise the risk of delays, errors, or penalties.",
+      title: "Duties, VAT & Tariff Management",
+      desc: "Our team calculates and manages import duties and VAT, helping you avoid penalties and ensuring full regulatory compliance.",
       icon: <ShieldCheck size={24} />,
     },
     {
-      title: "Ro-Ro, Container, Bulk & Hazardous Cargo Handling",
-      desc: "From Ro-Ro and containers to bulk and hazardous cargo, we ensure precise documentation for all Immingham freight terminals.",
-      icon: <Ship size={24} />,
+      title: "Expertise Across All Cargo Types",
+      desc: "Teesport handles metals, steel, agribulk, forest products, containers and project cargo — all requiring accurate commodity codes and documentation.",
+      icon: <Boxes size={24} />,
     },
     {
-      title: "Inspection & Border Agency Assistance",
-      desc: "If shipments are selected for inspection or require additional documentation, we liaise directly with HMRC and border authorities to resolve issues fast.",
-      icon: <SearchCheck size={24} />,
+      title: "Understanding Local Customs Requirements",
+      desc: "Every port has its own procedural nuances. We understand Teesport’s local customs rules and ensure all documentation aligns with port expectations.",
+      icon: <MapPin size={24} />,
+    },
+  ]; 
+    
+  const services = [
+    {
+      title: "Teesport Port Capabilities",
+      desc: "Teesport offers:",
+      items: [
+        "28 million tonnes of cargo per year from container, Ro-Ro and bulk operations.",
+        "40 million tonnes across the wider Tees & Hartlepool complex.",
+        "Deep-water quays capable of handling large dry-bulk and project cargo vessels.",
+        "Excellent transport connections, including an onsite intermodal rail terminal providing direct access to the national rail network.",
+        "Strong European & Scandinavian trade links, plus deep-sea container services.",
+      ],
+      extra:
+        "These capabilities make Teesport a critical hub for UK manufacturing, chemical, agrifood and energy industries.",
+      icon: <Anchor size={28} />,
+    },
+    {
+      title: "Documentation Required for Teesport Customs Clearance",
+      desc: "To ensure seamless customs processing, you will need:",
+      items: [
+        "Commercial Invoice",
+        "Packing List",
+        "Bill of Lading / CMR",
+        "Import or Export Licences (if applicable)",
+        "Commodity Code and Valuation",
+        "CDS/CHIEF Declarations",
+        "EORI Number",
+      ],
+      extra:
+        "We ensure all documentation is accurate, compliant and submitted promptly.",
+      icon: <FileText size={28} />,
+    },
+    {
+      title: "Common Causes of Delays — And How We Help Avoid Them",
+      desc: "Delays often arise due to:",
+      items: [
+        "Incorrect tariff classification",
+        "Missing or incomplete paperwork",
+        "Misdeclared values",
+        "Incorrect duty/VAT calculations",
+        "Late submission of declarations",
+      ],
+      extra:
+        "Our proactive compliance checks and pre-lodged entries significantly minimise risks and help keep your cargo moving.",
+      icon: <AlertTriangle size={28} />,
     },
   ];
-    
-const services = [
-  {
-    title: "Immingham Port Capabilities",
-    desc: "Immingham offers:",
-    items: [
-      "Largest UK port by tonnage – ~46m tonnes annually",
-      "Major hub for energy generation supply chains",
-      "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
-      "Deep-water container and Lo-Lo facilities for global trade routes",
-      "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",      
-    ],
-    extra:"This makes Immingham one of the most strategically important freight gateways in the UK.",
-    icon: <Anchor size={28} />,
-  },
-  {
-    title: "Documentation Required for Immingham Customs Clearance",
-    desc: "For smooth clearance, you must provide:",
-    items: [
-      "Commercial Invoice",
-      "Packing List",
-      "Bill of Lading / Airway Bill",
-      "Import/Export Licences (where required)",
-      "Customs Declaration (CDS)",
-    ],
-    extra:"Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
-    icon: <FileText size={28} />,
-  },
-  {
-    title: "Typical Customs Procedures at Immingham",
-    desc: "The customs process includes:",
-    items: [
-      "Pre-Arrival Notification submitted before vessel arrival.",
-      "Cargo Declaration upon arrival for HMRC processing.",
-      "Verification of Documentation (invoices, packing lists, origin certificates).",
-      "Physical Inspection when required by customs or risk assessment.",
-      "Payment of Duties & Taxes before release.",
-      "Release of Goods once all requirements are met",
-    ],
-    icon: <ClipboardList size={28} />,
-  },
-];
   
   return (
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance Immingham"
+          title="Customs Clearance Teesport"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Immingham is the UK’s largest port by tonnage, handling more than 46 million tonnes of cargo each year and serving as a critical gateway for energy, manufacturing, automotive, bulk and containerised freight. Its scale, deep‑water facilities and high sailing frequency make efficient customs clearance essential for keeping supply chains moving.",
-            "At Global Customs Clearance, we ensure your goods pass through Immingham’s busy customs environment quickly, compliantly and with minimal disruption — whether you are shipping Ro‑Ro, containers, dry bulk, liquid bulk or specialist freight.",
+            "Teesport is one of the UK’s most important deep‑water ports, handling around 28 million tonnes of cargo per year and serving as a major gateway for imports and exports across the North of England. Owned and operated by PD Ports, Teesport connects directly to global markets through strong European, Scandinavian and deep‑sea routes, making efficient customs clearance essential for keeping supply chains moving smoothly.",
+            "At Global Customs Clearance, we provide fast, compliant and accurate customs‑clearance support for all cargo moving through Teesport — from containers and Ro‑Ro freight to dry bulk, steel, agribulk, timber and project cargo.",
           ]}
         />
 
@@ -109,13 +109,13 @@ const services = [
         <section className="pb-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Immingham
+              Why Customs Clearance Matters at Teesport
             </h2>
             <p className="text-xl text-slate-500 leading-relaxed mb-8">
-              The Port of Immingham operates strict HMRC‑controlled procedures, requiring businesses to submit accurate declarations, proper classification and all mandatory supporting documentation.
+            Teesport benefits from a lock‑free marine opening, giving vessels immediate access to the North Sea and enabling fast turnaround times for shipments. It also supports container, Ro‑Ro and bulk cargo operations across specialist terminals staffed by experienced port teams. The wider Tees and Hartlepool complex handles around 40 million tonnes annually, giving the region a competitive advantage for trade with Europe, Scandinavia and emerging deep‑sea markets.
             </p>
-            <p className="text-lg text-slate-500 leading-relaxed">
-              Missing or incorrect paperwork can trigger port inspections, added costs or severe delays. Immingham handles a diverse mix of cargo — including timber, steel, bagged goods, forest products, containers and Ro‑Ro — making compliance essential for avoiding disruption to your supply chain.
+            <p className="text-xl text-slate-500 leading-relaxed">
+            To keep cargo moving efficiently, importers and exporters must meet HMRC requirements, submit accurate declarations, and ensure that duties and VAT are correctly accounted for.
             </p>
           </div>
         </section>       
@@ -124,7 +124,7 @@ const services = [
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose Us for Immingham Customs Clearance
+              Why Choose Us for Customs Clearance in Teesport
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,11 +217,11 @@ const services = [
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Let Us Handle Your <br />{" "}
               <span className="text-[#049fe1]">
-              Immingham Customs Clearance
+              Teesport Customs Clearance
               </span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Whether you’re dealing with high-volume Ro‑Ro cargo, complex industrial imports or multi‑modal logistics, we provide fast, compliant and reliable customs solutions at the Port of Immingham.
+            Whether you’re moving containerised freight, project cargo, bulk materials or Ro‑Ro shipments, we provide smooth, compliant and efficient customs‑clearance support across Teesport.
             </p>
             
 

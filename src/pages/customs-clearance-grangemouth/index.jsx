@@ -3,104 +3,105 @@ import Layout from "@/components/ui/Layout";
 import Heroservice from "@/components/ui/Heroservice";
 import PageHead from "@/components/ui/PageHead";
 import React from "react";
-import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList} from "lucide-react";
+import { CheckCircle2, FileText, Clock, ShieldCheck, Boxes, AlertTriangle, MapPin, Anchor, ClipboardList} from "lucide-react";
 import SiteButton from "@/components/ui/Btns/SiteButton";
 
 export default function Services({ preview }) {  
 
   const PageMeta = {
-    title: "Customs Clearance Immingham | Global Customs Clearance Ltd",
+    title: "Customs Clearance Grangemouth | Global Customs Clearance Ltd",
     description:
-      "Ensure fast, compliant customs clearance at the Port of Immingham with Global Customs Clearance. Our expert brokers handle all cargo types, providing accurate declarations, duty guidance and 24/7 support to keep your goods moving without delay.",
+      "Efficient customs clearance services for importers and exporters using the Port of Grangemouth. We ensure fast, compliant processing of your shipments through Avonmouth and Royal Portbury docks.",
     keywords:
-      "customs clearance immingham, immingham customs broker, import export immingham, hmrc customs immingham, cds chief immingham, immingham port customs, customs declarations immingham, duty vat immingham, immingham cargo clearance",
+      "Grangemouth customs clearance, import/export services, Avonmouth customs, Royal Portbury customs, UK port clearance, HMRC compliance, CHIEF/CDS declarations, Destin8 port system, bonded storage, customs-controlled goods",
   };
 
   const features = [
     {
-      title: "Full Import & Export Declarations",
-      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring HMRC compliance and smooth clearance through the UK frontier.",
+      title: "Complete Import & Export Declarations",
+      desc: "We prepare and submit all customs declarations accurately and on time, ensuring compliance for both inbound and outbound shipments.",
       icon: <FileText size={24} />,
     },
     {
-      title: "Pre-Lodged Entries to Avoid Delays",
-      desc: "With Immingham’s high traffic volumes, we pre-submit customs declarations before arrival so goods can be released immediately upon landing.",
-      icon: <Clock size={24} />,
+      title: "Experience Handling All Cargo Types",
+      desc: "From containerised freight to bulk loads and Ro-Ro cargo, our team ensures every movement meets HMRC requirements.",
+      icon: <Boxes size={24} />,
     },
     {
-      title: "Sector-Specific Expertise",
-      desc: "Immingham is a major hub for energy goods, raw materials, and industrial freight. We apply the correct tariffs, licensing, and compliance controls every time.",
-      icon: <Factory size={24} />,
-    },
-    {
-      title: "Duties, VAT & Compliance Support",
-      desc: "We manage duty calculations, VAT treatment, customs valuation, and classification to minimise the risk of delays, errors, or penalties.",
+      title: "Duty, VAT & Documentation Support",
+      desc: "We assist with commodity-code classification, duty calculations, VAT assessment, and all required documentation.",
       icon: <ShieldCheck size={24} />,
     },
     {
-      title: "Ro-Ro, Container, Bulk & Hazardous Cargo Handling",
-      desc: "From Ro-Ro and containers to bulk and hazardous cargo, we ensure precise documentation for all Immingham freight terminals.",
-      icon: <Ship size={24} />,
+      title: "Fast, Efficient Clearance to Avoid Delays",
+      desc: "Our detailed compliance checks, timely submissions and industry experience help ensure your goods pass customs smoothly.",
+      icon: <Clock size={24} />,
     },
     {
-      title: "Inspection & Border Agency Assistance",
-      desc: "If shipments are selected for inspection or require additional documentation, we liaise directly with HMRC and border authorities to resolve issues fast.",
-      icon: <SearchCheck size={24} />,
+      title: "Support for Scotland-Specific Trade Needs",
+      desc: "We understand the unique requirements of Scottish importers and exporters, offering tailored solutions for local and international supply chains.",
+      icon: <MapPin size={24} />,
     },
   ];
+  
+  
+  
     
-const services = [
-  {
-    title: "Immingham Port Capabilities",
-    desc: "Immingham offers:",
-    items: [
-      "Largest UK port by tonnage – ~46m tonnes annually",
-      "Major hub for energy generation supply chains",
-      "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
-      "Deep-water container and Lo-Lo facilities for global trade routes",
-      "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",      
-    ],
-    extra:"This makes Immingham one of the most strategically important freight gateways in the UK.",
-    icon: <Anchor size={28} />,
-  },
-  {
-    title: "Documentation Required for Immingham Customs Clearance",
-    desc: "For smooth clearance, you must provide:",
-    items: [
-      "Commercial Invoice",
-      "Packing List",
-      "Bill of Lading / Airway Bill",
-      "Import/Export Licences (where required)",
-      "Customs Declaration (CDS)",
-    ],
-    extra:"Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
-    icon: <FileText size={28} />,
-  },
-  {
-    title: "Typical Customs Procedures at Immingham",
-    desc: "The customs process includes:",
-    items: [
-      "Pre-Arrival Notification submitted before vessel arrival.",
-      "Cargo Declaration upon arrival for HMRC processing.",
-      "Verification of Documentation (invoices, packing lists, origin certificates).",
-      "Physical Inspection when required by customs or risk assessment.",
-      "Payment of Duties & Taxes before release.",
-      "Release of Goods once all requirements are met",
-    ],
-    icon: <ClipboardList size={28} />,
-  },
-];
+  const services = [
+    {
+      title: "Grangemouth Port Capabilities",
+      desc: "Grangemouth offers:",
+      items: [
+        "9 million tonnes of cargo annually across container, liquid and general cargo terminals.",
+        "Scotland’s largest container terminal, serving major international trade routes.",
+        "70% of Scotland’s population within one hour, ideal for inland distribution.",
+        "Key connections to the Netherlands, Germany, Ireland and global markets via major shipping lines such as Maersk and CMA CGM.",
+      ],
+      extra:
+        "This makes Grangemouth a central logistics hub for Scottish industry.",
+      icon: <Anchor size={28} />,
+    },
+    {
+      title: "Documentation Required for Grangemouth Customs Clearance",
+      desc: "To ensure clearance without delays, you will need:",
+      items: [
+        "Commercial Invoice",
+        "Packing List",
+        "Bill of Lading or CMR",
+        "Import/Export Licences where applicable",
+        "Correct Commodity Codes",
+        "CDS/CHIEF Declarations",
+      ],
+      extra:
+        "We assist in preparing all required documents correctly.",
+      icon: <FileText size={28} />,
+    },
+    {
+      title: "Common Causes of Customs Delays (and How We Prevent Them)",
+      desc: "The most frequent causes include:",
+      items: [
+        "Incorrect commodity codes",
+        "Incomplete documentation",
+        "Misdeclared values",
+        "Delays in submission",
+        "Regulatory holds for specialist cargo",
+      ],
+      extra:
+        "Our proactive checks and streamlined submission process significantly reduce these risks.",
+      icon: <AlertTriangle size={28} />,
+    },
+  ];
   
   return (
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance Immingham"
+          title="Customs Clearance Grangemouth"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Immingham is the UK’s largest port by tonnage, handling more than 46 million tonnes of cargo each year and serving as a critical gateway for energy, manufacturing, automotive, bulk and containerised freight. Its scale, deep‑water facilities and high sailing frequency make efficient customs clearance essential for keeping supply chains moving.",
-            "At Global Customs Clearance, we ensure your goods pass through Immingham’s busy customs environment quickly, compliantly and with minimal disruption — whether you are shipping Ro‑Ro, containers, dry bulk, liquid bulk or specialist freight.",
+            "The Port of Grangemouth is Scotland’s largest and busiest port, handling millions of tonnes of cargo each year and serving as the country’s primary gateway for containerised freight, bulk goods and international trade. Its strategic position between Glasgow and Edinburgh, with 70% of Scotland’s population within one hour’s drive, makes it a crucial distribution and logistics hub for Scottish businesses.",
+            "At Global Customs Clearance, we provide efficient, compliant and streamlined customs‑clearance services for all shipments passing through Grangemouth, ensuring your goods move without delays.",
           ]}
         />
 
@@ -109,13 +110,14 @@ const services = [
         <section className="pb-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Immingham
+              Why Customs Clearance Matters at Grangemouth
             </h2>
             <p className="text-xl text-slate-500 leading-relaxed mb-8">
-              The Port of Immingham operates strict HMRC‑controlled procedures, requiring businesses to submit accurate declarations, proper classification and all mandatory supporting documentation.
+            Grangemouth plays a key role in Scotland’s economy, facilitating the flow of over £6 billion worth of goods each year, including food and drink, machinery, fuel, timber, paper and equipment for the oil & gas industry.
+
             </p>
-            <p className="text-lg text-slate-500 leading-relaxed">
-              Missing or incorrect paperwork can trigger port inspections, added costs or severe delays. Immingham handles a diverse mix of cargo — including timber, steel, bagged goods, forest products, containers and Ro‑Ro — making compliance essential for avoiding disruption to your supply chain.
+            <p className="text-xl text-slate-500 leading-relaxed">
+            As Scotland’s main container port, it supports both domestic and international trade routes, making accurate customs documentation and compliance essential for avoiding delays to high‑value freight.
             </p>
           </div>
         </section>       
@@ -124,7 +126,7 @@ const services = [
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose Us for Immingham Customs Clearance
+              Why Choose Us for Customs Clearance in Grangemouth
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,11 +219,11 @@ const services = [
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Let Us Handle Your <br />{" "}
               <span className="text-[#049fe1]">
-              Immingham Customs Clearance
+              Grangemouth Customs Clearance
               </span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Whether you’re dealing with high-volume Ro‑Ro cargo, complex industrial imports or multi‑modal logistics, we provide fast, compliant and reliable customs solutions at the Port of Immingham.
+            Whether your goods are containerised, bulk, industrial, or specialised cargo, we provide reliable, compliant and cost‑effective customs‑clearance support tailored to Scotland’s busiest port.
             </p>
             
 

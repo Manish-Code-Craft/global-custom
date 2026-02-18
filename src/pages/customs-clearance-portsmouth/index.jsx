@@ -3,104 +3,106 @@ import Layout from "@/components/ui/Layout";
 import Heroservice from "@/components/ui/Heroservice";
 import PageHead from "@/components/ui/PageHead";
 import React from "react";
-import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList} from "lucide-react";
+import { CheckCircle2, FileText, Send, Truck, FileCheck, AlertTriangle, ShieldCheck, Anchor, CalendarCheck} from "lucide-react";
 import SiteButton from "@/components/ui/Btns/SiteButton";
 
 export default function Services({ preview }) {  
 
   const PageMeta = {
-    title: "Customs Clearance Immingham | Global Customs Clearance Ltd",
+    title: "Customs Clearance Portsmouth | Global Customs Clearance Ltd",
     description:
-      "Ensure fast, compliant customs clearance at the Port of Immingham with Global Customs Clearance. Our expert brokers handle all cargo types, providing accurate declarations, duty guidance and 24/7 support to keep your goods moving without delay.",
+      "Efficient customs clearance services at Portsmouth Port, a key UK–Ireland trade hub. We support hauliers and logistics providers with fast, compliant import/export declarations, GVMS management and duty/VAT handling to keep your goods moving smoothly across the Irish Sea.",
     keywords:
-      "customs clearance immingham, immingham customs broker, import export immingham, hmrc customs immingham, cds chief immingham, immingham port customs, customs declarations immingham, duty vat immingham, immingham cargo clearance",
+      "Portsmouth customs clearance, UK–Ireland trade, RoRo freight, import/export declarations, GVMS management, duty and VAT handling, cross-border logistics, Irish Sea shipping, haulier support, logistics provider services",
   };
 
   const features = [
     {
-      title: "Full Import & Export Declarations",
-      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring HMRC compliance and smooth clearance through the UK frontier.",
+      title: "Fast Import & Export Declarations",
+      desc: "We submit CDS declarations promptly to ensure goods clear without delay and are released quickly from Temporary Storage.",
       icon: <FileText size={24} />,
     },
     {
-      title: "Pre-Lodged Entries to Avoid Delays",
-      desc: "With Immingham’s high traffic volumes, we pre-submit customs declarations before arrival so goods can be released immediately upon landing.",
-      icon: <Clock size={24} />,
+      title: "Experienced RoRo & Trailer Freight Handling",
+      desc: "Portsmouth is predominantly a RoRo ferry port. We manage both accompanied and unaccompanied freight documentation, ensuring hauliers can board ferries without disruption.",
+      icon: <Truck size={24} />,
     },
     {
-      title: "Sector-Specific Expertise",
-      desc: "Immingham is a major hub for energy goods, raw materials, and industrial freight. We apply the correct tariffs, licensing, and compliance controls every time.",
-      icon: <Factory size={24} />,
+      title: "Compliance with Post-Brexit GB-EU Procedures",
+      desc: "We ensure correct documentation including TADs, ATA/TIR carnets, and all EU-related customs requirements needed for GB–EU movements.",
+      icon: <FileCheck size={24} />,
     },
     {
-      title: "Duties, VAT & Compliance Support",
-      desc: "We manage duty calculations, VAT treatment, customs valuation, and classification to minimise the risk of delays, errors, or penalties.",
+      title: "Duty, VAT & Tariff Management",
+      desc: "We assist with duty calculations, VAT requirements and commodity-code classification to reduce the risk of incorrect declarations or HMRC holds.",
       icon: <ShieldCheck size={24} />,
     },
     {
-      title: "Ro-Ro, Container, Bulk & Hazardous Cargo Handling",
-      desc: "From Ro-Ro and containers to bulk and hazardous cargo, we ensure precise documentation for all Immingham freight terminals.",
-      icon: <Ship size={24} />,
+      title: "Support for Special & Regulated Cargo",
+      desc: "We help you navigate requirements for animals, plants, firearms, hazardous freight and other controlled goods that require pre-authorisation.",
+      icon: <AlertTriangle size={24} />,
+    },
+  ]; 
+    
+  const services = [
+    {
+      title: "Portsmouth Port Capabilities",
+      desc: "Portsmouth offers:",
+      items: [
+        "One of the UK’s largest natural harbours, supporting freight, ferries and naval activity.",
+        "Extensive RoRo infrastructure with regular services to France and Spain via Brittany Ferries.",
+        "Strong road connections direct to the national motorway network.",
+        "Multiple berths for freight, container and project cargo vessels.",
+        "A Temporary Storage customs model with CNS inventory linking.",
+      ],
+      extra:
+        "Portsmouth’s connectivity makes it a vital hub for importers, exporters, and logistics operations serving southern England and beyond.",
+      icon: <Anchor size={28} />,
     },
     {
-      title: "Inspection & Border Agency Assistance",
-      desc: "If shipments are selected for inspection or require additional documentation, we liaise directly with HMRC and border authorities to resolve issues fast.",
-      icon: <SearchCheck size={24} />,
+      title: "Documentation Required for Portsmouth Customs Clearance",
+      desc: "To keep goods moving smoothly through Portsmouth, you will need:",
+      items: [
+        "Commercial Invoice",
+        "Packing List",
+        "Bill of Lading / Ferry Booking Reference",
+        "Relevant Transit Documents (TAD)",
+        "ATA / TIR Carnet (if applicable)",
+        "EORI Number",
+        "HS/Commodity Codes",
+        "Safety & security declarations when required",
+      ],
+      extra:
+        "Our team ensures all paperwork is accurate and aligned with Portsmouth’s border processes.",
+      icon: <FileText size={28} />,
+    },
+    {
+      title: "Common Causes of Delays at Portsmouth — And How We Prevent Them",
+      desc: "Delays often occur due to:",
+      items: [
+        "Missing or incorrect ferry booking references",
+        "Incomplete declarations before arrival",
+        "Incorrect commodity codes or valuations",
+        "Failure to meet GVMS or Temporary Storage requirements",
+        "Issues with regulated or special-category cargo",
+      ],
+      extra:
+        "Our proactive compliance checks and early submission of documents significantly reduce these risks.",
+      icon: <AlertTriangle size={28} />,
     },
   ];
-    
-const services = [
-  {
-    title: "Immingham Port Capabilities",
-    desc: "Immingham offers:",
-    items: [
-      "Largest UK port by tonnage – ~46m tonnes annually",
-      "Major hub for energy generation supply chains",
-      "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
-      "Deep-water container and Lo-Lo facilities for global trade routes",
-      "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",      
-    ],
-    extra:"This makes Immingham one of the most strategically important freight gateways in the UK.",
-    icon: <Anchor size={28} />,
-  },
-  {
-    title: "Documentation Required for Immingham Customs Clearance",
-    desc: "For smooth clearance, you must provide:",
-    items: [
-      "Commercial Invoice",
-      "Packing List",
-      "Bill of Lading / Airway Bill",
-      "Import/Export Licences (where required)",
-      "Customs Declaration (CDS)",
-    ],
-    extra:"Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
-    icon: <FileText size={28} />,
-  },
-  {
-    title: "Typical Customs Procedures at Immingham",
-    desc: "The customs process includes:",
-    items: [
-      "Pre-Arrival Notification submitted before vessel arrival.",
-      "Cargo Declaration upon arrival for HMRC processing.",
-      "Verification of Documentation (invoices, packing lists, origin certificates).",
-      "Physical Inspection when required by customs or risk assessment.",
-      "Payment of Duties & Taxes before release.",
-      "Release of Goods once all requirements are met",
-    ],
-    icon: <ClipboardList size={28} />,
-  },
-];
   
   return (
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance Immingham"
+          title="Customs Clearance Portsmouth"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Immingham is the UK’s largest port by tonnage, handling more than 46 million tonnes of cargo each year and serving as a critical gateway for energy, manufacturing, automotive, bulk and containerised freight. Its scale, deep‑water facilities and high sailing frequency make efficient customs clearance essential for keeping supply chains moving.",
-            "At Global Customs Clearance, we ensure your goods pass through Immingham’s busy customs environment quickly, compliantly and with minimal disruption — whether you are shipping Ro‑Ro, containers, dry bulk, liquid bulk or specialist freight.",
+            "Portsmouth International Port is one of the UK’s most important south‑coast gateways, serving freight, passengers, RoRo ferry traffic, and global trade routes. As a major commercial and ferry port, Portsmouth handles millions of customers and a large volume of cargo each year, making efficient customs‑clearance processes essential for avoiding delays and keeping supply chains moving.",
+            "With strong motorway links via the M275 and A3 direct access to London, along with extensive ferry services operated by Brittany Ferries, Portsmouth plays a key role in GB‑EU trade.",
+            "At Global Customs Clearance, we support importers, exporters, hauliers and logistics providers to ensure fast, compliant and cost‑effective customs‑clearance at Portsmouth.",
           ]}
         />
 
@@ -109,13 +111,13 @@ const services = [
         <section className="pb-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Immingham
+              Why Customs Clearance Matters at Portsmouth
             </h2>
             <p className="text-xl text-slate-500 leading-relaxed mb-8">
-              The Port of Immingham operates strict HMRC‑controlled procedures, requiring businesses to submit accurate declarations, proper classification and all mandatory supporting documentation.
+            Following the UK’s departure from the EU, Portsmouth operates under full customs controls, requiring all imports and exports to meet UK customs regulations. The port functions as a Temporary Storage location, meaning goods arriving can remain under customs control while declarations are submitted — but accurate documentation is crucial to avoid delays or storage charges.
             </p>
-            <p className="text-lg text-slate-500 leading-relaxed">
-              Missing or incorrect paperwork can trigger port inspections, added costs or severe delays. Immingham handles a diverse mix of cargo — including timber, steel, bagged goods, forest products, containers and Ro‑Ro — making compliance essential for avoiding disruption to your supply chain.
+            <p className="text-xl text-slate-500 leading-relaxed">
+            Portsmouth also uses the Goods Vehicle Movement Service (GVMS) for certain RoRo movements, requiring hauliers to be ‘border ready’ with correct references and declarations before arrival. Because ferry schedules operate tightly, even minor customs issues can result in vehicles missing sailings or being held until documentation is corrected.
             </p>
           </div>
         </section>       
@@ -124,7 +126,7 @@ const services = [
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose Us for Immingham Customs Clearance
+              Why Choose Us for Customs Clearance in Portsmouth
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,11 +219,11 @@ const services = [
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Let Us Handle Your <br />{" "}
               <span className="text-[#049fe1]">
-              Immingham Customs Clearance
+              Portsmouth Customs Clearance
               </span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Whether you’re dealing with high-volume Ro‑Ro cargo, complex industrial imports or multi‑modal logistics, we provide fast, compliant and reliable customs solutions at the Port of Immingham.
+            Whether you’re moving trailers, vehicles, containers, specialist freight or high‑volume RoRo shipments, we provide fast, compliant and professional customs‑clearance services tailored to Portsmouth’s busy operational environment.
             </p>
             
 

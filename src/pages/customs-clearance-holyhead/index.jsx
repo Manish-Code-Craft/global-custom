@@ -3,104 +3,102 @@ import Layout from "@/components/ui/Layout";
 import Heroservice from "@/components/ui/Heroservice";
 import PageHead from "@/components/ui/PageHead";
 import React from "react";
-import { CheckCircle2, FileText, Clock, ShieldCheck, Factory, Ship, SearchCheck, Anchor, ClipboardList} from "lucide-react";
+import { CheckCircle2, FileText, Send, Truck, FileCheck, AlertTriangle, ClipboardCheck, Anchor, CalendarCheck} from "lucide-react";
 import SiteButton from "@/components/ui/Btns/SiteButton";
 
 export default function Services({ preview }) {  
 
   const PageMeta = {
-    title: "Customs Clearance Immingham | Global Customs Clearance Ltd",
+    title: "Customs Clearance Holyhead | Global Customs Clearance Ltd",
     description:
-      "Ensure fast, compliant customs clearance at the Port of Immingham with Global Customs Clearance. Our expert brokers handle all cargo types, providing accurate declarations, duty guidance and 24/7 support to keep your goods moving without delay.",
+      "Efficient customs clearance services at Holyhead port. We handle import/export declarations, HMRC compliance, duty and VAT management for all cargo types. Keep your supply chain moving smoothly with our expert support.",
     keywords:
-      "customs clearance immingham, immingham customs broker, import export immingham, hmrc customs immingham, cds chief immingham, immingham port customs, customs declarations immingham, duty vat immingham, immingham cargo clearance",
+      "Customs Clearance Holyhead, Import Export Declarations Holyhead, HMRC Compliance Holyhead, Duty and VAT Management Holyhead, Cargo Types Customs Clearance Holyhead, Supply Chain Efficiency Holyhead, Global Customs Clearance Ltd",
   };
 
   const features = [
     {
-      title: "Full Import & Export Declarations",
-      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring HMRC compliance and smooth clearance through the UK frontier.",
-      icon: <FileText size={24} />,
+      title: "Fast Submission of Import & Export Declarations",
+      desc: "We ensure all customs entries are correctly lodged ahead of departure or arrival, avoiding holdups that can disrupt time-sensitive ferry crossings.",
+      icon: <Send size={24} />,
     },
     {
-      title: "Pre-Lodged Entries to Avoid Delays",
-      desc: "With Immingham’s high traffic volumes, we pre-submit customs declarations before arrival so goods can be released immediately upon landing.",
-      icon: <Clock size={24} />,
+      title: "Support for Ro-Ro, Accompanied & Unaccompanied Freight",
+      desc: "We help hauliers, drivers and logistics providers navigate border processes for trailers, containers, and groupage shipments moving between the UK and Ireland.",
+      icon: <Truck size={24} />,
     },
     {
-      title: "Sector-Specific Expertise",
-      desc: "Immingham is a major hub for energy goods, raw materials, and industrial freight. We apply the correct tariffs, licensing, and compliance controls every time.",
-      icon: <Factory size={24} />,
+      title: "GVMS, Transit & Post-Brexit Compliance",
+      desc: "We manage GVMS entries, T1/T2 transit documentation, and all post-Brexit customs procedures required for UK–EU movements.",
+      icon: <FileCheck size={24} />,
     },
     {
-      title: "Duties, VAT & Compliance Support",
-      desc: "We manage duty calculations, VAT treatment, customs valuation, and classification to minimise the risk of delays, errors, or penalties.",
-      icon: <ShieldCheck size={24} />,
+      title: "Accurate Commodity Codes, Valuation & Documentation Checks",
+      desc: "We validate HS codes, customs values, duties and VAT, reducing risks of delays, inspections and penalties.",
+      icon: <ClipboardCheck size={24} />,
     },
     {
-      title: "Ro-Ro, Container, Bulk & Hazardous Cargo Handling",
-      desc: "From Ro-Ro and containers to bulk and hazardous cargo, we ensure precise documentation for all Immingham freight terminals.",
-      icon: <Ship size={24} />,
-    },
-    {
-      title: "Inspection & Border Agency Assistance",
-      desc: "If shipments are selected for inspection or require additional documentation, we liaise directly with HMRC and border authorities to resolve issues fast.",
-      icon: <SearchCheck size={24} />,
+      title: "7-Day Support for Time-Critical Ferry Traffic",
+      desc: "Holyhead’s high-tempo environment demands reliable, responsive customs support — available every day when needed.",
+      icon: <CalendarCheck size={24} />,
     },
   ];
+  
     
-const services = [
-  {
-    title: "Immingham Port Capabilities",
-    desc: "Immingham offers:",
-    items: [
-      "Largest UK port by tonnage – ~46m tonnes annually",
-      "Major hub for energy generation supply chains",
-      "Extensive Ro-Ro capacity – 8 berths, 30+ weekly European sailings",
-      "Deep-water container and Lo-Lo facilities for global trade routes",
-      "Strategic North Sea location enabling efficient access to Northern Europe & the Baltics",      
-    ],
-    extra:"This makes Immingham one of the most strategically important freight gateways in the UK.",
-    icon: <Anchor size={28} />,
-  },
-  {
-    title: "Documentation Required for Immingham Customs Clearance",
-    desc: "For smooth clearance, you must provide:",
-    items: [
-      "Commercial Invoice",
-      "Packing List",
-      "Bill of Lading / Airway Bill",
-      "Import/Export Licences (where required)",
-      "Customs Declaration (CDS)",
-    ],
-    extra:"Accurate documentation ensures faster processing and reduces the likelihood of inspections.",
-    icon: <FileText size={28} />,
-  },
-  {
-    title: "Typical Customs Procedures at Immingham",
-    desc: "The customs process includes:",
-    items: [
-      "Pre-Arrival Notification submitted before vessel arrival.",
-      "Cargo Declaration upon arrival for HMRC processing.",
-      "Verification of Documentation (invoices, packing lists, origin certificates).",
-      "Physical Inspection when required by customs or risk assessment.",
-      "Payment of Duties & Taxes before release.",
-      "Release of Goods once all requirements are met",
-    ],
-    icon: <ClipboardList size={28} />,
-  },
-];
+  const services = [
+    {
+      title: "Holyhead Port Capabilities",
+      desc: "Holyhead offers:",
+      items: [
+        "A major RoRo ferry hub linking the UK and Ireland with frequent sailings.",
+        "Handling for freight, vehicles, agricultural goods, chemicals and regulated products.",
+        "24-hour, deep-water, lock-free access with excellent road and rail connections.",
+        "Strategic Irish Sea location connecting UK, Ireland, France and Spain through established shipping lines.",
+      ],
+      extra:
+        "These capabilities make Holyhead essential for cross-border supply chains.",
+      icon: <Anchor size={28} />,
+    },
+    {
+      title: "Documentation Required for Holyhead Customs Clearance",
+      desc: "To ensure smooth clearance:",
+      items: [
+        "Commercial Invoice",
+        "Packing List",
+        "Bill of Lading / Ferry Manifest",
+        "EORI Number (UK/EU as applicable)",
+        "Correct HS Codes",
+        "Customs Declaration (CDS)",
+        "Additional certificates where relevant (e.g., phytosanitary, hazardous goods permits, vehicle compliance)",
+      ],
+      icon: <FileText size={28} />,
+    },
+    {
+      title: "Common Challenges — And How We Help Avoid Them",
+      desc: "Holyhead sees frequent delays caused by:",
+      items: [
+        "Incorrect or incomplete customs paperwork",
+        "Misaligned documentation vs ferry manifests",
+        "Tight ferry schedules restricting clearance windows",
+        "Seasonal spikes in freight volume",
+        "Additional checks for regulated goods",
+      ],
+      extra:
+        "Our proactive checks, early submissions and close coordination with hauliers and ferry operators help prevent these issues and keep your cargo on schedule.",
+      icon: <AlertTriangle size={28} />,
+    },
+  ];
   
   return (
     <>
       <PageHead PageMeta={PageMeta} />
       <Layout preview={preview}>
         <Heroservice
-          title="Customs Clearance Immingham"
+          title="Customs Clearance Holyhead"
           backgroundImage="/images/service-bg.jpg"
           desc={[
-            "Immingham is the UK’s largest port by tonnage, handling more than 46 million tonnes of cargo each year and serving as a critical gateway for energy, manufacturing, automotive, bulk and containerised freight. Its scale, deep‑water facilities and high sailing frequency make efficient customs clearance essential for keeping supply chains moving.",
-            "At Global Customs Clearance, we ensure your goods pass through Immingham’s busy customs environment quickly, compliantly and with minimal disruption — whether you are shipping Ro‑Ro, containers, dry bulk, liquid bulk or specialist freight.",
+            "Holyhead Port is one of the UK’s busiest Irish Sea gateways, linking Wales with Ireland through high‑frequency roll‑on/roll‑off (RoRo) ferries. It handles a significant volume of freight and passenger traffic every year, making it a crucial hub for UK–Ireland trade. Efficient customs clearance at Holyhead is vital to ensure goods move smoothly across this heavily trafficked corridor and avoid delays caused by tight ferry schedules.",
+            "At Global Customs Clearance, we support hauliers, importers and exporters moving goods through Holyhead by providing fast, compliant and consistent customs‑clearance services tailored to the port’s unique operational environment.",
           ]}
         />
 
@@ -109,13 +107,13 @@ const services = [
         <section className="pb-24 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8">
-              Why Customs Clearance Matters at Immingham
+              Why Customs Clearance Matters at Holyhead
             </h2>
             <p className="text-xl text-slate-500 leading-relaxed mb-8">
-              The Port of Immingham operates strict HMRC‑controlled procedures, requiring businesses to submit accurate declarations, proper classification and all mandatory supporting documentation.
+            Holyhead’s heavy RoRo traffic means customs documentation must be correct and submitted early. All goods entering or leaving the port must be declared through the UK Customs Declaration Service (CDS). Early, accurate submissions are essential to align with ferry timetables and prevent missed sailings.
             </p>
-            <p className="text-lg text-slate-500 leading-relaxed">
-              Missing or incorrect paperwork can trigger port inspections, added costs or severe delays. Immingham handles a diverse mix of cargo — including timber, steel, bagged goods, forest products, containers and Ro‑Ro — making compliance essential for avoiding disruption to your supply chain.
+            <p className="text-xl text-slate-500 leading-relaxed">
+            The port handles general freight, vehicles, agricultural goods, chemicals and more — many of which require additional controls, such as phytosanitary certification or vehicle compliance checks.
             </p>
           </div>
         </section>       
@@ -124,7 +122,7 @@ const services = [
           <div className="mxl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 relative z-10">
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-white mb-4">
-              Why Choose Us for Immingham Customs Clearance
+              Why Choose Us for Customs Clearance in Holyhead
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,11 +215,11 @@ const services = [
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Let Us Handle Your <br />{" "}
               <span className="text-[#049fe1]">
-              Immingham Customs Clearance
+              Holyhead Customs Clearance
               </span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Whether you’re dealing with high-volume Ro‑Ro cargo, complex industrial imports or multi‑modal logistics, we provide fast, compliant and reliable customs solutions at the Port of Immingham.
+            Whether you’re transporting trailers, vehicles, groupage, agricultural products or specialist cargo, we provide the fast, accurate and compliant customs‑clearance service needed to keep goods moving across the Irish Sea.
             </p>
             
 

@@ -19,30 +19,31 @@ export default function Services({ preview }) {
   const features = [
     {
       title: "Fast, Accurate Import & Export Declarations",
-      desc: "We manage CDS/CHIEF declarations, ensuring correct commodity codes, valuation, licensing, and HMRC compliance for all goods moving through Bristol.",
+      desc: "We manage CDS/CHIEF declarations, ensuring correct commodity codes, valuation, licensing and compliance for all goods entering or leaving Bristol.",
       icon: <FileText size={24} />,
     },
     {
       title: "Pre-Lodged Entries for Faster Release",
-      desc: "Customs entries are prepared and submitted before vessel arrival, reducing dwell time at Avonmouth and Portbury terminals.",
+      desc: "We prepare and submit customs entries before vessel arrival, enabling faster release and reducing dwell time at Avonmouth or Portbury terminals.",
       icon: <Clock size={24} />,
     },
     {
       title: "Sector-Specific Expertise",
-      desc: "Bristol handles energy bulk cargo, steel, timber, food imports requiring DEFRA/Port Health notifications, and high-volume retail freight — all managed with precise customs control.",
+      desc: "Bristol handles bulk energy cargo, steel, timber, food imports (requiring Port Health/DEFRA notifications), and high-volume retail distribution freight — all of which require precise customs control.",
       icon: <Layers size={24} />,
     },
     {
-      title: "Duties, VAT & EORI Support",
-      desc: "We assist with duty deferment accounts, correct VAT treatments, import duty calculations, and full support for new importers.",
+      title: "Support with Duties, VAT & EORI",
+      desc: "Our team assists with duty deferment setups, correct VAT treatments, import duty calculations and new-importer support.",
       icon: <ShieldCheck size={24} />,
     },
     {
       title: "AEO-Level Compliance & Advanced Port Systems",
-      desc: "We operate within robust compliance frameworks and work seamlessly with Destin8, IPAFFS, and other advanced port systems used at Bristol.",
+      desc: "We operate with full compliance frameworks and are familiar with Destin8, IPAFFS and other port systems that streamline clearances for Bristol.",
       icon: <Settings size={24} />,
     },
   ];
+  
   
     
   const services = [
@@ -152,7 +153,6 @@ export default function Services({ preview }) {
           </div>
         </section>     
 
-         {/* Our Customs Services */}
          <section className="py-24 bg-slate-50">
           <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6">
 
