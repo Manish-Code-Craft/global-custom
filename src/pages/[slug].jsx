@@ -24,27 +24,88 @@ return
 }
 
 const links = [
-  { href: "/hs-code-guides", text: "HS Code Guides" },
-  { href: "/duty-relief-guides", text: "Duty Relief Guides" },
-  { href: "/port-guides", text: "Port Guides" },
-  { href: "/customs-glossary", text: "Customs Glossary" },
-  { href: "/importer-checklists", text: "Importer Checklists" },
-  { href: "/cds-vs-chief-guides", text: "CDS vs CHIEF Guides" },
-  { href: "/how-to-avoid-port-delays", text: "How to Avoid Port Delays" },
-  { href: "/how-to-classify-goods-correctly", text: "How to Classify Goods Correctly" },
-  { href: "/post-brexit-customs-advice", text: "Post-Brexit Customs Advice" },
-  { href: "/common-importer-mistakes", text: "Common Importer Mistakes" },
-  { href: "/how-to-prepare-for-a-customs-audit", text: "How to Prepare for a Customs Audit" },
-  { href: "/understanding-duty-relief-schemes", text: "Understanding Duty Relief Schemes" },
-  { href: "/temporary-admission-explained", text: "Temporary Admission Explained" },
-  { href: "/ata-carnet-step-by-step", text: "ATA Carnet Step-by-Step" },
-  { href: "/how-to-speed-up-customs-clearance", text: "How to Speed Up Customs Clearance" },
-  { href: "/what-importers-must-know-in-2026", text: "What Importers Must Know in 2026" },
-  { href: "/how-to-reduce-duty-costs-legally", text: "How to Reduce Duty Costs Legally" },
-  { href: "/e-commerce-importing-guide", text: "E-commerce Importing Guide" },
-  { href: "/amazon-fba-import-guide", text: "Amazon FBA Import Guide" },
-  { href: "/uk-border-changes-explained", text: "UK Border Changes Explained" },
+    {
+      href: "/hs-code-guides-understanding-finding-using-the-correct-commodity-codes",
+      text: "HS Code Guides",
+    },
+    {
+      href: "/duty-relief-guides-how-to-reduce-or-eliminate-import-duties-legally",
+      text: "Duty Relief Guides",
+    },
+    {
+      href: "/port-guides-navigating-uk-ports-for-smooth-customs-clearance",
+      text: "Port Guides",
+    },
+    {
+      href: "/customs-glossary-key-terms-every-importer-exporter-should-know",
+      text: "Customs Glossary",
+    },
+    {
+      href: "/importer-checklists",
+      text: "Importer Checklists",
+    },
+    {
+      href: "/cds-vs-chief-guides",
+      text: "CDS vs CHIEF Guides",
+    },
+    {
+      href: "/how-to-avoid-port-delays",
+      text: "How to Avoid Port Delays",
+    },
+    {
+      href: "/how-to-classify-goods-correctly",
+      text: "How to Classify Goods Correctly",
+    },
+    {
+      href: "/post-brexit-customs-advice-uk-importers-exporters",
+      text: "Post-Brexit Customs Advice",
+    },
+    {
+      href: "/importer-mistakes-common-errors-how-to-avoid-them",
+      text: "Common Importer Mistakes",
+    },
+    {
+      href: "/prepare-for-uk-customs-audit-guide",
+      text: "How to Prepare for a Customs Audit",
+    },
+    {
+      href: "/uk-duty-relief-schemes-import-costs-guide",
+      text: "Understanding Duty Relief Schemes",
+    },
+    {
+      href: "/temporary-admission-uk-duty-vat-relief",
+      text: "Temporary Admission Explained",
+    },
+    {
+      href: "/ata-carnet-step-by-step-guide",
+      text: "ATA Carnet Step-by-Step",
+    },
+    {
+      href: "/speed-up-uk-customs-clearance-guide",
+      text: "How to Speed Up Customs Clearance",
+    },
+    {
+      href: "/uk-import-rules-2026-changes-risks-opportunities",
+      text: "What Importers Must Know in 2026",
+    },
+    {
+      href: "/uk-import-rules-2026-changes-risks-opportunities",
+      text: "How to Reduce Duty Costs Legally",
+    },
+    {
+      href: "/ecommerce-importing-guide-uk-compliance",
+      text: "E-commerce Importing Guide",
+    },
+    {
+      href: "/amazon-fba-import-guide-uk",
+      text: "Amazon FBA Import Guide",
+    },
+    {
+      href: "/uk-border-changes-explained-importers-guide",
+      text: "UK Border Changes Explained",
+    },
   ];
+  
 const PageMeta = {
     title: `${post.seo.title ? post.seo.title : post.title}`,
     description: post.seo.metaDesc ? post.seo.metaDesc : post.title,

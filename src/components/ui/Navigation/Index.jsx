@@ -40,7 +40,6 @@ export default function Navigation() {
      <li className="group relative">
             <NavLink href="#" name="Locations" />
                 <ul className="sub-menu loc-sub-menu">
-                    <div className="px-2 grid grid-cols-3 gap-x-2 gap-y-1">
                     <li><NavSubLink href="/customs-clearance-liverpool" name="Custom Clearance in Liverpool" /></li>
                     <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
                     <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
@@ -75,9 +74,7 @@ export default function Navigation() {
                     <li><NavSubLink href="/customs-clearance-thamesport" name="Customs Clearance Thamesport" /></li>
                     <li><NavSubLink href="/customs-clearance-harwich" name="Customs Clearance Harwich" /></li>
                     <li><NavSubLink href="/customs-clearance-killingholme" name="Customs Clearance Killingholme" /></li>
-
-                    </div>
-            </ul>
+                     </ul>
         </li>
      <li className="group relative"><NavLink href="#" name="Airports" />
             <ul className="sub-menu">
@@ -91,30 +88,30 @@ export default function Navigation() {
             </ul>
         </li>
        
-        <li className="group relative"><NavLink href="/blog" name="Knowledge Hub" />
-        <ul className="sub-menu">
-            <li><NavSubLink href="/hs-code-guides" name="HS Code Guides" /></li>
-            <li><NavSubLink href="/duty-relief-guides" name="Duty Relief Guides" /></li>
-            <li><NavSubLink href="/port-guides" name="Port Guides" /></li>
-            <li><NavSubLink href="/customs-glossary" name="Customs Glossary" /></li>
-            <li><NavSubLink href="/importer-checklists" name="Importer Checklists" /></li>
-            <li><NavSubLink href="/cds-vs-chief-guides" name="CDS vs CHIEF Guides" /></li>
-            <li><NavSubLink href="/how-to-avoid-port-delays" name="How to Avoid Port Delays" /></li>
-            <li><NavSubLink href="/how-to-classify-goods-correctly" name="How to Classify Goods Correctly" /></li>
-            <li><NavSubLink href="/post-brexit-customs-advice" name="Post-Brexit Customs Advice" /></li>
-            <li><NavSubLink href="/common-importer-mistakes" name="Common Importer Mistakes" /></li>
-            <li><NavSubLink href="/how-to-prepare-for-a-customs-audit" name="How to Prepare for a Customs Audit" /></li>
-            <li><NavSubLink href="/understanding-duty-relief-schemes" name="Understanding Duty Relief Schemes" /></li>
-            <li><NavSubLink href="/temporary-admission-explained" name="Temporary Admission Explained" /></li>
-            <li><NavSubLink href="/ata-carnet-step-by-step" name="ATA Carnet Step-by-Step" /></li>
-            <li><NavSubLink href="/how-to-speed-up-customs-clearance" name="How to Speed Up Customs Clearance" /></li>
-            <li><NavSubLink href="/what-importers-must-know-in-2026" name="What Importers Must Know in 2026" /></li>
-            <li><NavSubLink href="/how-to-reduce-duty-costs-legally" name="How to Reduce Duty Costs Legally" /></li>
-            <li><NavSubLink href="/e-commerce-importing-guide" name="E-commerce Importing Guide" /></li>
-            <li><NavSubLink href="/amazon-fba-import-guide" name="Amazon FBA Import Guide" /></li>
-            <li><NavSubLink href="/uk-border-changes-explained" name="UK Border Changes Explained" /></li>
-        </ul>
-        </li>
+            <li className="group relative"><NavLink href="/blog" name="Knowledge Hub" />
+                <ul className="sub-menu">
+                    <li><NavSubLink href="/hs-code-guides-understanding-finding-using-the-correct-commodity-codes" name="HS Code Guides" /></li>
+                    <li><NavSubLink href="/duty-relief-guides-how-to-reduce-or-eliminate-import-duties-legally" name="Duty Relief Guides" /></li>
+                    <li><NavSubLink href="/port-guides-navigating-uk-ports-for-smooth-customs-clearance" name="Port Guides" /></li>
+                    <li><NavSubLink href="/customs-glossary-key-terms-every-importer-exporter-should-know" name="Customs Glossary" /></li>
+                    <li><NavSubLink href="/importer-checklists" name="Importer Checklists" /></li>
+                    <li><NavSubLink href="/cds-vs-chief-guides" name="CDS vs CHIEF Guides" /></li>
+                    <li><NavSubLink href="/how-to-avoid-port-delays" name="How to Avoid Port Delays" /></li>
+                    <li><NavSubLink href="/how-to-classify-goods-correctly" name="How to Classify Goods Correctly" /></li>
+                    <li><NavSubLink href="/post-brexit-customs-advice-uk-importers-exporters" name="Post-Brexit Customs Advice" /></li>
+                    <li><NavSubLink href="/importer-mistakes-common-errors-how-to-avoid-them" name="Common Importer Mistakes" /></li>
+                    <li><NavSubLink href="/prepare-for-uk-customs-audit-guide" name="How to Prepare for a Customs Audit" /></li>
+                    <li><NavSubLink href="/uk-duty-relief-schemes-import-costs-guide" name="Understanding Duty Relief Schemes" /></li>
+                    <li><NavSubLink href="/temporary-admission-uk-duty-vat-relief" name="Temporary Admission Explained" /></li>
+                    <li><NavSubLink href="/ata-carnet-step-by-step-guide" name="ATA Carnet Step-by-Step" /></li>
+                    <li><NavSubLink href="/speed-up-uk-customs-clearance-guide" name="How to Speed Up Customs Clearance" /></li>
+                    <li><NavSubLink href="/uk-import-rules-2026-changes-risks-opportunities" name="What Importers Must Know in 2026" /></li>
+                    <li><NavSubLink href="/uk-import-rules-2026-changes-risks-opportunities" name="How to Reduce Duty Costs Legally" /></li>
+                    <li><NavSubLink href="/ecommerce-importing-guide-uk-compliance" name="E-commerce Importing Guide" /></li>
+                    <li><NavSubLink href="/amazon-fba-import-guide-uk" name="Amazon FBA Import Guide" /></li>
+                    <li><NavSubLink href="/uk-border-changes-explained-importers-guide" name="UK Border Changes Explained" /></li>
+                </ul>
+          </li>
     
 
         <li className="group relative"><NavLink href="/about-us" name="About" />
