@@ -37,26 +37,49 @@ export default function Navigation() {
             <li><NavSubLink href="/industries/retail" name="Retail" /></li>
         </ul>
         </li>
+     <li className="group relative">
+            <NavLink href="#" name="Locations" />
+                <ul className="sub-menu loc-sub-menu">
+                    <div className="px-2 grid grid-cols-3 gap-x-2 gap-y-1">
+                    <li><NavSubLink href="/customs-clearance-liverpool" name="Custom Clearance in Liverpool" /></li>
+                    <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
+                    <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
+                    <li><NavSubLink href="/customs-clearance-southampton" name="Custom Clearance in Southampton" /></li>
 
+                    <li><NavSubLink href="/customs-clearance-tilbury" name="Customs Clearance Tilbury" /></li>
+                    <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Kent" /></li>
+                    <li><NavSubLink href="/customs-clearance-medway" name="Customs Clearance Medway" /></li>
+                    <li><NavSubLink href="/customs-clearance-gillingham" name="Customs Clearance Gillingham" /></li>
 
-        <li className="group relative"><NavLink href="#" name="Locations" />
-            <ul className="sub-menu">
-            <li><NavSubLink href="/customs-clearance-liverpool" name="Custom Clearance in Liverpool" /></li>
-                <li><NavSubLink href="/customs-clearance-felixstowe" name="Custom Clearance in Felixstowe" /></li>
-                <li><NavSubLink href="/customs-clearance-london-gateway" name="Custom Clearance in London Gateway" /></li>
-                <li><NavSubLink href="/customs-clearance-southampton" name="Custom Clearance in Southampton" /></li>
-                <li><NavSubLink href="/customs-clearance-tilbury" name="Customs Clearance Tilbury" /></li>
-                <li><NavSubLink href="/customs-clearance-kent" name="Customs Clearance Kent" /></li>
-                <li><NavSubLink href="/customs-clearance-medway" name="Customs Clearance Medway" /></li>
-                <li><NavSubLink href="/customs-clearance-gillingham" name="Customs Clearance Gillingham" /></li>
-                <li><NavSubLink href="/customs-clearance-rochester" name="Customs Clearance Rochester" /></li>
-                <li><NavSubLink href="/customs-clearance-chatham" name="Customs Clearance Chatham" /></li>               
-                <li><NavSubLink href="/customs-clearance-dover" name="Customs Clearance Dover" /></li>
-                <li><NavSubLink href="/customs-clearance-london" name="Customs Clearance London" /></li>               
+                    <li><NavSubLink href="/customs-clearance-rochester" name="Customs Clearance Rochester" /></li>
+                    <li><NavSubLink href="/customs-clearance-chatham" name="Customs Clearance Chatham" /></li>
+                    <li><NavSubLink href="/customs-clearance-dover" name="Customs Clearance Dover" /></li>
+                    <li><NavSubLink href="/customs-clearance-hull" name="Customs Clearance Hull" /></li>
+
+                    <li><NavSubLink href="/customs-clearance-immingham" name="Customs Clearance Immingham" /></li>
+                    <li><NavSubLink href="/customs-clearance-bristol" name="Customs Clearance Bristol" /></li>
+                    <li><NavSubLink href="/customs-clearance-grangemouth" name="Customs Clearance Grangemouth" /></li>
+                    <li><NavSubLink href="/customs-clearance-teesport" name="Customs Clearance Teesport" /></li>
+
+                    <li><NavSubLink href="/customs-clearance-holyhead" name="Customs Clearance Holyhead" /></li>
+                    <li><NavSubLink href="/customs-clearance-portsmouth" name="Customs Clearance Portsmouth" /></li>
+                    <li><NavSubLink href="/customs-clearance-poole" name="Customs Clearance Poole" /></li>
+                    <li><NavSubLink href="/customs-clearance-plymouth" name="Customs Clearance Plymouth" /></li>
+
+                    <li><NavSubLink href="/customs-clearance-grimsby" name="Customs Clearance Grimsby" /></li>
+                    <li><NavSubLink href="/customs-clearance-goole" name="Customs Clearance Goole" /></li>
+                    <li><NavSubLink href="/customs-clearance-port-of-tyne" name="Customs Clearance Port of Tyne" /></li>
+                    <li><NavSubLink href="/customs-clearance-belfast" name="Customs Clearance Belfast" /></li>
+
+                    <li><NavSubLink href="/customs-clearance-greenock" name="Customs Clearance Greenock" /></li>
+                    <li><NavSubLink href="/customs-clearance-thamesport" name="Customs Clearance Thamesport" /></li>
+                    <li><NavSubLink href="/customs-clearance-harwich" name="Customs Clearance Harwich" /></li>
+                    <li><NavSubLink href="/customs-clearance-killingholme" name="Customs Clearance Killingholme" /></li>
+
+                    </div>
             </ul>
         </li>
-
-        <li className="group relative"><NavLink href="#" name="Airports" />
+     <li className="group relative"><NavLink href="#" name="Airports" />
             <ul className="sub-menu">
                 <li><NavSubLink href="/customs-clearance-london-heathrow-airport" name="London Heathrow Airport (LHR)" /></li>                          
                 <li><NavSubLink href="/customs-clearance-london-gatwick-airport" name="LONDON GATWICK AIRPORT (LGW)" /></li>                          

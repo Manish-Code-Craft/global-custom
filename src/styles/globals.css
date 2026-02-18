@@ -1892,3 +1892,81 @@ button {
     width: 100%;
   }
 }
+
+/* Mega Sub Menu */
+/* ===== Mega menu base ===== */
+.loc-sub-menu {
+  position: absolute;
+  top: 60px !important;
+  left: 100% !important;
+  transform: translateX(-50%) !important;
+  width: 1100px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  padding: 28px 32px;
+  display: none;
+  z-index: 999;
+}
+
+/* ===== Show on hover ===== */
+.group:hover > .loc-sub-menu {
+  display: block;
+}
+
+/* ===== Grid layout ===== */
+.loc-sub-menu .mega-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 4px;
+}
+
+/* ===== Reset list ===== */
+.loc-sub-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Links ===== */
+.loc-sub-menu a {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ===== Hover state ===== */
+.loc-sub-menu a:hover {
+  background-color: #f8fafc;
+  color: #3daee0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .loc-sub-menu {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .loc-sub-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .loc-sub-menu .mega-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+
