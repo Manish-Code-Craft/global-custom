@@ -19,35 +19,36 @@ export default function Services({ preview }) {
   const features = [
     {
       title: "Full Import & Export Declarations",
-      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring HMRC compliance and smooth clearance through the UK frontier.",
+      desc: "We submit accurate CDS/CHIEF customs entries for all cargo types, ensuring compliance with HMRC and a smooth transition through the frontier.",
       icon: <FileText size={24} />,
     },
     {
       title: "Pre-Lodged Entries to Avoid Delays",
-      desc: "With Immingham’s high traffic volumes, we pre-submit customs declarations before arrival so goods can be released immediately upon landing.",
+      desc: "Immingham’s heavy traffic makes pre-arrival declarations essential. We pre-submit customs entries so goods can be released immediately upon landing.",
       icon: <Clock size={24} />,
     },
     {
       title: "Sector-Specific Expertise",
-      desc: "Immingham is a major hub for energy goods, raw materials, and industrial freight. We apply the correct tariffs, licensing, and compliance controls every time.",
+      desc: "Immingham is a key hub for energy-related goods, raw materials and industrial freight. Our specialist knowledge ensures the correct tariffs, compliance steps and licensing are applied.",
       icon: <Factory size={24} />,
     },
     {
-      title: "Duties, VAT & Compliance Support",
-      desc: "We manage duty calculations, VAT treatment, customs valuation, and classification to minimise the risk of delays, errors, or penalties.",
+      title: "Support with Duties, VAT & Compliance",
+      desc: "We manage duty calculations, VAT requirements, valuation rules and classification to reduce the risk of penalties or shipment delays.",
       icon: <ShieldCheck size={24} />,
     },
     {
       title: "Ro-Ro, Container, Bulk & Hazardous Cargo Handling",
-      desc: "From Ro-Ro and containers to bulk and hazardous cargo, we ensure precise documentation for all Immingham freight terminals.",
+      desc: "Immingham supports a broad range of freight types with Ro-Ro berths, deep-water container facilities and bulk-handling terminals, all of which require precise customs documentation.",
       icon: <Ship size={24} />,
     },
     {
-      title: "Inspection & Border Agency Assistance",
-      desc: "If shipments are selected for inspection or require additional documentation, we liaise directly with HMRC and border authorities to resolve issues fast.",
+      title: "Expert Assistance for Inspections & Border Agencies",
+      desc: "If goods are subject to inspection or need additional documentation, we coordinate with HMRC and relevant authorities to resolve issues quickly.",
       icon: <SearchCheck size={24} />,
     },
   ];
+  
     
 const services = [
   {
