@@ -74,13 +74,13 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
           desc="Expert customs guidance, compliance insights, and trade intelligence"
           backgroundImage="/images/service-bg.jpg"
         /> */}
-        <section className="bg-black text-white md:py-24 pt-28 pb-10 relative overflow-hidden">
+        <section className="bg-black text-white pt-24 lg:pt-48 lg:pb-24 pb-10 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-[#3daee0]/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
-                  <h1 className="text-5xl md:text-[70px] font-bold mb-6 tracking-tight">
+                  <h1 className="text-4xl md:text-[70px] font-bold mb-6 tracking-tight">
                   Knowledge <span className="text-[#3daee0]">Hub.</span>
                   </h1>
-                  <p className="text-gray-400 text-md max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                  <p className="text-gray-400 md:text-md max-w-2xl mx-auto lg:mb-10 mb-5 leading-relaxed font-medium">
                   Expert customs guidance, compliance insights, and trade intelligence
                   </p>
                   
