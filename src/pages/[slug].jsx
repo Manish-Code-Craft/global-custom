@@ -89,7 +89,7 @@ const links = [
       text: "What Importers Must Know in 2026",
     },
     {
-      href: "/uk-import-rules-2026-changes-risks-opportunities",
+      href: "/reduce-duty-costs-legally-uk-importers",
       text: "How to Reduce Duty Costs Legally",
     },
     {

@@ -106,7 +106,7 @@ export default function Navigation() {
                     <li><NavSubLink href="/ata-carnet-step-by-step-guide" name="ATA Carnet Step-by-Step" /></li>
                     <li><NavSubLink href="/speed-up-uk-customs-clearance-guide" name="How to Speed Up Customs Clearance" /></li>
                     <li><NavSubLink href="/uk-import-rules-2026-changes-risks-opportunities" name="What Importers Must Know in 2026" /></li>
-                    <li><NavSubLink href="/uk-import-rules-2026-changes-risks-opportunities" name="How to Reduce Duty Costs Legally" /></li>
+                    <li><NavSubLink href="/reduce-duty-costs-legally-uk-importers" name="How to Reduce Duty Costs Legally" /></li>
                     <li><NavSubLink href="/ecommerce-importing-guide-uk-compliance" name="E-commerce Importing Guide" /></li>
                     <li><NavSubLink href="/amazon-fba-import-guide-uk" name="Amazon FBA Import Guide" /></li>
                     <li><NavSubLink href="/uk-border-changes-explained-importers-guide" name="UK Border Changes Explained" /></li>
