@@ -69,28 +69,40 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
 
       <Layout preview={preview}>
         {/* HERO */}
-        <Heroservice
+        {/* <Heroservice
           title="Knowledge Hub"
           desc="Expert customs guidance, compliance insights, and trade intelligence"
           backgroundImage="/images/service-bg.jpg"
-        />
+        /> */}
+        <section className="bg-black text-white py-24 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-1/3 h-full bg-[#3daee0]/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+                <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+                  <h1 className="text-5xl md:text-[70px] font-bold mb-6 tracking-tight">
+                  Knowledge <span className="text-[#3daee0]">Hub.</span>
+                  </h1>
+                  <p className="text-gray-400 text-md max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                  Expert customs guidance, compliance insights, and trade intelligence
+                  </p>
+                  
+                  <div className="max-w-2xl mx-auto relative group">
+                  <input
+                  type="text"
+                  placeholder="Search knowledge base..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="w-full bg-white/10 border border-white/20 rounded-2xl py-5 px-14 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#3daee0] focus:bg-white/15 transition-all text-lg"
+              
+                />
+                    <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-6 w-6 text-[#3daee0]" />
+                  </div>
+                </div>
+              </section>
 
         {/* TOOLBAR */}
         {/* <div className="max-w-[800px] m-auto"> */}
         <Container ContainerClass="">
           <div className="mt-[80px] mb-12">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b pb-8">
-              {/* Search */}
-              <div className="relative w-full md:max-w-md">
-                <input
-                  type="text"
-                  placeholder="Search knowledge base..."
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  className="w-full border border-gray-200 rounded-xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#3daee0]"
-                />
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#3daee0]" />
-              </div>
+            <div className="flex flex-row justify-end gap-6 border-b pb-8">
 
               {/* View Toggle */}
               <div className="bg-gray-100 p-1 rounded-lg flex">
