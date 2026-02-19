@@ -79,6 +79,7 @@ export async function getAllPostsForHome(preview:any) {
             excerpt
             slug
             date
+            isSticky
             featuredImage {
               node {
                 sourceUrl

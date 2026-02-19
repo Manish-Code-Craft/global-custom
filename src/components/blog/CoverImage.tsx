@@ -27,7 +27,7 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
       height={800}
       alt={title}
       src={amarCoverImage}
-      className="object-cover coverimage-blog"
+      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-110"
     />
   );
 

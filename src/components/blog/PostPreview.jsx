@@ -1,6 +1,7 @@
 import Date from "./Date";
 import CoverImage from "./CoverImage";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 export default function PostPreview({
   title,
@@ -23,47 +24,55 @@ export default function PostPreview({
       .join(" ") + "...";
 
   return (
-    <article
-  className={`transition-all ${
-    isList
-      ? "pb-3 border-b border-gray-200"
-      : "bg-white border border-gray-100 hover:shadow-md"
-  }`}
->
-            {/* IMAGE */}
-      {!isList && (
-        <div className="">
-          <CoverImage
-            title={title}
-            coverImage={coverImage || fallbackImage}
-            slug={slug}
-          />
-        </div>
-      )}
+    <Link href={`/${slug}`} className={`group cursor-pointer bg-white overflow-hidden transition-all duration-500 ${
+      isList ? "flex flex-col md:flex-row gap-8 p-6 rounded-3xl hover:bg-gray-50 border border-transparent hover:border-gray-100"  : "flex flex-col"}`}>
+  {/* IMAGE */}
+  <div
+    className={`relative overflow-hidden rounded-2xl flex-shrink-0
+      ${
+        isList
+          ? "h-48 w-full md:w-80"
+          : "h-64 mb-6 shadow-lg shadow-black/5"
+      }`}
+  >
+    <CoverImage
+      title={title}
+      coverImage={coverImage || fallbackImage}
+      // slug={slug}
+      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-100 group-hover:scale-110"
+    />
+  </div>
 
+  {/* CONTENT */}
+  <div className="flex flex-col flex-grow">
+    {/* META */}
+    <div className="flex items-center text-[10px] font-black uppercase tracking-[0.2em] text-[#3daee0] mb-4">
+      <span>
+        <Date dateString={date} />
+      </span>
+    </div>
 
-      {/* CONTENT */}
-      <div className={`flex flex-col ${isList ? "max-w-3xl" : " p-4"}`}>
-        <h3 className="">
-          <Link
-            href={`/${slug}`}
-            className="text-[16px] font-bold text-[#3daee0]"
-          >
-            {title}
-          </Link>
-        </h3>
+    {/* TITLE */}
+    <h3 className="text-2xl font-black text-black mb-4 leading-tight group-hover:text-[#3daee0] transition-colors">
+      
+        {title}
+    </h3>
 
-        <div className="text-[12px]">
-          <Date dateString={date} />
-        </div>
+    {/* EXCERPT */}
+    <div
+      className="text-gray-500 text-sm line-clamp-2 leading-relaxed mb-6 font-medium"
+      dangerouslySetInnerHTML={{
+        __html: truncateExcerpt(excerpt),
+      }}
+    />
 
-        {/* <div
-          className="text-lg leading-relaxed text-gray-600"
-          dangerouslySetInnerHTML={{
-            __html: truncateExcerpt(excerpt),
-          }}
-        /> */}
-      </div>
-    </article>
+    {/* FOOTER */}
+    <div className="mt-auto pt-4 flex items-center text-black font-black text-[10px] uppercase tracking-[0.2em] group-hover:text-[#3daee0] transition-colors">
+      <span>Explore Detailed View</span>
+      <ChevronRight className="h-4 w-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
+    </div>
+  </div>
+  </Link>
+
   );
 }
