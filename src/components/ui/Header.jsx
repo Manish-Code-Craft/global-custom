@@ -25,9 +25,9 @@ export default function Header() {
     <header className="header">
         <Container>
             <div className="flex items-center justify-between py-2">
-                <div className="w-[200px] md:w-[210px] leading-[0]">
+                <div className="w-[80px] md:w-[210px] leading-[0]">
                     <Link title="Global Custom Clearance,UK" href="/">
-                   <Image src="/images/logo-animatef.gif" width={396} height={125}  alt="logo" className="w-[160px]"/>
+                   <Image src="/images/logo-animatef.gif" width={396} height={125}  alt="logo"/>
                     </Link>
                 </div>
                 <div className="main-menu hidden xl:block">

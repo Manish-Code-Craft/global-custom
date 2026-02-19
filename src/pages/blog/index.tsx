@@ -74,7 +74,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
           desc="Expert customs guidance, compliance insights, and trade intelligence"
           backgroundImage="/images/service-bg.jpg"
         /> */}
-        <section className="bg-black text-white py-24 relative overflow-hidden">
+        <section className="bg-black text-white md:py-24 pt-28 pb-10 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-[#3daee0]/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                   <h1 className="text-5xl md:text-[70px] font-bold mb-6 tracking-tight">
@@ -101,8 +101,8 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
         {/* TOOLBAR */}
         {/* <div className="max-w-[800px] m-auto"> */}
         <Container ContainerClass="">
-          <div className="mt-[80px] mb-12">
-            <div className="flex flex-row justify-end gap-6 border-b pb-8">
+          <div className="mb:mt-[80px] mt-8 hidden md:block">
+            <div className="flex flex-row justify-end gap-6 pb-8">
 
               {/* View Toggle */}
               <div className="bg-gray-100 p-1 rounded-lg flex">
@@ -132,7 +132,7 @@ const Index: React.FC<IndexProps> = ({ allPosts, preview }) => {
 
           {/* POSTS */}
           <div
-            className={` ${
+            className={` lg:mt-0 mt-4 ${
               viewMode === "grid"
                 ? "grid gap-8 md:grid-cols-2 lg:grid-cols-3"
                 : "flex flex-col gap-6"

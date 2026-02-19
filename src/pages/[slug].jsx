@@ -121,10 +121,10 @@ return (
     <PostTitle>Loading…</PostTitle>
     ) : (
     <>
-    <div className="bg-white section relative">
+    <div className="bg-white section relative mt-12">
         <article>
             <Container>
-                <div className="grid grid-cols-12 gap-12 ">
+                <div className="lg:grid lg:grid-cols-12 gap-12 ">
                     <div className=" lg:col-span-8 md:col-span-12 col-span-12">
                         <PostHeader
                             title={post.title}
@@ -133,9 +133,7 @@ return (
                             author={post.author}
                             categories={post.categories}
                             />
-                        {/* 
-                        <CoverImage title={post.title} coverImage={post.featuredImage} />
-                        */}
+                       
                         <PostBody content={post.content} />
                         <footer>
                             {post.tags.edges.length > 0 && 
