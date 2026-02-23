@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Optional: Subtle background glow for depth */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-[#26aae3]/50 to-transparent" />
         
-        <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-6 lg:px-10">
+        <div className="xl:max-w-[1400px] 2xl:max-w-[1500px] mx-auto px-3 lg:px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
             
             {/* Brand Column */}
